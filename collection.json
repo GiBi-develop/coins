@@ -8,8 +8,9 @@
   "status": "have | ordered | missing",
   "qty": "сколько экземпляров (0 для отсутствующих)",
   "image": "ссылка на фото (необязательно)",
-  "value_usd": "ориентир цены [от, до] в долларах для обычного состояния",
-  "value_src": "откуда взята оценка",
+  "price_rub": "розничная цена за штуку в рублях (ориентир по monetnik.ru, обычное состояние)",
+  "price_src": "страница, откуда взята цена; без ссылки — оценка по похожим",
+  "questions": "список вопросов для уточнения; генерируется заново при сборке",
   "album/sheet/row/slot": "место хранения; для банкнот row не используется"
  },
  "countries": {
@@ -836,7 +837,9 @@
    "album": "book25",
    "extra_have": 18,
    "total": 18,
-   "note": "Собрана полностью; число 18 — по подсчёту слотов, проверить"
+   "note": "Полный набор на Монетнике — 19 монет (три выпуска). Записано 18 по подсчёту слотов — проверить",
+   "price_rub": 2800,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/oruzhie-velikoj-pobedy/polnyj-nabor-25-rublej-199605/"
   },
   {
    "id": "misc25",
@@ -857,7 +860,9 @@
    "album": "jubilee",
    "extra_have": 28,
    "total": 28,
-   "note": "17 × 2 руб., 10 × 5 руб., 1 × 10 руб.; лист 8. Полный дубль 2-рублёвых — в ящике, блистер с 10 повторами 5-рублёвых — на листе"
+   "note": "17 × 2 руб., 10 × 5 руб., 1 × 10 руб.; лист 8. Полный дубль 2-рублёвых — в ящике, блистер с 10 повторами 5-рублёвых — на листе",
+   "price_rub": 1050,
+   "price_src": "https://www.monetnik.ru/monety/rossii/nabory/polnyj-komplekt-monet-4346/"
   },
   {
    "id": "victory70",
@@ -866,7 +871,8 @@
    "album": "victory70",
    "extra_have": 3,
    "total": 21,
-   "note": "18 × 5 руб. (2014) + 3 × 10 руб.; альбом полный"
+   "note": "18 × 5 руб. (2014) + 3 × 10 руб.; альбом полный",
+   "price_rub": 300
   },
   {
    "id": "crimea",
@@ -903,7 +909,9 @@
    "denom": "10 рублей",
    "album": "gvs",
    "extra_have": 40,
-   "note": "40 в отдельном альбоме + 5 на листе 9 юбилейного"
+   "note": "40 в отдельном альбоме + 5 на листе 9 юбилейного",
+   "price_rub": 2800,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "steel10",
@@ -967,7 +975,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0002",
@@ -979,7 +988,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0003",
@@ -991,7 +1001,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0004",
@@ -1003,7 +1014,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0005",
@@ -1015,7 +1027,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0006",
@@ -1027,7 +1040,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0007",
@@ -1039,7 +1053,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0008",
@@ -1051,7 +1066,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0009",
@@ -1063,7 +1079,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0010",
@@ -1075,7 +1092,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0011",
@@ -1087,7 +1105,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0012",
@@ -1099,7 +1118,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0013",
@@ -1111,7 +1131,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0014",
@@ -1124,7 +1145,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0015",
@@ -1137,7 +1159,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0016",
@@ -1150,7 +1173,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0017",
@@ -1163,7 +1187,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0018",
@@ -1176,7 +1201,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0019",
@@ -1189,7 +1215,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0020",
@@ -1202,7 +1229,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0021",
@@ -1215,7 +1243,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0022",
@@ -1228,7 +1257,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0023",
@@ -1241,7 +1271,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0024",
@@ -1254,7 +1285,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0025",
@@ -1267,7 +1299,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0026",
@@ -1280,7 +1313,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0027",
@@ -1293,7 +1327,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0028",
@@ -1306,7 +1341,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0029",
@@ -1319,7 +1355,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0030",
@@ -1332,7 +1369,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0031",
@@ -1345,7 +1383,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в пакете в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0032",
@@ -1359,7 +1398,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0033",
@@ -1373,7 +1413,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0034",
@@ -1387,7 +1428,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0035",
@@ -1401,7 +1443,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0036",
@@ -1415,7 +1458,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0037",
@@ -1429,7 +1473,8 @@
    "qty": 1,
    "status": "have",
    "note": "возможно, перенесены на лист 15 — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0038",
@@ -1442,7 +1487,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0039",
@@ -1455,7 +1501,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0040",
@@ -1468,7 +1515,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0041",
@@ -1481,7 +1529,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0042",
@@ -1494,7 +1543,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0043",
@@ -1507,7 +1557,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0044",
@@ -1519,7 +1570,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0045",
@@ -1531,7 +1583,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0046",
@@ -1543,7 +1596,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0047",
@@ -1555,7 +1609,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0048",
@@ -1567,7 +1622,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0049",
@@ -1579,7 +1635,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0050",
@@ -1592,7 +1649,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0051",
@@ -1605,7 +1663,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0052",
@@ -1618,7 +1677,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0053",
@@ -1631,7 +1691,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0054",
@@ -1644,7 +1705,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0055",
@@ -1657,7 +1719,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0056",
@@ -1670,7 +1733,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0057",
@@ -1683,7 +1747,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0058",
@@ -1696,7 +1761,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0059",
@@ -1709,7 +1775,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0060",
@@ -1722,7 +1789,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0061",
@@ -1734,7 +1802,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0062",
@@ -1746,7 +1815,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0063",
@@ -1758,7 +1828,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0064",
@@ -1770,7 +1841,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0065",
@@ -1782,7 +1854,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0066",
@@ -1794,7 +1867,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0067",
@@ -1806,7 +1880,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0068",
@@ -1818,7 +1893,8 @@
    "row": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0069",
@@ -1831,7 +1907,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0070",
@@ -1844,7 +1921,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0071",
@@ -1857,7 +1935,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0072",
@@ -1870,7 +1949,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0073",
@@ -1883,7 +1963,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0074",
@@ -1896,7 +1977,8 @@
    "qty": 1,
    "status": "have",
    "note": "дубли в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0075",
@@ -1908,7 +1990,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0076",
@@ -1920,7 +2003,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0077",
@@ -1933,7 +2017,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0078",
@@ -1945,7 +2030,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0079",
@@ -1957,7 +2043,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0080",
@@ -1969,7 +2056,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0081",
@@ -1982,7 +2070,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0082",
@@ -1995,7 +2084,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0083",
@@ -2008,7 +2098,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0084",
@@ -2021,7 +2112,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0085",
@@ -2034,7 +2126,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0086",
@@ -2047,7 +2140,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0087",
@@ -2060,7 +2154,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0088",
@@ -2074,7 +2169,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0089",
@@ -2088,7 +2184,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0090",
@@ -2101,7 +2198,8 @@
    "qty": 1,
    "status": "have",
    "note": "набор 1960–1989, строки 1–2",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0091",
@@ -2114,7 +2212,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0092",
@@ -2127,7 +2226,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0093",
@@ -2140,7 +2240,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0094",
@@ -2153,7 +2254,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0095",
@@ -2166,7 +2268,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0096",
@@ -2179,7 +2282,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0097",
@@ -2192,7 +2296,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0098",
@@ -2205,7 +2310,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0099",
@@ -2217,7 +2323,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0100",
@@ -2231,7 +2338,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0101",
@@ -2245,7 +2353,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0102",
@@ -2259,7 +2368,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0103",
@@ -2273,7 +2383,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0104",
@@ -2287,7 +2398,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0105",
@@ -2301,7 +2413,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0106",
@@ -2315,7 +2428,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0107",
@@ -2329,7 +2443,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0108",
@@ -2343,7 +2458,8 @@
    "qty": 1,
    "status": "have",
    "note": "строки 4–5",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0109",
@@ -2357,7 +2473,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0110",
@@ -2371,7 +2488,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0111",
@@ -2386,7 +2504,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0112",
@@ -2401,7 +2520,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0113",
@@ -2416,7 +2536,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0114",
@@ -2430,7 +2551,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0115",
@@ -2445,7 +2567,8 @@
    "qty": 1,
    "status": "have",
    "note": "слот совпадает с ПНГ — возможно 5",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0116",
@@ -2457,7 +2580,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0117",
@@ -2469,7 +2593,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0118",
@@ -2481,7 +2606,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0119",
@@ -2493,7 +2619,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0120",
@@ -2506,7 +2633,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0121",
@@ -2519,7 +2647,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0122",
@@ -2531,7 +2660,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0123",
@@ -2544,7 +2674,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0124",
@@ -2557,7 +2688,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0125",
@@ -2571,7 +2703,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0126",
@@ -2585,7 +2718,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0127",
@@ -2599,7 +2733,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0128",
@@ -2613,7 +2748,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0129",
@@ -2626,7 +2762,8 @@
    "row": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0130",
@@ -2638,7 +2775,8 @@
    "row": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0131",
@@ -2651,7 +2789,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0132",
@@ -2666,7 +2805,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0133",
@@ -2681,7 +2821,8 @@
    "qty": 1,
    "status": "have",
    "note": "записано как Индия; крузейро — Бразилия",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0134",
@@ -2695,7 +2836,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0135",
@@ -2709,7 +2851,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0136",
@@ -2723,7 +2866,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0137",
@@ -2737,7 +2881,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0138",
@@ -2751,7 +2896,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0139",
@@ -2765,7 +2911,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0140",
@@ -2779,7 +2926,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0141",
@@ -2793,7 +2941,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0142",
@@ -2806,7 +2955,8 @@
    "row": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0143",
@@ -2820,7 +2970,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0144",
@@ -2833,7 +2984,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0145",
@@ -2846,7 +2998,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0146",
@@ -2859,7 +3012,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0147",
@@ -2872,7 +3026,8 @@
    "row": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0148",
@@ -2885,7 +3040,8 @@
    "row": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0149",
@@ -2898,7 +3054,8 @@
    "row": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0150",
@@ -2912,7 +3069,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0151",
@@ -2925,7 +3083,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0152",
@@ -2938,7 +3097,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0153",
@@ -2951,7 +3111,8 @@
    "row": 8,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0154",
@@ -2965,7 +3126,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0155",
@@ -2979,7 +3141,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0156",
@@ -2993,7 +3156,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0157",
@@ -3007,7 +3171,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0158",
@@ -3021,7 +3186,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0159",
@@ -3035,7 +3201,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0160",
@@ -3049,7 +3216,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0161",
@@ -3063,7 +3231,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0162",
@@ -3077,7 +3246,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0163",
@@ -3091,7 +3261,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0164",
@@ -3105,7 +3276,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0165",
@@ -3118,7 +3290,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0166",
@@ -3131,7 +3304,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0167",
@@ -3143,7 +3317,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0168",
@@ -3155,7 +3330,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0169",
@@ -3167,7 +3343,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0170",
@@ -3180,7 +3357,8 @@
    "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0171",
@@ -3194,7 +3372,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0172",
@@ -3208,7 +3387,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0173",
@@ -3221,7 +3401,8 @@
    "row": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0174",
@@ -3235,7 +3416,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0175",
@@ -3249,7 +3431,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0176",
@@ -3263,7 +3446,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0177",
@@ -3277,7 +3461,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0178",
@@ -3291,7 +3476,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0179",
@@ -3305,7 +3491,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0180",
@@ -3319,7 +3506,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0181",
@@ -3332,7 +3520,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0182",
@@ -3346,7 +3535,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0183",
@@ -3359,7 +3549,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0184",
@@ -3371,7 +3562,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0185",
@@ -3383,7 +3575,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0186",
@@ -3395,7 +3588,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0187",
@@ -3407,7 +3601,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0188",
@@ -3419,7 +3614,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0189",
@@ -3431,7 +3627,8 @@
    "row": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0190",
@@ -3443,7 +3640,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0191",
@@ -3455,7 +3653,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0192",
@@ -3467,7 +3666,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0193",
@@ -3479,7 +3679,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0194",
@@ -3491,7 +3692,8 @@
    "row": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0195",
@@ -3505,7 +3707,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0196",
@@ -3519,7 +3722,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0197",
@@ -3533,7 +3737,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0198",
@@ -3547,7 +3752,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0199",
@@ -3561,7 +3767,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0200",
@@ -3575,7 +3782,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0201",
@@ -3589,7 +3797,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0202",
@@ -3603,7 +3812,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0203",
@@ -3617,7 +3827,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0204",
@@ -3631,7 +3842,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0205",
@@ -3645,7 +3857,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0206",
@@ -3659,7 +3872,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0207",
@@ -3673,7 +3887,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0208",
@@ -3687,7 +3902,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0209",
@@ -3700,7 +3916,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0210",
@@ -3713,7 +3930,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0211",
@@ -3728,7 +3946,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0212",
@@ -3742,7 +3961,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0213",
@@ -3756,7 +3976,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0214",
@@ -3770,7 +3991,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0215",
@@ -3784,7 +4006,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0216",
@@ -3798,7 +4021,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0217",
@@ -3812,7 +4036,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0218",
@@ -3826,7 +4051,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0219",
@@ -3840,7 +4066,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0220",
@@ -3854,7 +4081,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0221",
@@ -3868,7 +4096,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0222",
@@ -3882,7 +4111,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0223",
@@ -3896,7 +4126,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0224",
@@ -3910,7 +4141,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0225",
@@ -3924,7 +4156,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0226",
@@ -3938,7 +4171,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0227",
@@ -3952,7 +4186,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0228",
@@ -3966,7 +4201,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0229",
@@ -3980,7 +4216,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0230",
@@ -3994,7 +4231,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0231",
@@ -4007,7 +4245,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0232",
@@ -4020,7 +4259,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0233",
@@ -4033,7 +4273,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0234",
@@ -4046,7 +4287,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0235",
@@ -4059,7 +4301,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0236",
@@ -4073,7 +4316,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0237",
@@ -4087,7 +4331,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0238",
@@ -4101,7 +4346,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0239",
@@ -4115,7 +4361,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0240",
@@ -4129,7 +4376,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0241",
@@ -4143,7 +4391,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0242",
@@ -4157,7 +4406,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0243",
@@ -4170,7 +4420,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0244",
@@ -4184,7 +4435,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0245",
@@ -4198,7 +4450,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0246",
@@ -4212,7 +4465,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0247",
@@ -4226,7 +4480,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0248",
@@ -4240,7 +4495,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0249",
@@ -4254,7 +4510,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0250",
@@ -4269,7 +4526,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0251",
@@ -4283,7 +4541,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0252",
@@ -4297,7 +4556,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0253",
@@ -4311,7 +4571,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0254",
@@ -4325,7 +4586,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0255",
@@ -4339,7 +4601,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0256",
@@ -4353,7 +4616,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0257",
@@ -4367,7 +4631,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0258",
@@ -4381,7 +4646,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0259",
@@ -4394,7 +4660,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0260",
@@ -4408,7 +4675,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0261",
@@ -4422,7 +4690,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0262",
@@ -4436,7 +4705,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0263",
@@ -4450,7 +4720,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0264",
@@ -4464,7 +4735,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0265",
@@ -4478,7 +4750,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0266",
@@ -4492,7 +4765,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0267",
@@ -4506,7 +4780,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0268",
@@ -4521,7 +4796,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0269",
@@ -4536,7 +4812,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0270",
@@ -4550,7 +4827,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0271",
@@ -4564,7 +4842,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0272",
@@ -4578,7 +4857,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 250
   },
   {
    "id": "i0273",
@@ -4592,7 +4872,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0274",
@@ -4606,7 +4887,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0275",
@@ -4620,7 +4902,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0276",
@@ -4634,7 +4917,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0277",
@@ -4648,7 +4932,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0278",
@@ -4662,7 +4947,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0279",
@@ -4676,7 +4962,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0280",
@@ -4690,7 +4977,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0281",
@@ -4704,7 +4992,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0282",
@@ -4717,7 +5006,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0283",
@@ -4730,7 +5020,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0284",
@@ -4744,7 +5035,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0285",
@@ -4758,7 +5050,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0286",
@@ -4771,7 +5064,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0287",
@@ -4785,7 +5079,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0288",
@@ -4798,7 +5093,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0289",
@@ -4812,7 +5108,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0290",
@@ -4826,7 +5123,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0291",
@@ -4839,7 +5137,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0292",
@@ -4853,7 +5152,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0293",
@@ -4866,7 +5166,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0294",
@@ -4880,7 +5181,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0295",
@@ -4893,7 +5195,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0296",
@@ -4907,7 +5210,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0297",
@@ -4920,7 +5224,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0298",
@@ -4934,7 +5239,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0299",
@@ -4947,7 +5253,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0300",
@@ -4960,7 +5267,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0301",
@@ -4973,7 +5281,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0302",
@@ -4986,7 +5295,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0303",
@@ -4999,7 +5309,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0304",
@@ -5012,7 +5323,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0305",
@@ -5026,7 +5338,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0306",
@@ -5040,7 +5353,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0307",
@@ -5054,7 +5368,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0308",
@@ -5068,7 +5383,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0309",
@@ -5082,7 +5398,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0310",
@@ -5096,7 +5413,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0311",
@@ -5110,7 +5428,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0312",
@@ -5124,7 +5443,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0313",
@@ -5138,7 +5458,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0314",
@@ -5152,7 +5473,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0315",
@@ -5166,7 +5488,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0316",
@@ -5180,7 +5503,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0317",
@@ -5194,7 +5518,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0318",
@@ -5208,7 +5533,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0319",
@@ -5222,7 +5548,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0320",
@@ -5236,7 +5563,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0321",
@@ -5250,7 +5578,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0322",
@@ -5264,7 +5593,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0323",
@@ -5278,7 +5608,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0324",
@@ -5292,7 +5623,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0325",
@@ -5306,7 +5638,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0326",
@@ -5320,7 +5653,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0327",
@@ -5333,7 +5667,8 @@
    "slot": 7,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0328",
@@ -5347,7 +5682,8 @@
    "slot": 8,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0329",
@@ -5361,7 +5697,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0330",
@@ -5375,7 +5712,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0331",
@@ -5389,7 +5727,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0332",
@@ -5403,7 +5742,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0333",
@@ -5417,7 +5757,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0334",
@@ -5431,7 +5772,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0335",
@@ -5445,7 +5787,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0336",
@@ -5459,7 +5802,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0337",
@@ -5473,7 +5817,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0338",
@@ -5487,7 +5832,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0339",
@@ -5501,7 +5847,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0340",
@@ -5515,7 +5862,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0341",
@@ -5529,7 +5877,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0342",
@@ -5543,7 +5892,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0343",
@@ -5557,7 +5907,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0344",
@@ -5571,7 +5922,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0345",
@@ -5585,7 +5937,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0346",
@@ -5599,7 +5952,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0347",
@@ -5613,7 +5967,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0348",
@@ -5627,7 +5982,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 110
   },
   {
    "id": "i0349",
@@ -5641,7 +5997,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 220
   },
   {
    "id": "i0350",
@@ -5655,7 +6012,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0351",
@@ -5670,7 +6028,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0352",
@@ -5685,7 +6045,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0353",
@@ -5700,7 +6062,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0354",
@@ -5715,7 +6079,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0355",
@@ -5730,7 +6096,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0356",
@@ -5745,7 +6113,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500
   },
   {
    "id": "i0357",
@@ -5760,7 +6129,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0358",
@@ -5775,7 +6146,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500
   },
   {
    "id": "i0359",
@@ -5788,7 +6160,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0360",
@@ -5801,7 +6174,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0361",
@@ -5816,7 +6190,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0362",
@@ -5831,7 +6207,9 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 850,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/1-rubl-1918-212292/"
   },
   {
    "id": "i0363",
@@ -5844,7 +6222,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0364",
@@ -5857,7 +6236,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0365",
@@ -5869,7 +6249,8 @@
    "slot": 1,
    "qty": 4,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0366",
@@ -5882,7 +6263,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0367",
@@ -5895,7 +6277,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0368",
@@ -5907,7 +6290,8 @@
    "slot": 1,
    "qty": 3,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0369",
@@ -5920,7 +6304,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0370",
@@ -5934,7 +6319,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0371",
@@ -5950,11 +6336,8 @@
    "status": "have",
    "image": "",
    "issuer": "РСФСР",
-   "value_usd": [
-    13,
-    37
-   ],
-   "value_src": "https://en.numista.com/catalogue/note208968.html"
+   "price_rub": 3400,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/5000-rublej-1918-128478/"
   },
   {
    "id": "i0372",
@@ -5967,7 +6350,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400,
+   "price_src": "https://www.monetnik.ru/banknoty/rossiya/pamyatnye/t/100-rublej/"
   },
   {
    "id": "i0373",
@@ -5980,7 +6365,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400,
+   "price_src": "https://www.monetnik.ru/banknoty/rossiya/pamyatnye/t/100-rublej/"
   },
   {
    "id": "i0374",
@@ -5993,7 +6380,9 @@
    "slot": 3,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400,
+   "price_src": "https://www.monetnik.ru/banknoty/rossiya/pamyatnye/t/100-rublej/"
   },
   {
    "id": "i0375",
@@ -6005,7 +6394,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 2000
   },
   {
    "id": "i0376",
@@ -6017,7 +6407,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0377",
@@ -6029,7 +6420,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0378",
@@ -6041,7 +6433,8 @@
    "slot": 1,
    "qty": 4,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0379",
@@ -6053,7 +6446,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0380",
@@ -6065,7 +6459,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0381",
@@ -6078,7 +6473,8 @@
    "qty": 2,
    "status": "have",
    "note": "+ повторки",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0382",
@@ -6092,7 +6488,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0383",
@@ -6106,7 +6504,9 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0384",
@@ -6118,7 +6518,8 @@
    "slot": 1,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0385",
@@ -6132,7 +6533,8 @@
    "qty": 2,
    "status": "have",
    "note": "+ повторки",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0386",
@@ -6145,7 +6547,8 @@
    "slot": 3,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0387",
@@ -6158,7 +6561,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0388",
@@ -6171,7 +6575,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0389",
@@ -6184,7 +6589,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0390",
@@ -6197,7 +6603,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0391",
@@ -6210,7 +6617,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0392",
@@ -6223,7 +6631,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0393",
@@ -6236,7 +6645,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0394",
@@ -6249,7 +6659,8 @@
    "slot": 2,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0395",
@@ -6262,7 +6673,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0396",
@@ -6275,7 +6687,8 @@
    "slot": 1,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0397",
@@ -6288,7 +6701,8 @@
    "slot": 2,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0398",
@@ -6301,7 +6715,8 @@
    "slot": 3,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0399",
@@ -6314,7 +6729,8 @@
    "slot": 1,
    "qty": 5,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0400",
@@ -6327,7 +6743,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0401",
@@ -6339,7 +6756,8 @@
    "slot": 3,
    "qty": 4,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0402",
@@ -6352,7 +6770,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0403",
@@ -6365,7 +6784,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0404",
@@ -6378,7 +6798,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0405",
@@ -6390,7 +6811,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0406",
@@ -6402,7 +6824,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0407",
@@ -6415,7 +6838,8 @@
    "slot": 3,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0408",
@@ -6427,7 +6851,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0409",
@@ -6440,7 +6865,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0410",
@@ -6453,7 +6879,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0411",
@@ -6466,7 +6893,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0412",
@@ -6479,7 +6907,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0413",
@@ -6492,7 +6921,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0414",
@@ -6505,7 +6935,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0415",
@@ -6518,7 +6949,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0416",
@@ -6532,7 +6964,8 @@
    "qty": 1,
    "status": "have",
    "note": "слот совпадает с 1 долларом — возможно 26/2",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0417",
@@ -6545,7 +6978,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0418",
@@ -6558,7 +6992,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0419",
@@ -6571,7 +7006,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0420",
@@ -6586,7 +7022,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0421",
@@ -6601,7 +7038,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0422",
@@ -6615,7 +7053,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0423",
@@ -6630,7 +7070,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0424",
@@ -6645,7 +7086,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0425",
@@ -6659,7 +7101,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0426",
@@ -6674,7 +7118,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0427",
@@ -6688,7 +7133,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0428",
@@ -6701,7 +7147,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0429",
@@ -6715,7 +7162,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0430",
@@ -6729,7 +7178,9 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0431",
@@ -6742,7 +7193,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0432",
@@ -6755,7 +7207,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0433",
@@ -6768,7 +7221,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0434",
@@ -6783,7 +7237,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0435",
@@ -6796,7 +7251,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0436",
@@ -6809,7 +7265,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0437",
@@ -6822,7 +7279,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0438",
@@ -6837,7 +7295,8 @@
    "slot": 2,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0439",
@@ -6852,7 +7311,8 @@
    "slot": 3,
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0440",
@@ -6865,7 +7325,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0441",
@@ -6878,7 +7339,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0442",
@@ -6892,7 +7354,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0443",
@@ -6906,7 +7370,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0444",
@@ -6920,7 +7386,9 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0445",
@@ -6934,7 +7402,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0446",
@@ -6948,7 +7417,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 175,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0447",
@@ -6962,7 +7433,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0448",
@@ -6977,7 +7450,9 @@
    "qty": 4,
    "status": "have",
    "note": "подлинность под вопросом",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1961/t/1-rubl/"
   },
   {
    "id": "i0449",
@@ -6990,7 +7465,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0450",
@@ -7005,7 +7481,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "issuer": "РСФСР"
+   "issuer": "РСФСР",
+   "price_rub": 400
   },
   {
    "id": "i0451",
@@ -7018,7 +7495,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0452",
@@ -7031,7 +7509,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0453",
@@ -7043,7 +7522,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0454",
@@ -7055,7 +7535,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0455",
@@ -7067,7 +7548,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0456",
@@ -7079,7 +7561,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0457",
@@ -7091,7 +7574,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0458",
@@ -7103,7 +7587,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0459",
@@ -7115,7 +7600,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 120
   },
   {
    "id": "i0460",
@@ -7130,7 +7616,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0461",
@@ -7145,7 +7633,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 650,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1918/t/100-rublej/"
   },
   {
    "id": "i0462",
@@ -7159,7 +7649,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1947/"
   },
   {
    "id": "i0463",
@@ -7173,7 +7665,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1947/"
   },
   {
    "id": "i0464",
@@ -7187,7 +7681,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1947/"
   },
   {
    "id": "i0465",
@@ -7202,11 +7698,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "value_usd": [
-    5,
-    18
-   ],
-   "value_src": "https://en.numista.com/204572"
+   "price_rub": 1600,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/t/chervonec/"
   },
   {
    "id": "i0466",
@@ -7221,7 +7714,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0467",
@@ -7236,7 +7731,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0468",
@@ -7251,7 +7748,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/3-rublya-1905-425613/"
   },
   {
    "id": "i0469",
@@ -7266,7 +7765,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/3-rublya-1905-425613/"
   },
   {
    "id": "i0470",
@@ -7281,7 +7782,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400
   },
   {
    "id": "i0471",
@@ -7296,7 +7798,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 600,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/3-rublya-1905-425613/"
   },
   {
    "id": "i0472",
@@ -7311,7 +7815,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400
   },
   {
    "id": "i0473",
@@ -7326,7 +7831,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 400,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/1-rubl-1898-bumazhnyj/"
   },
   {
    "id": "i0474",
@@ -7341,7 +7848,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0475",
@@ -7356,7 +7865,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0476",
@@ -7371,7 +7882,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0477",
@@ -7386,7 +7899,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 370,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/10-rublej-1909/"
   },
   {
    "id": "i0478",
@@ -7400,7 +7915,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 4000,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1947/t/100-rublej-1947/"
   },
   {
    "id": "i0479",
@@ -7414,7 +7931,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 2500,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1947/"
   },
   {
    "id": "i0480",
@@ -7429,7 +7948,9 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 1000,
+   "price_src": "https://www.monetnik.ru/banknoty/carskie/t/25-rublej-1909/"
   },
   {
    "id": "i0481",
@@ -7443,7 +7964,9 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 2700,
+   "price_src": "https://www.monetnik.ru/banknoty/sssr/1937/t/10-chervoncev/"
   },
   {
    "id": "i0482",
@@ -7454,7 +7977,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0483",
@@ -7465,7 +7990,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0484",
@@ -7476,7 +8003,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0485",
@@ -7487,7 +8016,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0486",
@@ -7498,7 +8029,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0487",
@@ -7509,7 +8042,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0488",
@@ -7520,7 +8055,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0489",
@@ -7531,7 +8068,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0490",
@@ -7542,7 +8081,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0491",
@@ -7553,7 +8094,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0492",
@@ -7564,7 +8107,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0493",
@@ -7575,7 +8120,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0494",
@@ -7586,7 +8133,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0495",
@@ -7597,7 +8146,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0496",
@@ -7608,7 +8159,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0497",
@@ -7619,7 +8172,9 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 500,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/multiplikaciya/t/25-rublej-krokodil-gena/"
   },
   {
    "id": "i0498",
@@ -7632,7 +8187,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0499",
@@ -7645,7 +8202,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0500",
@@ -7658,7 +8217,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0501",
@@ -7671,7 +8232,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0502",
@@ -7684,7 +8247,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0503",
@@ -7697,7 +8262,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0504",
@@ -7710,7 +8277,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/olimpiada-sochi/t/25-rublej/"
   },
   {
    "id": "i0505",
@@ -7722,7 +8291,8 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0506",
@@ -7734,7 +8304,8 @@
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0507",
@@ -7747,7 +8318,8 @@
    "qty": 2,
    "status": "have",
    "note": "с дублем",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0508",
@@ -7760,7 +8332,8 @@
    "qty": 2,
    "status": "have",
    "note": "с дублем",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0509",
@@ -7773,7 +8346,8 @@
    "qty": 1,
    "status": "ordered",
    "note": "заказана; в сводке записана как «1» — проверить",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0510",
@@ -7786,7 +8360,8 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0511",
@@ -7798,7 +8373,8 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0512",
@@ -7811,7 +8387,8 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0513",
@@ -7824,7 +8401,8 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0514",
@@ -7837,7 +8415,8 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в шкатулке",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0515",
@@ -7848,7 +8427,8 @@
    "series": "misc25",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0516",
@@ -7861,7 +8441,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0517",
@@ -7875,7 +8457,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в ящике",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0518",
@@ -7888,7 +8472,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0519",
@@ -7902,7 +8488,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в ящике",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0520",
@@ -7916,7 +8504,9 @@
    "qty": 2,
    "status": "have",
    "note": "дубль в ящике",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0521",
@@ -7929,7 +8519,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0522",
@@ -7942,7 +8534,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 250,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0523",
@@ -7955,7 +8549,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0524",
@@ -7968,7 +8564,9 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/goroda-geroi/nabor-iz-7-monet-2-rublya-737987/"
   },
   {
    "id": "i0525",
@@ -7980,7 +8578,8 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0526",
@@ -7992,7 +8591,8 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0527",
@@ -8004,7 +8604,8 @@
    "sheet": "7",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0528",
@@ -8019,7 +8620,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0529",
@@ -8034,7 +8636,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0530",
@@ -8049,7 +8652,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0531",
@@ -8064,7 +8668,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0532",
@@ -8079,7 +8684,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0533",
@@ -8094,7 +8700,8 @@
    "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0534",
@@ -8109,7 +8716,8 @@
    "slot": 1,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0535",
@@ -8124,7 +8732,8 @@
    "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0536",
@@ -8139,7 +8748,8 @@
    "slot": 3,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0537",
@@ -8154,7 +8764,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0538",
@@ -8169,7 +8780,8 @@
    "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 50
   },
   {
    "id": "i0539",
@@ -8181,7 +8793,9 @@
    "sheet": "9",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0540",
@@ -8193,7 +8807,9 @@
    "sheet": "9",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0541",
@@ -8205,7 +8821,9 @@
    "sheet": "9",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0542",
@@ -8217,7 +8835,9 @@
    "sheet": "9",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0543",
@@ -8229,7 +8849,9 @@
    "sheet": "9",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0544",
@@ -8240,7 +8862,9 @@
    "qty": 0,
    "status": "ordered",
    "note": "едет доставкой",
-   "image": ""
+   "image": "",
+   "price_rub": 70,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/gvs/polnyj-nabor-10-rublevyh-671513/"
   },
   {
    "id": "i0545",
@@ -8253,7 +8877,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0546",
@@ -8266,7 +8891,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0547",
@@ -8279,7 +8905,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0548",
@@ -8292,7 +8919,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0549",
@@ -8305,7 +8933,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0550",
@@ -8318,7 +8947,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0551",
@@ -8331,7 +8961,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0552",
@@ -8344,7 +8975,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0553",
@@ -8357,7 +8989,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0554",
@@ -8370,7 +9003,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0555",
@@ -8383,7 +9017,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0556",
@@ -8396,7 +9031,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0557",
@@ -8409,7 +9045,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0558",
@@ -8422,7 +9059,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0559",
@@ -8435,7 +9073,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0560",
@@ -8448,7 +9087,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0561",
@@ -8459,7 +9099,8 @@
    "album": "box",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0562",
@@ -8469,7 +9110,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0563",
@@ -8479,7 +9121,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0564",
@@ -8490,7 +9133,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0565",
@@ -8501,7 +9145,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0566",
@@ -8512,7 +9157,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0567",
@@ -8523,7 +9169,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0568",
@@ -8534,7 +9181,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0569",
@@ -8545,7 +9193,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0570",
@@ -8556,7 +9205,8 @@
    "series": "regions",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 200
   },
   {
    "id": "i0571",
@@ -8568,7 +9218,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0572",
@@ -8580,7 +9231,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0573",
@@ -8592,7 +9244,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0574",
@@ -8604,7 +9257,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0575",
@@ -8616,7 +9270,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0576",
@@ -8628,7 +9283,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0577",
@@ -8640,7 +9296,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0578",
@@ -8652,7 +9309,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0579",
@@ -8664,7 +9322,8 @@
    "sheet": "10–11",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0580",
@@ -8674,7 +9333,8 @@
    "series": "ancient",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0581",
@@ -8684,7 +9344,8 @@
    "series": "ancient",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0582",
@@ -8694,7 +9355,8 @@
    "series": "ancient",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0583",
@@ -8704,7 +9366,8 @@
    "series": "ancient",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0584",
@@ -8714,7 +9377,8 @@
    "series": "ancient",
    "qty": 0,
    "status": "missing",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0585",
@@ -8728,7 +9392,8 @@
    "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0586",
@@ -8739,7 +9404,8 @@
    "album": "jubilee",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0587",
@@ -8750,7 +9416,8 @@
    "album": "jubilee",
    "qty": 4,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0588",
@@ -8761,7 +9428,8 @@
    "album": "jubilee",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0589",
@@ -8773,7 +9441,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0590",
@@ -8785,7 +9455,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0591",
@@ -8797,7 +9469,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0592",
@@ -8809,7 +9483,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0593",
@@ -8821,7 +9497,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0594",
@@ -8833,7 +9511,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0595",
@@ -8845,7 +9525,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0596",
@@ -8857,7 +9539,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0597",
@@ -8869,7 +9553,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0598",
@@ -8881,7 +9567,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0599",
@@ -8893,7 +9581,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0600",
@@ -8905,7 +9595,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0601",
@@ -8917,7 +9609,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0602",
@@ -8929,7 +9623,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0603",
@@ -8941,7 +9637,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0604",
@@ -8953,7 +9651,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0605",
@@ -8965,7 +9665,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0606",
@@ -8977,7 +9679,9 @@
    "album": "victory70",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 35,
+   "price_src": "https://www.monetnik.ru/monety/rossii/jubilejnye/70-let-pobedy-vov/nabor-5-rublej-2014-serii-109511/"
   },
   {
    "id": "i0607",
@@ -8989,7 +9693,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0608",
@@ -9001,7 +9706,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0609",
@@ -9013,7 +9719,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0610",
@@ -9025,7 +9732,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0611",
@@ -9037,7 +9745,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0612",
@@ -9049,7 +9758,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0613",
@@ -9061,7 +9771,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0614",
@@ -9073,7 +9784,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0615",
@@ -9085,7 +9797,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0616",
@@ -9097,7 +9810,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0617",
@@ -9109,7 +9823,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0618",
@@ -9121,7 +9836,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0619",
@@ -9133,7 +9849,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0620",
@@ -9145,7 +9862,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0621",
@@ -9157,7 +9875,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0622",
@@ -9169,7 +9888,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0623",
@@ -9181,7 +9901,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0624",
@@ -9193,7 +9914,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0625",
@@ -9205,7 +9927,8 @@
    "qty": 1,
    "status": "have",
    "note": "альбом не указан",
-   "image": ""
+   "image": "",
+   "price_rub": 80
   },
   {
    "id": "i0626",
@@ -9216,7 +9939,8 @@
    "series": "labor",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0627",
@@ -9227,7 +9951,8 @@
    "series": "labor",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0628",
@@ -9238,7 +9963,8 @@
    "series": "labor",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0629",
@@ -9249,7 +9975,8 @@
    "series": "labor",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0630",
@@ -9261,7 +9988,8 @@
    "qty": 3,
    "status": "have",
    "note": "одна из строителей цветная",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0631",
@@ -9272,7 +10000,8 @@
    "series": "labor",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0632",
@@ -9283,7 +10012,8 @@
    "series": "labor",
    "qty": 3,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 30
   },
   {
    "id": "i0633",
@@ -9296,7 +10026,8 @@
    "album": "reich",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0634",
@@ -9309,7 +10040,8 @@
    "album": "reich",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0635",
@@ -9322,7 +10054,8 @@
    "album": "reich",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0636",
@@ -9335,7 +10068,8 @@
    "album": "reich",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0637",
@@ -9348,7 +10082,8 @@
    "album": "reich",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 150
   },
   {
    "id": "i0638",
@@ -9359,7 +10094,8 @@
    "qty": 1,
    "status": "have",
    "note": "записано «3 лист, 1 строка, от немецких» — альбом уточнить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0639",
@@ -9370,7 +10106,8 @@
    "qty": 1,
    "status": "have",
    "note": "записано «3 лист, 2 ряд, от немецких» — альбом уточнить",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0640",
@@ -9384,11 +10121,8 @@
    "status": "have",
    "note": "место не указано",
    "image": "",
-   "value_usd": [
-    24,
-    50
-   ],
-   "value_src": "https://en.numista.com/4624"
+   "price_rub": 2700,
+   "price_src": "https://www.monetnik.ru/monety/sssr/rsfsr/t/50-kopeek-1922/"
   },
   {
    "id": "i0641",
@@ -9402,11 +10136,7 @@
    "status": "have",
    "note": "место не указано",
    "image": "",
-   "value_usd": [
-    10,
-    45
-   ],
-   "value_src": "https://en.numista.com/21240"
+   "price_rub": 1000
   },
   {
    "id": "i0642",
@@ -9419,7 +10149,8 @@
    "qty": 1,
    "status": "have",
    "note": "место не указано",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0643",
@@ -9432,7 +10163,8 @@
    "qty": 1,
    "status": "have",
    "note": "место не указано",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0644",
@@ -9445,7 +10177,9 @@
    "qty": 1,
    "status": "have",
    "note": "место не указано",
-   "image": ""
+   "image": "",
+   "price_rub": 80,
+   "price_src": "https://www.monetnik.ru/monety/sssr/jubilejnye/t/rubl-lenin-1870-1970/"
   },
   {
    "id": "i0645",
@@ -9458,7 +10192,8 @@
    "qty": 1,
    "status": "have",
    "note": "место не указано",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0646",
@@ -9471,7 +10206,8 @@
    "qty": 1,
    "status": "have",
    "note": "место не указано",
-   "image": ""
+   "image": "",
+   "price_rub": 100
   },
   {
    "id": "i0647",
@@ -9484,7 +10220,9 @@
    "album": "box",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 450,
+   "price_src": "https://www.monetnik.ru/monety/drevnyaja-rus/mihail-fedorovich/"
   },
   {
    "id": "i0648",
@@ -9498,11 +10236,8 @@
    "qty": 2,
    "status": "have",
    "image": "",
-   "value_usd": [
-    9,
-    20
-   ],
-   "value_src": "https://en.numista.com/50758"
+   "price_rub": 400,
+   "price_src": "https://www.monetnik.ru/monety/"
   },
   {
    "id": "i0649",
@@ -9514,7 +10249,8 @@
    "album": "box",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0650",
@@ -9526,7 +10262,8 @@
    "qty": 1,
    "status": "have",
    "note": "в пластиковом холдере",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0651",
@@ -9538,7 +10275,8 @@
    "qty": 1,
    "status": "have",
    "note": "в пластиковом чехле",
-   "image": ""
+   "image": "",
+   "price_rub": 300
   },
   {
    "id": "i0652",
@@ -9550,7 +10288,8 @@
    "qty": 1,
    "status": "have",
    "note": "в блистере",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0653",
@@ -9561,7 +10300,8 @@
    "qty": 1,
    "status": "have",
    "note": "в капсуле",
-   "image": ""
+   "image": "",
+   "price_rub": 40
   },
   {
    "id": "i0654",
@@ -9573,7 +10313,624 @@
    "qty": 1,
    "status": "have",
    "note": "отдел запечатанных монет",
-   "image": ""
+   "image": "",
+   "price_rub": 40
+  }
+ ],
+ "questions": [
+  {
+   "group": "Где лежит",
+   "text": "Серия «Подвиг советских воинов в Крыму, 2015» (5 вид.) — в каком альбоме и на каком листе?",
+   "items": [
+    "i0607",
+    "i0608",
+    "i0609",
+    "i0610",
+    "i0611"
+   ]
+  },
+  {
+   "group": "Где лежит",
+   "text": "Серия «Освобождённые города-столицы Европы, 2016» (14 вид.) — в каком альбоме и на каком листе?",
+   "items": [
+    "i0612",
+    "i0613",
+    "i0614",
+    "i0615",
+    "i0616",
+    "i0617",
+    "i0618",
+    "i0619",
+    "i0620",
+    "i0621",
+    "i0622",
+    "i0623",
+    "i0624",
+    "i0625"
+   ]
+  },
+  {
+   "group": "Где лежит",
+   "text": "Серия «Человек труда» (7 вид.) — в каком альбоме и на каком листе?",
+   "items": [
+    "i0626",
+    "i0627",
+    "i0628",
+    "i0629",
+    "i0630",
+    "i0631",
+    "i0632"
+   ]
+  },
+  {
+   "group": "Где лежит",
+   "text": "Серия «СССР и Российская империя» (7 вид.) — в каком альбоме и на каком листе?",
+   "items": [
+    "i0640",
+    "i0641",
+    "i0642",
+    "i0643",
+    "i0644",
+    "i0645",
+    "i0646"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 1 — слоты для 7 шт.: Турция 1 лира, Турция 50 курушей «Мост через Босфор», Турция 50 курушей, Турция 25 курушей, Турция 10 курушей, Турция 5 курушей, Турция 1 куруш",
+   "items": [
+    "i0001",
+    "i0002",
+    "i0003",
+    "i0004",
+    "i0005",
+    "i0006",
+    "i0007"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 2 — слоты для 6 шт.: Азербайджан 50 гяпиков, Азербайджан 20 гяпиков, Азербайджан 10 гяпиков, Азербайджан 5 гяпиков, Азербайджан 2 (3?) гяпика, Азербайджан 1 гяпик",
+   "items": [
+    "i0008",
+    "i0009",
+    "i0010",
+    "i0011",
+    "i0012",
+    "i0013"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 3 — слоты для 6 шт.: Швейцария 2 франка, Швейцария 1 франк, Швейцария ½ франка, Швейцария 20 раппенов, Швейцария 10 раппенов, Швейцария 5 раппенов",
+   "items": [
+    "i0014",
+    "i0015",
+    "i0016",
+    "i0017",
+    "i0018",
+    "i0019"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 4 — слоты для 6 шт.: Индия 10 рупий, Индия 2 рупии, Индия 2 рупии, Индия 1 рупия, Индия 5 рупий, Индия 2 рупии",
+   "items": [
+    "i0020",
+    "i0021",
+    "i0022",
+    "i0023",
+    "i0024",
+    "i0025"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 6 — слоты для 6 шт.: Болгария 50 стотинок, Болгария 20 стотинок, Болгария 10 стотинок, Болгария 5 стотинок, Болгария 2 стотинки, Болгария 1 стотинка",
+   "items": [
+    "i0026",
+    "i0027",
+    "i0028",
+    "i0029",
+    "i0030",
+    "i0031"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 1, строка 8 — слоты для 6 шт.: Великобритания 1 фунт, Великобритания 20 пенсов, Великобритания 10 пенсов, Великобритания 5 пенсов, Великобритания 2 пенса, Великобритания 1 пенни",
+   "items": [
+    "i0032",
+    "i0033",
+    "i0034",
+    "i0035",
+    "i0036",
+    "i0037"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 2, строка 1 — слоты для 6 шт.: Украина 50 копеек, Украина 25 копеек, Украина 10 копеек, Украина 5 копеек, Украина 2 копейки, Украина 1 копейка",
+   "items": [
+    "i0038",
+    "i0039",
+    "i0040",
+    "i0041",
+    "i0042",
+    "i0043"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 2, строка 2 — слоты для 6 шт.: Чехия 50 крон, Чехия 20 крон, Чехия 10 крон, Чехия 5 крон, Чехия 2 кроны, Чехия 1 крона",
+   "items": [
+    "i0044",
+    "i0045",
+    "i0046",
+    "i0047",
+    "i0048",
+    "i0049"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 2, строка 3 — слоты для 6 шт.: Польша 50 грошей, Польша 20 грошей, Польша 10 грошей, Польша 5 грошей, Польша 2 гроша, Польша 1 грош",
+   "items": [
+    "i0050",
+    "i0051",
+    "i0052",
+    "i0053",
+    "i0054",
+    "i0055"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 2, строка 4 — слоты для 5 шт.: Дания 5 крон, Дания 2 кроны, Дания 1 крона, Дания 50 эре, Дания 10 эре",
+   "items": [
+    "i0056",
+    "i0057",
+    "i0058",
+    "i0059",
+    "i0060"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 2, строка 7 — слоты для 5 шт.: Бразилия 1 реал, Бразилия 50 сентаво, Бразилия 25 сентаво, Бразилия 10 сентаво, Бразилия 5 сентаво",
+   "items": [
+    "i0061",
+    "i0062",
+    "i0063",
+    "i0064",
+    "i0065"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 3, строка 1 — слоты для 3 шт.: Тунис 100 миллимов, Тунис 100 миллимов, Тунис 50 миллимов",
+   "items": [
+    "i0066",
+    "i0067",
+    "i0068"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 3, строка 2 — слоты для 6 шт.: Израиль ½ шекеля, Израиль 10 агорот, Израиль 10 агорот (другая), Израиль 5 агорот, Израиль 1 шекель, Израиль 1 шекель",
+   "items": [
+    "i0069",
+    "i0070",
+    "i0071",
+    "i0072",
+    "i0073",
+    "i0074"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 3, строка 3 — в каком слоте: ОАЭ монеты ОАЭ (номиналы не записаны)",
+   "items": [
+    "i0075"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 3, строка 4 — слоты для 5 шт.: Таиланд 10 бат, Таиланд 5 бат, Таиланд 2 бата, Таиланд 1 бат, Таиланд 50 сатангов",
+   "items": [
+    "i0076",
+    "i0077",
+    "i0078",
+    "i0079",
+    "i0080"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 4, строка 1 — слоты для 10 шт.: Турция 5 лир, Турция 50 лир, Турция 2½ лиры, Турция 25 лир, Турция 25 курушей, Турция 50 курушей, Турция 10 лир, Турция 1 лира …",
+   "items": [
+    "i0081",
+    "i0082",
+    "i0083",
+    "i0084",
+    "i0085",
+    "i0086",
+    "i0087",
+    "i0088",
+    "i0089",
+    "i0090"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 4, строка 3 — слоты для 6 шт.: Таиланд 20 бат «80 лет Департаменту налогов», Таиланд 1 бат, Таиланд 1 бат, Таиланд 25 сатангов, Таиланд 5 бат, Таиланд 1 бат (Рама X)",
+   "items": [
+    "i0094",
+    "i0095",
+    "i0096",
+    "i0097",
+    "i0098",
+    "i0099"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 4, строка 4 — слоты для 8 шт.: Польша 20 злотых, Польша 10 злотых, Польша 5 злотых, Польша 5 злотых, Польша 2 злотых, Польша 1 злотый, Польша 10 грошей, Польша 20 грошей",
+   "items": [
+    "i0101",
+    "i0102",
+    "i0103",
+    "i0104",
+    "i0105",
+    "i0106",
+    "i0107",
+    "i0108"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 5, строка 2 — слоты для 3 шт.: Пакистан 1 рупия, Пакистан 2 рупии, Пакистан 5 рупий",
+   "items": [
+    "i0116",
+    "i0117",
+    "i0118"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 5, строка 3 — в каком слоте: Руанда 1 франк",
+   "items": [
+    "i0119"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 5, строка 5 — слоты для 4 шт.: Мьянма 5 пья, Мьянма 5 кьят, ? неопознанная (рядом с Мьянмой), Малайзия 5 сенов",
+   "items": [
+    "i0120",
+    "i0121",
+    "i0122",
+    "i0123"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 5, строка 6 — слоты для 2 шт.: Непал 1 рупия, Непал 25 пайс",
+   "items": [
+    "i0129",
+    "i0130"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 2 — в каком слоте: Молдова 50 бани",
+   "items": [
+    "i0142"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 3 — в каком слоте: Гонконг 20 центов",
+   "items": [
+    "i0144"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 4 — в каком слоте: Филиппины 25 сентимо",
+   "items": [
+    "i0145"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 5 — в каком слоте: Бельгия 1 франк",
+   "items": [
+    "i0146"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 6 — слоты для 3 шт.: Индия 25 (пайс?), Индия 10 рупий, Индия 1 рупия",
+   "items": [
+    "i0147",
+    "i0148",
+    "i0149"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 6, строка 8 — в каком слоте: Иран 5 риалов",
+   "items": [
+    "i0153"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 7, строка 4 — слоты для 5 шт.: Великобритания 1 пенни, Великобритания 1 пенни, Фиджи 1 цент, Фиджи 2 цента, Фиджи 5 центов",
+   "items": [
+    "i0165",
+    "i0166",
+    "i0167",
+    "i0168",
+    "i0169"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 7, строка 5 — в каком слоте: Белиз 1 цент",
+   "items": [
+    "i0170"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 7, строка 7 — в каком слоте: Венгрия 20 филлеров",
+   "items": [
+    "i0173"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 8, строка 3 — слоты для 6 шт.: Казахстан 100 тенге, Казахстан 50 тенге, Казахстан 20 тенге, Казахстан 10 тенге, Казахстан 5 тенге, Казахстан 1 тенге",
+   "items": [
+    "i0184",
+    "i0185",
+    "i0186",
+    "i0187",
+    "i0188",
+    "i0189"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Иностранные монеты, лист 8, строка 4 — слоты для 5 шт.: Колумбия 1000 песо, Колумбия 500 песо, Колумбия 200 песо, Колумбия 100 песо, Колумбия 50 песо",
+   "items": [
+    "i0190",
+    "i0191",
+    "i0192",
+    "i0193",
+    "i0194"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, лист 10–11 — слоты для 25 шт.: Россия Пензенская обл., Россия Саратовская обл., Россия Амурская обл., Россия Белгородская обл., Россия Иркутская обл., Россия Ульяновская обл., Россия Костромская обл., Россия Московская обл. …",
+   "items": [
+    "i0545",
+    "i0546",
+    "i0547",
+    "i0548",
+    "i0549",
+    "i0550",
+    "i0551",
+    "i0552",
+    "i0553",
+    "i0554",
+    "i0555",
+    "i0556",
+    "i0557",
+    "i0558",
+    "i0559",
+    "i0560",
+    "i0571",
+    "i0572",
+    "i0573",
+    "i0574",
+    "i0575",
+    "i0576",
+    "i0577",
+    "i0578",
+    "i0579"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, лист 7 — слоты для 12 шт.: Россия Москва, Россия Ленинград, Россия Сталинград, Россия Тула, Россия Новороссийск, Россия Мурманск, Россия Смоленск, Россия Керчь …",
+   "items": [
+    "i0516",
+    "i0517",
+    "i0518",
+    "i0519",
+    "i0520",
+    "i0521",
+    "i0522",
+    "i0523",
+    "i0524",
+    "i0525",
+    "i0526",
+    "i0527"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, лист 9 — слоты для 5 шт.: Россия Грозный, Россия Феодосия, Россия Старая Русса, Россия Петрозаводск, Россия Гатчина",
+   "items": [
+    "i0539",
+    "i0540",
+    "i0541",
+    "i0542",
+    "i0543"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, лист не указан — слоты для 3 шт.: Россия 170 лет Русскому географическому обществу, Россия 150 лет Русскому историческому обществу, Россия Курильская десантная операция",
+   "items": [
+    "i0586",
+    "i0587",
+    "i0588"
+   ]
+  },
+  {
+   "group": "Номер слота",
+   "text": "Книжка 25 рублей: на каких листах лежат мультипликация, Сочи, «Оружие Победы» и прочие 25 рублей?",
+   "items": []
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, листы 1–4: перечень регионов и древних городов до 2011 года и их слоты (сейчас посчитаны только как «все, кроме Чечни и ЯНАО»).",
+   "items": []
+  },
+  {
+   "group": "Номер слота",
+   "text": "Юбилейные России, листы 5–6: какие именно 5-рублёвые там лежат (Крым 2015, столицы 2016, РГО, РИО, Курилы?).",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Сирия 50, 100, 200 фунтов — монеты или банкноты? Записаны как банкноты (лист 9).",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Греция 25 млн драхм 1944 — банкнота? Записана как банкнота.",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Германия, Берлин, 1 марка 1920 — банкнота (нотгельд) или монета?",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Малави 50 квача 2024 — монета или банкнота? И где лежит («3 лист от немецких»)?",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Испания 50 сентимо 1980 «ЧМ 1982» — где лежит («3 лист от немецких»)?",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Турция 250 000, 100 000 и 50 000 лир — монеты в иностранном альбоме (лист 4)? Записаны как монеты.",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "50 копеек 1915–1917 — бумажный казначейский знак или монета? Записан как банкнота (лист 32).",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "Мадагаскар 100, 200, 500, 1000 — ариари, банкноты? Записаны как банкноты.",
+   "items": []
+  },
+  {
+   "group": "Монета или банкнота",
+   "text": "ОАЭ, лист 3 строка 3 — какие номиналы и сколько монет?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Италия 1 чентезимо 1900: Григорий — лист 7 / 1 / 5, Ксения — лист 7 / 8 / 6 вместе с 5 лирами 1952. Одна монета или две?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Франция 5 сантимов «Марианна»: 1978 или 1970? Возможно, две разные монеты.",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Великобритания: набор 1 фунт 1983, 20 п 2001, 10 п 1996, 5 п 2010, 2 п 2003 записан и на лист 1 / 8, и на лист 15. Перенесён? Тогда лист 1 строка 8 свободна.",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Беларусь 2009 (1–50 копеек, 1 рубль): лист 8 строка 5 или 6? Взята версия Ксении — строка 6.",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Беларусь 50 копеек: записана на 11 / 4 / 1, где лежат и швейцарские 5 франков 1996. Ушла на лист 8?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Банкноты 25 / 2: там и США 1 доллар 2003, и Беларусь 5 руб. 2009. Может, Беларусь в 26 / 2?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Лист 5 строка 5: 9 монет на 6 слотов (Мьянма ×3, Малайзия, Сейшелы ×3, Словения, Македония). Строка 4 нигде не упомянута — может, Мьянма или Малайзия там?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Лист 5 / 1 / 4: и Папуа — Новая Гвинея, и Ямайка. Ямайка в слоте 5?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Турция «бин лир»: 250 000 и 50 000 обе на 4 / 2 / 1?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "ЧМ 2018, эмблема 25 рублей: заказана или уже есть?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Юбилейный лист 9: при 48 слотах и 16 описанных монетах свободно 32, а записано 42.",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Индия, лист 6 / 6: «25 рупий 2000» — скорее 25 пайс?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Азербайджан, лист 1 / 2: 2 гяпика не выпускались — вероятно, 3 гяпика?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "«5 крузейро 1984, Индия» (5 / 7 / 2): крузейро — валюта Бразилии. Это Бразилия?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "США, лист 14 / 2 / 4: «5 центов с мемориалом Линкольна» — мемориал Линкольна на 1 центе. Что за монета?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "«Оружие Великой Победы» 25 рублей: полный набор — 19 монет. У вас 18 или 19?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "Альбом «70-летие Победы»: полная коллекция 5 и 10 рублей 2014–2016 — 40 монет. Крым 2015 и столицы 2016 лежат в нём же?",
+   "items": []
+  },
+  {
+   "group": "Старые вопросы",
+   "text": "1 рубль 1961 серия ЗН ×4 — подлинность под вопросом. Проверить водяной знак и печать.",
+   "items": []
   }
  ]
 }
