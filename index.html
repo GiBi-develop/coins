@@ -118,6 +118,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
 .mark.n{width:30px;height:17px;border-radius:2px;background:var(--felt-soft);border-color:var(--felt)}
 .lead{font-size:14px;color:var(--muted);max-width:70ch;margin:0}
 .lead b{color:var(--ink);font:500 14px var(--mono)}
+.crow.ru{grid-template-columns:minmax(0,1fr) auto 20px;padding-block:9px}
 </style>
 </head>
 <body>
@@ -9676,17 +9677,28 @@ function renderGroupsView(v){
 }
 
 /* ---------- World ---------- */
-function byCountry(){const m={};for(const it of D.items){if(!have(it)||it.country==="RU"||era(it)==="old"&&it.country==="RU")continue;const c=it.country||"";(m[c]=m[c]||[]).push(it)}return m}
+const ruExtra=()=>D.series.reduce((a,s)=>a+(s.extra_have||0),0);
+const cpcs=(c,l)=>pcs(l)+(c==="RU"?ruExtra():0);
+function byCountry(){const m={};for(const it of D.items){if(!have(it))continue;const c=it.country||"";(m[c]=m[c]||[]).push(it)}return m}
 function renderWorldLead(){
   const m=byCountry(), all=Object.values(m).flat();
   const n=Object.keys(m).filter(c=>c&&c!=="EU").length;
-  $("#worldlead").innerHTML=`<b>${pcs(all.filter(i=>i.kind!=="banknote"))}</b> монет и <b>${pcs(all.filter(i=>i.kind==="banknote"))}</b> банкнот из <b>${n}</b> стран. Нажмите на страну, чтобы увидеть, что из неё есть.`;
+  $("#worldlead").innerHTML=`Монеты и банкноты из <b>${n}</b> стран, включая Россию. Нажмите на страну, чтобы увидеть, что из неё есть.`;
 }
 function itemRow(it){
   return `<div class="irow"><span>${esc(it.name)}${it.year?", "+esc(it.year):""}</span><span class="q">${it.qty>1?"×"+it.qty:""}</span>${it.image?`<img src="${esc(it.image)}" alt="${esc(it.name)}" loading="lazy">`:""}</div>`;
 }
 function renderSide(){
   const side=$("#side"), m=byCountry();
+  if(selCountry==="RU"&&m.RU){
+    const sec=[["russia","Современная Россия"],["ussr","СССР"],["old","Старые"]].map(([v,l])=>{
+      const list=m.RU.filter(i=>era(i)===v), c=pcs(list.filter(i=>i.kind!=="banknote"))+(v==="russia"?ruExtra():0), n=pcs(list.filter(i=>i.kind==="banknote"));
+      return `<button class="crow ru" data-go="${v}"><span>${l}</span><span class="snote">${[c?c+" мон.":"",n?n+" банкн.":""].filter(Boolean).join(" · ")}</span><b>→</b></button>`}).join("");
+    side.innerHTML=`<div class="side-head"><h2>Россия</h2><button id="back">Все страны</button></div><div class="side-body"><p class="snote" style="padding:4px 14px">Российская часть коллекции разбита на три раздела:</p>${sec}</div>`;
+    $("#back").onclick=()=>{selCountry=null;renderSide()};
+    side.querySelectorAll("[data-go]").forEach(b=>b.onclick=()=>{show(b.dataset.go);window.scrollTo(0,0)});
+    return;
+  }
   if(selCountry!==null&&m[selCountry]){
     const list=m[selCountry].slice().sort(byYear), base=cname(selCountry), groups={};
     list.forEach(i=>{const k=i.issuer||base;(groups[k]=groups[k]||[]).push(i)});
@@ -9696,7 +9708,7 @@ function renderSide(){
     $("#back").onclick=()=>{selCountry=null;renderSide()};
     return;
   }
-  const rows=Object.entries(m).map(([c,l])=>[c,pcs(l)]).sort((a,b)=>(a[0]==="")-(b[0]==="")||b[1]-a[1]);
+  const rows=Object.entries(m).map(([c,l])=>[c,cpcs(c,l)]).sort((a,b)=>(a[0]==="")-(b[0]==="")||b[1]-a[1]);
   const max=Math.log(Math.max(...rows.map(r=>r[1]),1)+1);
   side.innerHTML=`<div class="side-head"><h2>Страны</h2><span class="snote">${rows.length}</span></div>
     <div class="side-body">${rows.map(([c,n])=>`<button class="crow" data-c="${esc(c)}"><span>${esc(cname(c))}</span><span class="bar"><i style="width:${Math.log(n+1)/max*100}%"></i></span><b>${n}</b></button>`).join("")}</div>`;
@@ -9707,7 +9719,7 @@ const BINS=[[1,"1"],[2,"2–5"],[6,"6–15"],[16,"16–40"],[41,"больше 40
 function bin(n){let b=0;BINS.forEach(([lo],i)=>{if(n>=lo)b=i});return b}
 function hex(h){h=h.replace("#","");if(h.length===3)h=h.split("").map(x=>x+x).join("");return [0,2,4].map(i=>parseInt(h.slice(i,i+2),16))}
 function binColors(){const a=hex(css("--brass-soft")),b=hex(css("--brass"));return BINS.map((_,i)=>{const k=i/(BINS.length-1);return "#"+a.map((v,j)=>Math.round(v+(b[j]-v)*k).toString(16).padStart(2,"0")).join("")})}
-function countryCounts(){const m=byCountry(),o={};for(const c in m)if(c&&D.countries[c]&&D.countries[c].lat!=null)o[c]=pcs(m[c]);return o}
+function countryCounts(){const m=byCountry(),o={};for(const c in m)if(c&&D.countries[c]&&D.countries[c].lat!=null)o[c]=cpcs(c,m[c]);return o}
 function legend(){$("#legend").innerHTML="Экземпляров: "+BINS.map(([,l],i)=>`<span><i style="background:${binColors()[i]}"></i>${l}</span>`).join("")}
 function dotMap(){
   legend();
