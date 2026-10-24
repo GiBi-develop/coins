@@ -119,6 +119,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
 .lead{font-size:14px;color:var(--muted);max-width:70ch;margin:0}
 .lead b{color:var(--ink);font:500 14px var(--mono)}
 .crow.ru{grid-template-columns:minmax(0,1fr) auto 20px;padding-block:9px}
+.stat b small{font-size:15px;color:var(--muted);margin-left:4px}
+#worldlead{display:grid;grid-template-columns:auto auto minmax(120px,1fr);gap:6px 20px;align-items:center;max-width:none}
+#worldlead .wl-num{font-size:15px;color:var(--ink);white-space:nowrap}
+#worldlead .wl-num b{font:500 22px var(--mono);color:var(--brass);font-variant-numeric:tabular-nums}
+#worldlead .wl-bar{height:8px;background:var(--empty);border-radius:4px;overflow:hidden}
+#worldlead .wl-bar i{display:block;height:100%;background:var(--brass)}
+#worldlead .snote{grid-column:1/-1}
+@media (max-width:600px){#worldlead{grid-template-columns:1fr}#worldlead .wl-num{white-space:normal}}
 </style>
 </head>
 <body>
@@ -129,7 +137,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
   <section class="stats" id="stats"></section>
   <nav role="tablist">
     <button role="tab" data-v="russia" aria-selected="true">Современная Россия</button>
-    <button role="tab" data-v="world" aria-selected="false">Иностранные</button>
+    <button role="tab" data-v="world" aria-selected="false">Мировые</button>
     <button role="tab" data-v="ussr" aria-selected="false">СССР</button>
     <button role="tab" data-v="old" aria-selected="false">Старые</button>
     <button role="tab" data-v="albums" aria-selected="false">Альбомы</button>
@@ -880,44 +888,44 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "kind": "coin",
    "sheets": {
     "1": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "2": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "3": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "4": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "5": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "6": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "7": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "8": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "9": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     },
     "10": {
-     "rows": 1,
-     "cols": 6
+     "rows": 2,
+     "cols": 3
     }
    }
   },
@@ -972,8 +980,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "name": "Оружие Великой Победы (конструкторы оружия)",
    "denom": "25 рублей",
    "album": "book25",
-   "extra_have": 18,
-   "total": 18
+   "total": 19
   },
   {
    "id": "misc25",
@@ -1001,7 +1008,6 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "name": "70-летие Победы",
    "denom": "5 и 10 рублей",
    "album": "victory70",
-   "extra_have": 3,
    "total": 21
   },
   {
@@ -1097,10 +1103,11 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "kind": "coin",
    "country": "TR",
    "name": "1 лира",
-   "year": "2010",
+   "year": "2014",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1110,9 +1117,11 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "kind": "coin",
    "country": "TR",
    "name": "50 курушей «Мост через Босфор»",
+   "year": "2010",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 2,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1121,10 +1130,12 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0003",
    "kind": "coin",
    "country": "TR",
-   "name": "50 курушей",
+   "name": "25 курушей",
+   "year": "2009",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1133,10 +1144,12 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0004",
    "kind": "coin",
    "country": "TR",
-   "name": "25 курушей",
+   "name": "10 курушей",
+   "year": "2011",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 4,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1145,10 +1158,12 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0005",
    "kind": "coin",
    "country": "TR",
-   "name": "10 курушей",
+   "name": "5 курушей",
+   "year": "2014",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 5,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1157,28 +1172,18 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0006",
    "kind": "coin",
    "country": "TR",
-   "name": "5 курушей",
+   "name": "1 куруш",
+   "year": "2013",
    "album": "foreign",
    "sheet": "1",
    "row": 1,
+   "slot": 6,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
    "id": "i0007",
-   "kind": "coin",
-   "country": "TR",
-   "name": "1 куруш",
-   "album": "foreign",
-   "sheet": "1",
-   "row": 1,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0008",
    "kind": "coin",
    "country": "AZ",
    "name": "50 гяпиков",
@@ -1190,7 +1195,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0009",
+   "id": "i0008",
    "kind": "coin",
    "country": "AZ",
    "name": "20 гяпиков",
@@ -1202,7 +1207,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0010",
+   "id": "i0009",
    "kind": "coin",
    "country": "AZ",
    "name": "10 гяпиков",
@@ -1214,7 +1219,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0011",
+   "id": "i0010",
    "kind": "coin",
    "country": "AZ",
    "name": "5 гяпиков",
@@ -1226,7 +1231,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0012",
+   "id": "i0011",
    "kind": "coin",
    "country": "AZ",
    "name": "3 гяпика",
@@ -1238,7 +1243,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0013",
+   "id": "i0012",
    "kind": "coin",
    "country": "AZ",
    "name": "1 гяпик",
@@ -1250,7 +1255,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0014",
+   "id": "i0013",
    "kind": "coin",
    "country": "CH",
    "name": "2 франка",
@@ -1263,7 +1268,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0015",
+   "id": "i0014",
    "kind": "coin",
    "country": "CH",
    "name": "1 франк",
@@ -1276,7 +1281,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0016",
+   "id": "i0015",
    "kind": "coin",
    "country": "CH",
    "name": "½ франка",
@@ -1289,7 +1294,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0017",
+   "id": "i0016",
    "kind": "coin",
    "country": "CH",
    "name": "20 раппенов",
@@ -1302,7 +1307,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0018",
+   "id": "i0017",
    "kind": "coin",
    "country": "CH",
    "name": "10 раппенов",
@@ -1315,7 +1320,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0019",
+   "id": "i0018",
    "kind": "coin",
    "country": "CH",
    "name": "5 раппенов",
@@ -1328,10 +1333,23 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0020",
+   "id": "i0019",
    "kind": "coin",
    "country": "IN",
    "name": "10 рупий",
+   "year": "2011",
+   "album": "foreign",
+   "sheet": "1",
+   "row": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0020",
+   "kind": "coin",
+   "country": "IN",
+   "name": "2 рупии",
    "year": "2011",
    "album": "foreign",
    "sheet": "1",
@@ -1345,19 +1363,6 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "kind": "coin",
    "country": "IN",
    "name": "2 рупии",
-   "year": "2011",
-   "album": "foreign",
-   "sheet": "1",
-   "row": 4,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0022",
-   "kind": "coin",
-   "country": "IN",
-   "name": "2 рупии",
    "year": "2006",
    "album": "foreign",
    "sheet": "1",
@@ -1367,7 +1372,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0023",
+   "id": "i0022",
    "kind": "coin",
    "country": "IN",
    "name": "1 рупия",
@@ -1380,7 +1385,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0024",
+   "id": "i0023",
    "kind": "coin",
    "country": "IN",
    "name": "5 рупий",
@@ -1393,7 +1398,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0025",
+   "id": "i0024",
    "kind": "coin",
    "country": "IN",
    "name": "2 рупии",
@@ -1406,7 +1411,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0026",
+   "id": "i0025",
    "kind": "coin",
    "country": "BG",
    "name": "50 стотинок",
@@ -1418,7 +1423,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0027",
+   "id": "i0026",
    "kind": "coin",
    "country": "BG",
    "name": "20 стотинок",
@@ -1430,7 +1435,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0028",
+   "id": "i0027",
    "kind": "coin",
    "country": "BG",
    "name": "10 стотинок",
@@ -1442,7 +1447,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0029",
+   "id": "i0028",
    "kind": "coin",
    "country": "BG",
    "name": "5 стотинок",
@@ -1454,7 +1459,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0030",
+   "id": "i0029",
    "kind": "coin",
    "country": "BG",
    "name": "2 стотинки",
@@ -1466,7 +1471,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0031",
+   "id": "i0030",
    "kind": "coin",
    "country": "BG",
    "name": "1 стотинка",
@@ -1478,7 +1483,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0032",
+   "id": "i0031",
    "kind": "coin",
    "country": "GB",
    "name": "1 фунт",
@@ -1491,7 +1496,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0033",
+   "id": "i0032",
    "kind": "coin",
    "country": "GB",
    "name": "20 пенсов",
@@ -1504,7 +1509,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0034",
+   "id": "i0033",
    "kind": "coin",
    "country": "GB",
    "name": "10 пенсов",
@@ -1517,7 +1522,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0035",
+   "id": "i0034",
    "kind": "coin",
    "country": "GB",
    "name": "5 пенсов",
@@ -1530,7 +1535,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0036",
+   "id": "i0035",
    "kind": "coin",
    "country": "GB",
    "name": "2 пенса",
@@ -1543,7 +1548,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0037",
+   "id": "i0036",
    "kind": "coin",
    "country": "GB",
    "name": "1 пенни",
@@ -1556,7 +1561,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0038",
+   "id": "i0037",
    "kind": "coin",
    "country": "UA",
    "name": "50 копеек",
@@ -1569,7 +1574,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0039",
+   "id": "i0038",
    "kind": "coin",
    "country": "UA",
    "name": "25 копеек",
@@ -1582,7 +1587,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0040",
+   "id": "i0039",
    "kind": "coin",
    "country": "UA",
    "name": "10 копеек",
@@ -1595,7 +1600,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0041",
+   "id": "i0040",
    "kind": "coin",
    "country": "UA",
    "name": "5 копеек",
@@ -1608,7 +1613,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0042",
+   "id": "i0041",
    "kind": "coin",
    "country": "UA",
    "name": "2 копейки",
@@ -1621,7 +1626,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0043",
+   "id": "i0042",
    "kind": "coin",
    "country": "UA",
    "name": "1 копейка",
@@ -1634,7 +1639,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0044",
+   "id": "i0043",
    "kind": "coin",
    "country": "CZ",
    "name": "50 крон",
@@ -1646,7 +1651,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0045",
+   "id": "i0044",
    "kind": "coin",
    "country": "CZ",
    "name": "20 крон",
@@ -1658,7 +1663,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0046",
+   "id": "i0045",
    "kind": "coin",
    "country": "CZ",
    "name": "10 крон",
@@ -1670,7 +1675,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0047",
+   "id": "i0046",
    "kind": "coin",
    "country": "CZ",
    "name": "5 крон",
@@ -1682,7 +1687,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0048",
+   "id": "i0047",
    "kind": "coin",
    "country": "CZ",
    "name": "2 кроны",
@@ -1694,7 +1699,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0049",
+   "id": "i0048",
    "kind": "coin",
    "country": "CZ",
    "name": "1 крона",
@@ -1706,7 +1711,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0050",
+   "id": "i0049",
    "kind": "coin",
    "country": "PL",
    "name": "50 грошей",
@@ -1719,7 +1724,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0051",
+   "id": "i0050",
    "kind": "coin",
    "country": "PL",
    "name": "20 грошей",
@@ -1732,7 +1737,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0052",
+   "id": "i0051",
    "kind": "coin",
    "country": "PL",
    "name": "10 грошей",
@@ -1745,7 +1750,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0053",
+   "id": "i0052",
    "kind": "coin",
    "country": "PL",
    "name": "5 грошей",
@@ -1758,7 +1763,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0054",
+   "id": "i0053",
    "kind": "coin",
    "country": "PL",
    "name": "2 гроша",
@@ -1771,7 +1776,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0055",
+   "id": "i0054",
    "kind": "coin",
    "country": "PL",
    "name": "1 грош",
@@ -1784,7 +1789,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0056",
+   "id": "i0055",
    "kind": "coin",
    "country": "DK",
    "name": "5 крон",
@@ -1797,7 +1802,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0057",
+   "id": "i0056",
    "kind": "coin",
    "country": "DK",
    "name": "2 кроны",
@@ -1810,7 +1815,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0058",
+   "id": "i0057",
    "kind": "coin",
    "country": "DK",
    "name": "1 крона",
@@ -1823,7 +1828,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0059",
+   "id": "i0058",
    "kind": "coin",
    "country": "DK",
    "name": "50 эре",
@@ -1836,7 +1841,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0060",
+   "id": "i0059",
    "kind": "coin",
    "country": "DK",
    "name": "10 эре",
@@ -1849,7 +1854,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0061",
+   "id": "i0060",
    "kind": "coin",
    "country": "BR",
    "name": "1 реал",
@@ -1861,7 +1866,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0062",
+   "id": "i0061",
    "kind": "coin",
    "country": "BR",
    "name": "50 сентаво",
@@ -1873,7 +1878,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0063",
+   "id": "i0062",
    "kind": "coin",
    "country": "BR",
    "name": "25 сентаво",
@@ -1885,7 +1890,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0064",
+   "id": "i0063",
    "kind": "coin",
    "country": "BR",
    "name": "10 сентаво",
@@ -1897,13 +1902,25 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0065",
+   "id": "i0064",
    "kind": "coin",
    "country": "BR",
    "name": "5 сентаво",
    "album": "foreign",
    "sheet": "2",
    "row": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0065",
+   "kind": "coin",
+   "country": "TN",
+   "name": "100 миллимов",
+   "album": "foreign",
+   "sheet": "3",
+   "row": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -1924,18 +1941,6 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0067",
    "kind": "coin",
    "country": "TN",
-   "name": "100 миллимов",
-   "album": "foreign",
-   "sheet": "3",
-   "row": 1,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0068",
-   "kind": "coin",
-   "country": "TN",
    "name": "50 миллимов",
    "album": "foreign",
    "sheet": "3",
@@ -1945,7 +1950,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0069",
+   "id": "i0068",
    "kind": "coin",
    "country": "IL",
    "name": "½ шекеля",
@@ -1957,7 +1962,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0070",
+   "id": "i0069",
    "kind": "coin",
    "country": "IL",
    "name": "10 агорот",
@@ -1969,7 +1974,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0071",
+   "id": "i0070",
    "kind": "coin",
    "country": "IL",
    "name": "10 агорот (другая)",
@@ -1981,10 +1986,22 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0072",
+   "id": "i0071",
    "kind": "coin",
    "country": "IL",
    "name": "5 агорот",
+   "album": "foreign",
+   "sheet": "3",
+   "row": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0072",
+   "kind": "coin",
+   "country": "IL",
+   "name": "1 шекель",
    "album": "foreign",
    "sheet": "3",
    "row": 2,
@@ -2007,11 +2024,12 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
   {
    "id": "i0074",
    "kind": "coin",
-   "country": "IL",
-   "name": "1 шекель",
+   "country": "AE",
+   "name": "1 дирхам",
    "album": "foreign",
    "sheet": "3",
-   "row": 2,
+   "row": 3,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -2020,16 +2038,30 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0075",
    "kind": "coin",
    "country": "AE",
-   "name": "монеты ОАЭ",
+   "name": "50 филсов",
    "album": "foreign",
    "sheet": "3",
    "row": 3,
+   "slot": 2,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
    "id": "i0076",
+   "kind": "coin",
+   "country": "AE",
+   "name": "25 филсов",
+   "album": "foreign",
+   "sheet": "3",
+   "row": 3,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0077",
    "kind": "coin",
    "country": "TH",
    "name": "10 бат",
@@ -2041,7 +2073,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0077",
+   "id": "i0078",
    "kind": "coin",
    "country": "TH",
    "name": "5 бат",
@@ -2054,7 +2086,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0078",
+   "id": "i0079",
    "kind": "coin",
    "country": "TH",
    "name": "2 бата",
@@ -2066,7 +2098,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0079",
+   "id": "i0080",
    "kind": "coin",
    "country": "TH",
    "name": "1 бат",
@@ -2078,7 +2110,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0080",
+   "id": "i0081",
    "kind": "coin",
    "country": "TH",
    "name": "50 сатангов",
@@ -2090,7 +2122,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0081",
+   "id": "i0082",
    "kind": "coin",
    "country": "TR",
    "name": "5 лир",
@@ -2102,7 +2134,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0082",
+   "id": "i0083",
    "kind": "coin",
    "country": "TR",
    "name": "50 лир",
@@ -2114,7 +2146,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0083",
+   "id": "i0084",
    "kind": "coin",
    "country": "TR",
    "name": "2½ лиры",
@@ -2126,7 +2158,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0084",
+   "id": "i0085",
    "kind": "coin",
    "country": "TR",
    "name": "25 лир",
@@ -2138,7 +2170,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0085",
+   "id": "i0086",
    "kind": "coin",
    "country": "TR",
    "name": "25 курушей",
@@ -2150,7 +2182,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0086",
+   "id": "i0087",
    "kind": "coin",
    "country": "TR",
    "name": "50 курушей",
@@ -2162,23 +2194,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0087",
-   "kind": "coin",
-   "country": "TR",
-   "name": "10 лир",
-   "album": "foreign",
-   "sheet": "4",
-   "row": 1,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
    "id": "i0088",
    "kind": "coin",
    "country": "TR",
-   "name": "1 лира",
-   "year": "1979",
+   "name": "10 лир",
    "album": "foreign",
    "sheet": "4",
    "row": 1,
@@ -2191,7 +2210,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "kind": "coin",
    "country": "TR",
    "name": "1 лира",
-   "year": "1987",
+   "year": "1979",
    "album": "foreign",
    "sheet": "4",
    "row": 1,
@@ -2203,7 +2222,8 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0090",
    "kind": "coin",
    "country": "TR",
-   "name": "5 лир",
+   "name": "1 лира",
+   "year": "1987",
    "album": "foreign",
    "sheet": "4",
    "row": 1,
@@ -2213,6 +2233,18 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
   },
   {
    "id": "i0091",
+   "kind": "coin",
+   "country": "TR",
+   "name": "5 лир",
+   "album": "foreign",
+   "sheet": "4",
+   "row": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0092",
    "kind": "coin",
    "country": "TR",
    "name": "250 000 лир",
@@ -2225,7 +2257,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0092",
+   "id": "i0093",
    "kind": "coin",
    "country": "TR",
    "name": "50 000 лир",
@@ -2238,7 +2270,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0093",
+   "id": "i0094",
    "kind": "coin",
    "country": "TR",
    "name": "100 000 лир",
@@ -2251,7 +2283,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0094",
+   "id": "i0095",
    "kind": "coin",
    "country": "TH",
    "name": "20 бат «80 лет Департаменту налогов»",
@@ -2264,7 +2296,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0095",
+   "id": "i0096",
    "kind": "coin",
    "country": "TH",
    "name": "1 бат",
@@ -2277,7 +2309,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0096",
+   "id": "i0097",
    "kind": "coin",
    "country": "TH",
    "name": "1 бат",
@@ -2290,7 +2322,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0097",
+   "id": "i0098",
    "kind": "coin",
    "country": "TH",
    "name": "25 сатангов",
@@ -2303,7 +2335,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0098",
+   "id": "i0099",
    "kind": "coin",
    "country": "TH",
    "name": "5 бат",
@@ -2316,7 +2348,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0099",
+   "id": "i0100",
    "kind": "coin",
    "country": "TH",
    "name": "1 бат (Рама X)",
@@ -2328,7 +2360,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0100",
+   "id": "i0101",
    "kind": "coin",
    "country": "PL",
    "name": "1 злотый",
@@ -2342,7 +2374,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0101",
+   "id": "i0102",
    "kind": "coin",
    "country": "PL",
    "name": "20 злотых",
@@ -2355,7 +2387,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0102",
+   "id": "i0103",
    "kind": "coin",
    "country": "PL",
    "name": "10 злотых",
@@ -2368,7 +2400,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0103",
+   "id": "i0104",
    "kind": "coin",
    "country": "PL",
    "name": "5 злотых",
@@ -2381,7 +2413,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0104",
+   "id": "i0105",
    "kind": "coin",
    "country": "PL",
    "name": "5 злотых",
@@ -2394,7 +2426,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0105",
+   "id": "i0106",
    "kind": "coin",
    "country": "PL",
    "name": "2 злотых",
@@ -2407,7 +2439,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0106",
+   "id": "i0107",
    "kind": "coin",
    "country": "PL",
    "name": "1 злотый",
@@ -2420,7 +2452,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0107",
+   "id": "i0108",
    "kind": "coin",
    "country": "PL",
    "name": "10 грошей",
@@ -2433,7 +2465,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0108",
+   "id": "i0109",
    "kind": "coin",
    "country": "PL",
    "name": "20 грошей",
@@ -2446,7 +2478,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0109",
+   "id": "i0110",
    "kind": "coin",
    "country": "PL",
    "name": "2 злотых «Турин 2006»",
@@ -2460,7 +2492,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0110",
+   "id": "i0111",
    "kind": "coin",
    "country": "PL",
    "name": "2 злотых «ЧМ по футболу, Германия»",
@@ -2474,7 +2506,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0111",
+   "id": "i0112",
    "kind": "coin",
    "country": "DE",
    "name": "1 пфенниг",
@@ -2489,7 +2521,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0112",
+   "id": "i0113",
    "kind": "coin",
    "country": "DE",
    "name": "5 рейхспфеннигов",
@@ -2504,7 +2536,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0113",
+   "id": "i0114",
    "kind": "coin",
    "country": "DE",
    "name": "6 крейцеров",
@@ -2519,7 +2551,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0114",
+   "id": "i0115",
    "kind": "coin",
    "country": "PG",
    "name": "1 тоя",
@@ -2533,7 +2565,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0115",
+   "id": "i0116",
    "kind": "coin",
    "country": "JM",
    "name": "1 цент",
@@ -2541,13 +2573,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "foreign",
    "sheet": "5",
    "row": 1,
-   "slot": 4,
+   "slot": 5,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
-   "id": "i0116",
+   "id": "i0117",
    "kind": "coin",
    "country": "PK",
    "name": "1 рупия",
@@ -2559,7 +2591,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0117",
+   "id": "i0118",
    "kind": "coin",
    "country": "PK",
    "name": "2 рупии",
@@ -2571,7 +2603,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0118",
+   "id": "i0119",
    "kind": "coin",
    "country": "PK",
    "name": "5 рупий",
@@ -2583,7 +2615,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0119",
+   "id": "i0120",
    "kind": "coin",
    "country": "RW",
    "name": "1 франк",
@@ -2595,58 +2627,59 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0120",
+   "id": "i0121",
    "kind": "coin",
    "country": "MM",
    "name": "5 пья",
    "year": "1966",
    "album": "foreign",
    "sheet": "5",
-   "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "loose": true
   },
   {
-   "id": "i0121",
+   "id": "i0122",
    "kind": "coin",
    "country": "MM",
    "name": "5 кьят",
    "year": "1999",
    "album": "foreign",
    "sheet": "5",
-   "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "loose": true
   },
   {
-   "id": "i0122",
+   "id": "i0123",
    "kind": "coin",
    "country": null,
    "name": "неопознанная",
    "album": "foreign",
    "sheet": "5",
-   "row": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0123",
-   "kind": "coin",
-   "country": "MY",
-   "name": "5 сенов",
-   "year": "1989–2011",
-   "album": "foreign",
-   "sheet": "5",
-   "row": 5,
-   "qty": 1,
-   "status": "have",
-   "image": ""
+   "image": "",
+   "loose": true
   },
   {
    "id": "i0124",
+   "kind": "coin",
+   "country": "MY",
+   "name": "5 сенов",
+   "year": "2000",
+   "album": "foreign",
+   "sheet": "5",
+   "row": 5,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0125",
    "kind": "coin",
    "country": "SC",
    "name": "10 центов",
@@ -2659,7 +2692,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0125",
+   "id": "i0126",
    "kind": "coin",
    "country": "SI",
    "name": "1 толар",
@@ -2673,7 +2706,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0126",
+   "id": "i0127",
    "kind": "coin",
    "country": "MK",
    "name": "50 дени",
@@ -2687,7 +2720,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0127",
+   "id": "i0128",
    "kind": "coin",
    "country": "SC",
    "name": "1 цент",
@@ -2701,10 +2734,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0128",
+   "id": "i0129",
    "kind": "coin",
    "country": "SC",
-   "name": "1 цент",
+   "name": "1 цент (другой рисунок)",
    "year": "2016",
    "album": "foreign",
    "sheet": "5",
@@ -2715,7 +2748,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0129",
+   "id": "i0130",
    "kind": "coin",
    "country": "NP",
    "name": "1 рупия",
@@ -2728,7 +2761,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0130",
+   "id": "i0131",
    "kind": "coin",
    "country": "NP",
    "name": "25 пайс",
@@ -2740,7 +2773,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0131",
+   "id": "i0132",
    "kind": "coin",
    "country": "NP",
    "name": "неопознанная",
@@ -2753,7 +2786,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0132",
+   "id": "i0133",
    "kind": "coin",
    "country": "RS",
    "name": "1 динар",
@@ -2768,7 +2801,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0133",
+   "id": "i0134",
    "kind": "coin",
    "country": "BR",
    "name": "5 крузейро «Зелёное золото»",
@@ -2782,7 +2815,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0134",
+   "id": "i0135",
    "kind": "coin",
    "country": "SE",
    "name": "5 эре",
@@ -2796,7 +2829,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0135",
+   "id": "i0136",
    "kind": "coin",
    "country": "SE",
    "name": "1 крона (Карл XVI Густав)",
@@ -2810,7 +2843,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0136",
+   "id": "i0137",
    "kind": "coin",
    "country": "UA",
    "name": "1 гривна «Владимир Великий»",
@@ -2824,7 +2857,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0137",
+   "id": "i0138",
    "kind": "coin",
    "country": "UA",
    "name": "5 копеек",
@@ -2838,7 +2871,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0138",
+   "id": "i0139",
    "kind": "coin",
    "country": "UA",
    "name": "5 копеек",
@@ -2852,7 +2885,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0139",
+   "id": "i0140",
    "kind": "coin",
    "country": "AT",
    "name": "5 евроцентов",
@@ -2866,7 +2899,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0140",
+   "id": "i0141",
    "kind": "coin",
    "country": "AT",
    "name": "2 евроцента",
@@ -2880,7 +2913,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0141",
+   "id": "i0142",
    "kind": "coin",
    "country": "AT",
    "name": "1 евроцент",
@@ -2894,7 +2927,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0142",
+   "id": "i0143",
    "kind": "coin",
    "country": "MD",
    "name": "50 бани",
@@ -2907,7 +2940,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0143",
+   "id": "i0144",
    "kind": "coin",
    "country": "SB",
    "name": "10 центов",
@@ -2921,7 +2954,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0144",
+   "id": "i0145",
    "kind": "coin",
    "country": "HK",
    "name": "20 центов",
@@ -2934,7 +2967,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0145",
+   "id": "i0146",
    "kind": "coin",
    "country": "PH",
    "name": "25 сентимо",
@@ -2947,7 +2980,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0146",
+   "id": "i0147",
    "kind": "coin",
    "country": "BE",
    "name": "1 франк",
@@ -2960,7 +2993,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0147",
+   "id": "i0148",
    "kind": "coin",
    "country": "IN",
    "name": "25 пайс",
@@ -2973,7 +3006,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0148",
+   "id": "i0149",
    "kind": "coin",
    "country": "IN",
    "name": "10 рупий",
@@ -2986,7 +3019,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0149",
+   "id": "i0150",
    "kind": "coin",
    "country": "IN",
    "name": "1 рупия",
@@ -2999,7 +3032,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0150",
+   "id": "i0151",
    "kind": "coin",
    "country": "IN",
    "name": "1 рупия",
@@ -3013,7 +3046,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0151",
+   "id": "i0152",
    "kind": "coin",
    "country": "NA",
    "name": "10 центов",
@@ -3026,7 +3059,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0152",
+   "id": "i0153",
    "kind": "coin",
    "country": "NA",
    "name": "5 центов",
@@ -3039,7 +3072,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0153",
+   "id": "i0154",
    "kind": "coin",
    "country": "IR",
    "name": "5 риалов",
@@ -3052,7 +3085,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0154",
+   "id": "i0155",
    "kind": "coin",
    "country": "US",
    "name": "1 цент",
@@ -3066,7 +3099,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0155",
+   "id": "i0156",
    "kind": "coin",
    "country": "BN",
    "name": "1 сен",
@@ -3080,7 +3113,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0156",
+   "id": "i0157",
    "kind": "coin",
    "country": "KY",
    "name": "1 цент",
@@ -3094,7 +3127,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0157",
+   "id": "i0158",
    "kind": "coin",
    "country": "PH",
    "name": "25 сентимо",
@@ -3103,20 +3136,6 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "sheet": "7",
    "row": 1,
    "slot": 4,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0158",
-   "kind": "coin",
-   "country": "IT",
-   "name": "1 чентезимо (Умберто I)",
-   "year": "1900",
-   "album": "foreign",
-   "sheet": "7",
-   "row": 1,
-   "slot": 5,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -3138,6 +3157,16 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
   {
    "id": "i0160",
    "kind": "coin",
+   "country": "IT",
+   "name": "1 чентезимо (Умберто I)",
+   "year": "1900",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0161",
+   "kind": "coin",
    "country": "CA",
    "name": "1 цент",
    "year": "1981",
@@ -3150,7 +3179,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0161",
+   "id": "i0162",
    "kind": "coin",
    "country": "CA",
    "name": "1 цент",
@@ -3164,7 +3193,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0162",
+   "id": "i0163",
    "kind": "coin",
    "country": "LK",
    "name": "25 центов",
@@ -3178,7 +3207,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0163",
+   "id": "i0164",
    "kind": "coin",
    "country": "UY",
    "name": "20 сентесимо",
@@ -3192,7 +3221,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0164",
+   "id": "i0165",
    "kind": "coin",
    "country": "LT",
    "name": "1 лит",
@@ -3206,7 +3235,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0165",
+   "id": "i0166",
    "kind": "coin",
    "country": "GB",
    "name": "1 пенни",
@@ -3219,7 +3248,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0166",
+   "id": "i0167",
    "kind": "coin",
    "country": "GB",
    "name": "1 пенни",
@@ -3232,7 +3261,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0167",
+   "id": "i0168",
    "kind": "coin",
    "country": "FJ",
    "name": "1 цент",
@@ -3244,7 +3273,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0168",
+   "id": "i0169",
    "kind": "coin",
    "country": "FJ",
    "name": "2 цента",
@@ -3256,7 +3285,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0169",
+   "id": "i0170",
    "kind": "coin",
    "country": "FJ",
    "name": "5 центов",
@@ -3268,7 +3297,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0170",
+   "id": "i0171",
    "kind": "coin",
    "country": "BZ",
    "name": "1 цент",
@@ -3281,7 +3310,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0171",
+   "id": "i0172",
    "kind": "coin",
    "country": "FR",
    "name": "5 сантимов «Марианна»",
@@ -3295,7 +3324,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0172",
+   "id": "i0173",
    "kind": "coin",
    "country": "FR",
    "name": "10 сантимов",
@@ -3309,7 +3338,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0173",
+   "id": "i0174",
    "kind": "coin",
    "country": "HU",
    "name": "20 филлеров",
@@ -3322,7 +3351,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0174",
+   "id": "i0175",
    "kind": "coin",
    "country": "ZA",
    "name": "20 центов",
@@ -3336,7 +3365,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0175",
+   "id": "i0176",
    "kind": "coin",
    "country": "ZA",
    "name": "20 центов",
@@ -3350,7 +3379,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0176",
+   "id": "i0177",
    "kind": "coin",
    "country": "UG",
    "name": "50 центов",
@@ -3364,7 +3393,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0177",
+   "id": "i0178",
    "kind": "coin",
    "country": "IT",
    "name": "50 лир",
@@ -3378,7 +3407,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0178",
+   "id": "i0179",
    "kind": "coin",
    "country": "IT",
    "name": "100 лир",
@@ -3392,7 +3421,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0179",
+   "id": "i0180",
    "kind": "coin",
    "country": "IT",
    "name": "5 лир",
@@ -3406,7 +3435,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0180",
+   "id": "i0181",
    "kind": "coin",
    "country": "IT",
    "name": "100 лир",
@@ -3420,7 +3449,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0181",
+   "id": "i0182",
    "kind": "coin",
    "country": "IT",
    "name": "5 лир",
@@ -3433,7 +3462,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0182",
+   "id": "i0183",
    "kind": "coin",
    "country": "IT",
    "name": "500 лир",
@@ -3447,7 +3476,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0183",
+   "id": "i0184",
    "kind": "coin",
    "country": "ES",
    "name": "25 песет",
@@ -3460,7 +3489,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0184",
+   "id": "i0185",
    "kind": "coin",
    "country": "KZ",
    "name": "100 тенге",
@@ -3472,7 +3501,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0185",
+   "id": "i0186",
    "kind": "coin",
    "country": "KZ",
    "name": "50 тенге",
@@ -3484,7 +3513,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0186",
+   "id": "i0187",
    "kind": "coin",
    "country": "KZ",
    "name": "20 тенге",
@@ -3496,7 +3525,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0187",
+   "id": "i0188",
    "kind": "coin",
    "country": "KZ",
    "name": "10 тенге",
@@ -3508,7 +3537,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0188",
+   "id": "i0189",
    "kind": "coin",
    "country": "KZ",
    "name": "5 тенге",
@@ -3520,7 +3549,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0189",
+   "id": "i0190",
    "kind": "coin",
    "country": "KZ",
    "name": "1 тенге",
@@ -3532,7 +3561,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0190",
+   "id": "i0191",
    "kind": "coin",
    "country": "CO",
    "name": "1000 песо",
@@ -3544,7 +3573,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0191",
+   "id": "i0192",
    "kind": "coin",
    "country": "CO",
    "name": "500 песо",
@@ -3556,7 +3585,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0192",
+   "id": "i0193",
    "kind": "coin",
    "country": "CO",
    "name": "200 песо",
@@ -3568,7 +3597,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0193",
+   "id": "i0194",
    "kind": "coin",
    "country": "CO",
    "name": "100 песо",
@@ -3580,7 +3609,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0194",
+   "id": "i0195",
    "kind": "coin",
    "country": "CO",
    "name": "50 песо",
@@ -3592,7 +3621,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0195",
+   "id": "i0196",
    "kind": "coin",
    "country": "FI",
    "name": "1 пенни",
@@ -3606,7 +3635,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0196",
+   "id": "i0197",
    "kind": "coin",
    "country": "LV",
    "name": "1 сантим",
@@ -3620,7 +3649,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0197",
+   "id": "i0198",
    "kind": "coin",
    "country": "LV",
    "name": "2 сантима",
@@ -3634,7 +3663,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0198",
+   "id": "i0199",
    "kind": "coin",
    "country": "TR",
    "name": "1 новая лира",
@@ -3648,7 +3677,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0199",
+   "id": "i0200",
    "kind": "coin",
    "country": "TR",
    "name": "10 курушей",
@@ -3662,7 +3691,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0200",
+   "id": "i0201",
    "kind": "coin",
    "country": "TR",
    "name": "1 куруш",
@@ -3676,7 +3705,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0201",
+   "id": "i0202",
    "kind": "coin",
    "country": "BY",
    "name": "1 копейка",
@@ -3690,7 +3719,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0202",
+   "id": "i0203",
    "kind": "coin",
    "country": "BY",
    "name": "2 копейки",
@@ -3704,7 +3733,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0203",
+   "id": "i0204",
    "kind": "coin",
    "country": "BY",
    "name": "5 копеек",
@@ -3718,7 +3747,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0204",
+   "id": "i0205",
    "kind": "coin",
    "country": "BY",
    "name": "10 копеек",
@@ -3732,7 +3761,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0205",
+   "id": "i0206",
    "kind": "coin",
    "country": "BY",
    "name": "50 копеек",
@@ -3746,7 +3775,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0206",
+   "id": "i0207",
    "kind": "coin",
    "country": "BY",
    "name": "1 рубль",
@@ -3760,7 +3789,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0207",
+   "id": "i0208",
    "kind": "coin",
    "country": "PL",
    "name": "5 грошей",
@@ -3774,7 +3803,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0208",
+   "id": "i0209",
    "kind": "coin",
    "country": "PL",
    "name": "20 грошей",
@@ -3788,7 +3817,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0209",
+   "id": "i0210",
    "kind": "coin",
    "country": "JP",
    "name": "5 иен",
@@ -3801,7 +3830,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0210",
+   "id": "i0211",
    "kind": "coin",
    "country": "JP",
    "name": "10 иен",
@@ -3814,7 +3843,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0211",
+   "id": "i0212",
    "kind": "coin",
    "country": "DE",
    "name": "1 пфенниг",
@@ -3829,7 +3858,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0212",
+   "id": "i0213",
    "kind": "coin",
    "country": "BR",
    "name": "5 сентаво",
@@ -3843,7 +3872,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0213",
+   "id": "i0214",
    "kind": "coin",
    "country": "IN",
    "name": "2 пайсы",
@@ -3857,7 +3886,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0214",
+   "id": "i0215",
    "kind": "coin",
    "country": "AR",
    "name": "1 аустраль",
@@ -3871,7 +3900,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0215",
+   "id": "i0216",
    "kind": "coin",
    "country": "PH",
    "name": "10 сентимо",
@@ -3885,7 +3914,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0216",
+   "id": "i0217",
    "kind": "coin",
    "country": "BE",
    "name": "1 франк",
@@ -3899,7 +3928,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0217",
+   "id": "i0218",
    "kind": "coin",
    "country": "NL",
    "name": "10 центов",
@@ -3913,7 +3942,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0218",
+   "id": "i0219",
    "kind": "coin",
    "country": "NL",
    "name": "1 цент",
@@ -3927,7 +3956,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0219",
+   "id": "i0220",
    "kind": "coin",
    "country": "GR",
    "name": "20 драхм",
@@ -3941,7 +3970,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0220",
+   "id": "i0221",
    "kind": "coin",
    "country": "GR",
    "name": "10 драхм",
@@ -3955,7 +3984,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0221",
+   "id": "i0222",
    "kind": "coin",
    "country": "EC",
    "name": "1 сукре",
@@ -3969,7 +3998,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0222",
+   "id": "i0223",
    "kind": "coin",
    "country": "PT",
    "name": "50 сентаво",
@@ -3983,7 +4012,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0223",
+   "id": "i0224",
    "kind": "coin",
    "country": "PT",
    "name": "20 сентаво",
@@ -3997,7 +4026,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0224",
+   "id": "i0225",
    "kind": "coin",
    "country": "PT",
    "name": "10 сентаво",
@@ -4011,7 +4040,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0225",
+   "id": "i0226",
    "kind": "coin",
    "country": "SE",
    "name": "10 крон",
@@ -4025,7 +4054,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0226",
+   "id": "i0227",
    "kind": "coin",
    "country": "SE",
    "name": "1 крона",
@@ -4039,7 +4068,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0227",
+   "id": "i0228",
    "kind": "coin",
    "country": "SE",
    "name": "1 крона",
@@ -4053,7 +4082,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0228",
+   "id": "i0229",
    "kind": "coin",
    "country": "SE",
    "name": "1 крона",
@@ -4067,7 +4096,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0229",
+   "id": "i0230",
    "kind": "coin",
    "country": "SE",
    "name": "50 эре",
@@ -4081,7 +4110,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0230",
+   "id": "i0231",
    "kind": "coin",
    "country": "AM",
    "name": "10 драмов",
@@ -4095,7 +4124,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0231",
+   "id": "i0232",
    "kind": "coin",
    "country": "EG",
    "name": "10 пиастров",
@@ -4108,7 +4137,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0232",
+   "id": "i0233",
    "kind": "coin",
    "country": "EG",
    "name": "50 пиастров",
@@ -4121,7 +4150,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0233",
+   "id": "i0234",
    "kind": "coin",
    "country": "EG",
    "name": "5 пиастров",
@@ -4134,7 +4163,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0234",
+   "id": "i0235",
    "kind": "coin",
    "country": "EG",
    "name": "10 пиастров",
@@ -4147,7 +4176,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0235",
+   "id": "i0236",
    "kind": "coin",
    "country": "EG",
    "name": "5 пиастров",
@@ -4160,7 +4189,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0236",
+   "id": "i0237",
    "kind": "coin",
    "country": "MY",
    "name": "10 сенов",
@@ -4174,7 +4203,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0237",
+   "id": "i0238",
    "kind": "coin",
    "country": "ES",
    "name": "25 песет",
@@ -4188,7 +4217,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0238",
+   "id": "i0239",
    "kind": "coin",
    "country": "ES",
    "name": "5 песет",
@@ -4202,7 +4231,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0239",
+   "id": "i0240",
    "kind": "coin",
    "country": "ES",
    "name": "1 песета",
@@ -4216,7 +4245,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0240",
+   "id": "i0241",
    "kind": "coin",
    "country": "KZ",
    "name": "50 тенге",
@@ -4230,7 +4259,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0241",
+   "id": "i0242",
    "kind": "coin",
    "country": "KZ",
    "name": "20 тенге",
@@ -4244,7 +4273,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0242",
+   "id": "i0243",
    "kind": "coin",
    "country": "KZ",
    "name": "5 тенге",
@@ -4258,7 +4287,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0243",
+   "id": "i0244",
    "kind": "coin",
    "country": "TW",
    "name": "1 доллар",
@@ -4271,7 +4300,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0244",
+   "id": "i0245",
    "kind": "coin",
    "country": "ES",
    "name": "5 песет",
@@ -4285,7 +4314,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0245",
+   "id": "i0246",
    "kind": "coin",
    "country": "ES",
    "name": "5 песет",
@@ -4299,7 +4328,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0246",
+   "id": "i0247",
    "kind": "coin",
    "country": "NL",
    "name": "5 центов",
@@ -4313,7 +4342,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0247",
+   "id": "i0248",
    "kind": "coin",
    "country": "CA",
    "name": "1 цент",
@@ -4327,7 +4356,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0248",
+   "id": "i0249",
    "kind": "coin",
    "country": "CA",
    "name": "1 цент",
@@ -4341,7 +4370,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0249",
+   "id": "i0250",
    "kind": "coin",
    "country": "PH",
    "name": "25 сентимо",
@@ -4355,7 +4384,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0250",
+   "id": "i0251",
    "kind": "coin",
    "country": "RS",
    "name": "20 пара",
@@ -4370,7 +4399,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0251",
+   "id": "i0252",
    "kind": "coin",
    "country": "EE",
    "name": "1 крона",
@@ -4384,7 +4413,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0252",
+   "id": "i0253",
    "kind": "coin",
    "country": "KR",
    "name": "500 вон",
@@ -4398,7 +4427,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0253",
+   "id": "i0254",
    "kind": "coin",
    "country": "NO",
    "name": "1 крона",
@@ -4412,7 +4441,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0254",
+   "id": "i0255",
    "kind": "coin",
    "country": "ID",
    "name": "1000 рупий",
@@ -4426,7 +4455,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0255",
+   "id": "i0256",
    "kind": "coin",
    "country": "HU",
    "name": "5 форинтов",
@@ -4440,7 +4469,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0256",
+   "id": "i0257",
    "kind": "coin",
    "country": "HU",
    "name": "20 форинтов",
@@ -4454,7 +4483,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0257",
+   "id": "i0258",
    "kind": "coin",
    "country": "KR",
    "name": "10 вон",
@@ -4468,7 +4497,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0258",
+   "id": "i0259",
    "kind": "coin",
    "country": "MY",
    "name": "1 сен",
@@ -4482,7 +4511,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0259",
+   "id": "i0260",
    "kind": "coin",
    "country": "IL",
    "name": "1 новая агора",
@@ -4495,7 +4524,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0260",
+   "id": "i0261",
    "kind": "coin",
    "country": "GR",
    "name": "2 драхмы",
@@ -4509,7 +4538,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0261",
+   "id": "i0262",
    "kind": "coin",
    "country": "BG",
    "name": "1 стотинка",
@@ -4523,7 +4552,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0262",
+   "id": "i0263",
    "kind": "coin",
    "country": "BG",
    "name": "1 лев",
@@ -4537,7 +4566,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0263",
+   "id": "i0264",
    "kind": "coin",
    "country": "BG",
    "name": "1 лев",
@@ -4551,7 +4580,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0264",
+   "id": "i0265",
    "kind": "coin",
    "country": "CH",
    "name": "5 франков",
@@ -4565,7 +4594,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0265",
+   "id": "i0266",
    "kind": "coin",
    "country": "CH",
    "name": "1 франк",
@@ -4579,7 +4608,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0266",
+   "id": "i0267",
    "kind": "coin",
    "country": "MD",
    "name": "1 рубль «Циолковский»",
@@ -4593,7 +4622,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0267",
+   "id": "i0268",
    "kind": "coin",
    "country": "BY",
    "name": "1 рубль",
@@ -4607,7 +4636,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0268",
+   "id": "i0269",
    "kind": "coin",
    "country": "MD",
    "name": "1 рубль «60 лет спутнику»",
@@ -4622,7 +4651,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0269",
+   "id": "i0270",
    "kind": "coin",
    "country": "MD",
    "name": "1 рубль «Церковь в с. Воронково»",
@@ -4637,7 +4666,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0270",
+   "id": "i0271",
    "kind": "coin",
    "country": "PA",
    "name": "1 бальбоа «Красный Крест»",
@@ -4651,7 +4680,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0271",
+   "id": "i0272",
    "kind": "coin",
    "country": "GR",
    "name": "2 евро «Исход из Месолонгиона»",
@@ -4665,7 +4694,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0272",
+   "id": "i0273",
    "kind": "coin",
    "country": "GB",
    "name": "1 крона «Черчилль»",
@@ -4679,7 +4708,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0273",
+   "id": "i0274",
    "kind": "coin",
    "country": "GR",
    "name": "50 лепт",
@@ -4693,7 +4722,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0274",
+   "id": "i0275",
    "kind": "coin",
    "country": "MX",
    "name": "20 песо «ЧМ по футболу 2026»",
@@ -4707,7 +4736,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0275",
+   "id": "i0276",
    "kind": "coin",
    "country": "HU",
    "name": "50 форинтов «ЧМ по водным видам спорта»",
@@ -4721,7 +4750,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0276",
+   "id": "i0277",
    "kind": "coin",
    "country": "PH",
    "name": "10 песо «Председательство в АСЕАН»",
@@ -4735,7 +4764,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0277",
+   "id": "i0278",
    "kind": "coin",
    "country": "VA",
    "name": "50 лир",
@@ -4749,7 +4778,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0278",
+   "id": "i0279",
    "kind": "coin",
    "country": "HU",
    "name": "200 форинтов",
@@ -4763,7 +4792,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0279",
+   "id": "i0280",
    "kind": "coin",
    "country": "CN",
    "name": "10 юаней «Национальный парк Уишань»",
@@ -4777,7 +4806,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0280",
+   "id": "i0281",
    "kind": "coin",
    "country": "CN",
    "name": "10 юаней «Год лошади»",
@@ -4791,7 +4820,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0281",
+   "id": "i0282",
    "kind": "coin",
    "country": "CN",
    "name": "1 юань «70 лет Победы»",
@@ -4805,7 +4834,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0282",
+   "id": "i0283",
    "kind": "coin",
    "country": "CN",
    "name": "5 цзяо",
@@ -4818,7 +4847,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0283",
+   "id": "i0284",
    "kind": "coin",
    "country": "CN",
    "name": "1 цзяо",
@@ -4831,7 +4860,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0284",
+   "id": "i0285",
    "kind": "coin",
    "country": "US",
    "name": "50 центов «250 лет независимости» D",
@@ -4845,7 +4874,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0285",
+   "id": "i0286",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Вилма Мэнкиллер» D",
@@ -4859,7 +4888,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0286",
+   "id": "i0287",
    "kind": "coin",
    "country": "US",
    "name": "5 центов «Бизон»",
@@ -4872,7 +4901,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0287",
+   "id": "i0288",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Ховита Идар» D",
@@ -4886,7 +4915,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0288",
+   "id": "i0289",
    "kind": "coin",
    "country": "US",
    "name": "квотер",
@@ -4899,7 +4928,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0289",
+   "id": "i0290",
    "kind": "coin",
    "country": "US",
    "name": "50 центов «Кеннеди» P",
@@ -4913,7 +4942,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0290",
+   "id": "i0291",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Огайо»",
@@ -4927,7 +4956,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0291",
+   "id": "i0292",
    "kind": "coin",
    "country": "US",
    "name": "10 центов (дайм)",
@@ -4940,7 +4969,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0292",
+   "id": "i0293",
    "kind": "coin",
    "country": "US",
    "name": "1 доллар «Сакагавея» D",
@@ -4954,7 +4983,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0293",
+   "id": "i0294",
    "kind": "coin",
    "country": "US",
    "name": "1 цент «Мемориал Линкольна»",
@@ -4967,7 +4996,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0294",
+   "id": "i0295",
    "kind": "coin",
    "country": "US",
    "name": "1 доллар «Джордж Вашингтон» P",
@@ -4981,7 +5010,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0295",
+   "id": "i0296",
    "kind": "coin",
    "country": "US",
    "name": "1 цент «Щит»",
@@ -4994,7 +5023,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0296",
+   "id": "i0297",
    "kind": "coin",
    "country": "US",
    "name": "25 центов «Джордж Вашингтон» D",
@@ -5008,7 +5037,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0297",
+   "id": "i0298",
    "kind": "coin",
    "country": "US",
    "name": "5 центов",
@@ -5021,7 +5050,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0298",
+   "id": "i0299",
    "kind": "coin",
    "country": "US",
    "name": "1 доллар «Сборочная линия (Мичиган)» D",
@@ -5035,7 +5064,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0299",
+   "id": "i0300",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Аризона»",
@@ -5048,7 +5077,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0300",
+   "id": "i0301",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Оклахома»",
@@ -5061,7 +5090,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0301",
+   "id": "i0302",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Революционная война»",
@@ -5074,7 +5103,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0302",
+   "id": "i0303",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Орегон»",
@@ -5087,7 +5116,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0303",
+   "id": "i0304",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Делавэр»",
@@ -5100,7 +5129,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0304",
+   "id": "i0305",
    "kind": "coin",
    "country": "US",
    "name": "квотер «Мэйфлауэр»",
@@ -5113,7 +5142,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0305",
+   "id": "i0306",
    "kind": "coin",
    "country": "US",
    "name": "1 доллар «Сакагавея»",
@@ -5127,7 +5156,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0306",
+   "id": "i0307",
    "kind": "coin",
    "country": "GB",
    "name": "1 новый пенни",
@@ -5141,7 +5170,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0307",
+   "id": "i0308",
    "kind": "coin",
    "country": "GB",
    "name": "1 фунт",
@@ -5155,7 +5184,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0308",
+   "id": "i0309",
    "kind": "coin",
    "country": "GB",
    "name": "1 пенни",
@@ -5169,7 +5198,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0309",
+   "id": "i0310",
    "kind": "coin",
    "country": "GB",
    "name": "1 фунт",
@@ -5183,7 +5212,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0310",
+   "id": "i0311",
    "kind": "coin",
    "country": "GB",
    "name": "5 пенсов",
@@ -5197,7 +5226,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0311",
+   "id": "i0312",
    "kind": "coin",
    "country": "GB",
    "name": "20 пенсов",
@@ -5211,7 +5240,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0312",
+   "id": "i0313",
    "kind": "coin",
    "country": "GB",
    "name": "½ пенни",
@@ -5225,7 +5254,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0313",
+   "id": "i0314",
    "kind": "coin",
    "country": "GB",
    "name": "1 пенни",
@@ -5239,7 +5268,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0314",
+   "id": "i0315",
    "kind": "coin",
    "country": "GB",
    "name": "10 пенсов",
@@ -5253,7 +5282,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0315",
+   "id": "i0316",
    "kind": "coin",
    "country": "GB",
    "name": "5 пенсов",
@@ -5267,7 +5296,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0316",
+   "id": "i0317",
    "kind": "coin",
    "country": "GB",
    "name": "2 пенса",
@@ -5281,7 +5310,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0317",
+   "id": "i0318",
    "kind": "coin",
    "country": "GB",
    "name": "10 пенсов",
@@ -5295,7 +5324,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0318",
+   "id": "i0319",
    "kind": "coin",
    "country": "GB",
    "name": "20 пенсов",
@@ -5309,7 +5338,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0319",
+   "id": "i0320",
    "kind": "coin",
    "country": "GB",
    "name": "2 фунта",
@@ -5323,7 +5352,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0320",
+   "id": "i0321",
    "kind": "coin",
    "country": "GB",
    "name": "50 пенсов",
@@ -5337,7 +5366,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0321",
+   "id": "i0322",
    "kind": "coin",
    "country": "ES",
    "name": "1 евроцент",
@@ -5351,7 +5380,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0322",
+   "id": "i0323",
    "kind": "coin",
    "country": "ES",
    "name": "1 евроцент",
@@ -5365,7 +5394,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0323",
+   "id": "i0324",
    "kind": "coin",
    "country": "ES",
    "name": "1 евроцент",
@@ -5379,7 +5408,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0324",
+   "id": "i0325",
    "kind": "coin",
    "country": "ES",
    "name": "1 евроцент",
@@ -5393,7 +5422,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0325",
+   "id": "i0326",
    "kind": "coin",
    "country": "DE",
    "name": "1 евроцент",
@@ -5407,7 +5436,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0326",
+   "id": "i0327",
    "kind": "coin",
    "country": "DE",
    "name": "1 евроцент",
@@ -5421,7 +5450,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0327",
+   "id": "i0328",
    "kind": "coin",
    "country": "GR",
    "name": "1 евроцент",
@@ -5434,7 +5463,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0328",
+   "id": "i0329",
    "kind": "coin",
    "country": "DE",
    "name": "1 евроцент",
@@ -5448,7 +5477,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0329",
+   "id": "i0330",
    "kind": "coin",
    "country": "ES",
    "name": "2 евроцента",
@@ -5462,7 +5491,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0330",
+   "id": "i0331",
    "kind": "coin",
    "country": "ES",
    "name": "2 евроцента",
@@ -5476,7 +5505,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0331",
+   "id": "i0332",
    "kind": "coin",
    "country": "ES",
    "name": "2 евроцента",
@@ -5490,7 +5519,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0332",
+   "id": "i0333",
    "kind": "coin",
    "country": "ES",
    "name": "2 евроцента",
@@ -5504,7 +5533,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0333",
+   "id": "i0334",
    "kind": "coin",
    "country": "DE",
    "name": "2 евроцента",
@@ -5518,7 +5547,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0334",
+   "id": "i0335",
    "kind": "coin",
    "country": "DE",
    "name": "2 евроцента",
@@ -5532,7 +5561,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0335",
+   "id": "i0336",
    "kind": "coin",
    "country": "DE",
    "name": "5 евроцентов",
@@ -5546,7 +5575,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0336",
+   "id": "i0337",
    "kind": "coin",
    "country": "DE",
    "name": "5 евроцентов",
@@ -5560,7 +5589,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0337",
+   "id": "i0338",
    "kind": "coin",
    "country": "ES",
    "name": "5 евроцентов",
@@ -5574,7 +5603,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0338",
+   "id": "i0339",
    "kind": "coin",
    "country": "AT",
    "name": "10 евроцентов",
@@ -5588,7 +5617,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0339",
+   "id": "i0340",
    "kind": "coin",
    "country": "NL",
    "name": "20 евроцентов",
@@ -5602,7 +5631,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0340",
+   "id": "i0341",
    "kind": "coin",
    "country": "FR",
    "name": "10 евроцентов",
@@ -5616,7 +5645,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0341",
+   "id": "i0342",
    "kind": "coin",
    "country": "DE",
    "name": "10 евроцентов",
@@ -5630,7 +5659,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0342",
+   "id": "i0343",
    "kind": "coin",
    "country": "DE",
    "name": "20 евроцентов",
@@ -5644,7 +5673,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0343",
+   "id": "i0344",
    "kind": "coin",
    "country": "BE",
    "name": "20 евроцентов",
@@ -5658,7 +5687,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0344",
+   "id": "i0345",
    "kind": "coin",
    "country": "DE",
    "name": "20 евроцентов",
@@ -5672,7 +5701,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0345",
+   "id": "i0346",
    "kind": "coin",
    "country": "DE",
    "name": "20 евроцентов",
@@ -5686,7 +5715,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0346",
+   "id": "i0347",
    "kind": "coin",
    "country": "IT",
    "name": "1 евро",
@@ -5700,7 +5729,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0347",
+   "id": "i0348",
    "kind": "coin",
    "country": "AT",
    "name": "1 евро",
@@ -5714,7 +5743,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0348",
+   "id": "i0349",
    "kind": "coin",
    "country": "FR",
    "name": "1 евро",
@@ -5728,7 +5757,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0349",
+   "id": "i0350",
    "kind": "coin",
    "country": "DE",
    "name": "2 евро",
@@ -5742,7 +5771,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0350",
+   "id": "i0351",
    "kind": "banknote",
    "country": "DE",
    "name": "1000 марок, красная печать",
@@ -5756,7 +5785,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0351",
+   "id": "i0352",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. Пятаков / Титов",
@@ -5771,7 +5800,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0352",
+   "id": "i0353",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. Пятаков / Г. де Милло",
@@ -5786,7 +5815,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0353",
+   "id": "i0354",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Шипов / Былинский",
@@ -5801,7 +5830,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0354",
+   "id": "i0355",
    "kind": "banknote",
    "country": "RU",
    "name": "50 руб. Пятаков / Барышев, серия АА",
@@ -5816,7 +5845,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0355",
+   "id": "i0356",
    "kind": "banknote",
    "country": "RU",
    "name": "250 руб. Пятаков / Лошкин",
@@ -5831,7 +5860,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0356",
+   "id": "i0357",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб., билет Госказначейства 4%",
@@ -5846,7 +5875,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0357",
+   "id": "i0358",
    "kind": "banknote",
    "country": "RU",
    "name": "500 руб. Пятаков / Осипов",
@@ -5861,7 +5890,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0358",
+   "id": "i0359",
    "kind": "banknote",
    "country": "RU",
    "name": "250 руб. Шипов / Метц",
@@ -5876,7 +5905,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0359",
+   "id": "i0360",
    "kind": "banknote",
    "country": "MW",
    "name": "20 квача",
@@ -5889,7 +5918,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0360",
+   "id": "i0361",
    "kind": "banknote",
    "country": "KH",
    "name": "100 риелей",
@@ -5902,7 +5931,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0361",
+   "id": "i0362",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Пятаков / Алексеев",
@@ -5917,7 +5946,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0362",
+   "id": "i0363",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб. Пятаков / Осипов, серия АА",
@@ -5932,7 +5961,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0363",
+   "id": "i0364",
    "kind": "banknote",
    "country": "CD",
    "name": "20 франков",
@@ -5945,7 +5974,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0364",
+   "id": "i0365",
    "kind": "banknote",
    "country": "EG",
    "name": "25 пиастров",
@@ -5958,7 +5987,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0365",
+   "id": "i0366",
    "kind": "banknote",
    "country": "MG",
    "name": "100, 200, 500, 1000 ариари",
@@ -5970,7 +5999,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0366",
+   "id": "i0367",
    "kind": "banknote",
    "country": "GT",
    "name": "1 кетсаль «100 лет нацвалюте»",
@@ -5983,7 +6012,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0367",
+   "id": "i0368",
    "kind": "banknote",
    "country": "AZ",
    "name": "1 манат",
@@ -5996,7 +6025,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0368",
+   "id": "i0369",
    "kind": "banknote",
    "country": "SY",
    "name": "50, 100, 200 фунтов",
@@ -6008,7 +6037,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0369",
+   "id": "i0370",
    "kind": "banknote",
    "country": "GR",
    "name": "25 млн драхм",
@@ -6021,7 +6050,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0370",
+   "id": "i0371",
    "kind": "banknote",
    "country": "DE",
    "name": "1 марка, Берлин",
@@ -6035,7 +6064,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0371",
+   "id": "i0372",
    "kind": "banknote",
    "country": "RU",
    "name": "5000 руб. Шмидт, ВЗ «горизонтальный ковёр»",
@@ -6050,7 +6079,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0372",
+   "id": "i0373",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. «ЧМ по футболу 2018»",
@@ -6063,7 +6092,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0373",
+   "id": "i0374",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. «Сочи 2014»",
@@ -6076,7 +6105,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0374",
+   "id": "i0375",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. «Крым», серия КС",
@@ -6089,7 +6118,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0375",
+   "id": "i0376",
    "kind": "banknote",
    "country": "RU",
    "name": "2000 руб.",
@@ -6101,7 +6130,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0376",
+   "id": "i0377",
    "kind": "banknote",
    "country": "RU",
    "name": "200 руб.",
@@ -6113,7 +6142,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0377",
+   "id": "i0378",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. (лучшие из многих)",
@@ -6125,7 +6154,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0378",
+   "id": "i0379",
    "kind": "banknote",
    "country": "IN",
    "name": "100 рупий",
@@ -6137,7 +6166,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0379",
+   "id": "i0380",
    "kind": "banknote",
    "country": "IN",
    "name": "50 рупий",
@@ -6149,7 +6178,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0380",
+   "id": "i0381",
    "kind": "banknote",
    "country": "IN",
    "name": "20 рупий",
@@ -6161,7 +6190,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0381",
+   "id": "i0382",
    "kind": "banknote",
    "country": "IN",
    "name": "10 рупий",
@@ -6173,7 +6202,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0382",
+   "id": "i0383",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб.",
@@ -6187,7 +6216,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0383",
+   "id": "i0384",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб.",
@@ -6201,7 +6230,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0384",
+   "id": "i0385",
    "kind": "banknote",
    "country": "UA",
    "name": "1 гривна",
@@ -6213,7 +6242,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0385",
+   "id": "i0386",
    "kind": "banknote",
    "country": "BY",
    "name": "10 руб.",
@@ -6226,7 +6255,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0386",
+   "id": "i0387",
    "kind": "banknote",
    "country": "BY",
    "name": "50 руб.",
@@ -6239,7 +6268,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0387",
+   "id": "i0388",
    "kind": "banknote",
    "country": "BY",
    "name": "5 руб.",
@@ -6252,7 +6281,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0388",
+   "id": "i0389",
    "kind": "banknote",
    "country": "BY",
    "name": "5 руб.",
@@ -6265,7 +6294,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0389",
+   "id": "i0390",
    "kind": "banknote",
    "country": "BY",
    "name": "50 коп.",
@@ -6278,7 +6307,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0390",
+   "id": "i0391",
    "kind": "banknote",
    "country": "BY",
    "name": "25 руб.",
@@ -6291,7 +6320,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0391",
+   "id": "i0392",
    "kind": "banknote",
    "country": "BY",
    "name": "1000 руб.",
@@ -6304,7 +6333,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0392",
+   "id": "i0393",
    "kind": "banknote",
    "country": "BY",
    "name": "50 000 руб.",
@@ -6317,7 +6346,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0393",
+   "id": "i0394",
    "kind": "banknote",
    "country": "BY",
    "name": "500 руб.",
@@ -6330,7 +6359,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0394",
+   "id": "i0395",
    "kind": "banknote",
    "country": "BY",
    "name": "20 руб.",
@@ -6343,7 +6372,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0395",
+   "id": "i0396",
    "kind": "banknote",
    "country": "BY",
    "name": "100 руб.",
@@ -6356,7 +6385,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0396",
+   "id": "i0397",
    "kind": "banknote",
    "country": "BY",
    "name": "5000 руб.",
@@ -6369,7 +6398,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0397",
+   "id": "i0398",
    "kind": "banknote",
    "country": "BY",
    "name": "3 руб.",
@@ -6382,7 +6411,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0398",
+   "id": "i0399",
    "kind": "banknote",
    "country": "BY",
    "name": "10 руб.",
@@ -6395,7 +6424,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0399",
+   "id": "i0400",
    "kind": "banknote",
    "country": "BY",
    "name": "1 руб.",
@@ -6408,7 +6437,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0400",
+   "id": "i0401",
    "kind": "banknote",
    "country": "VN",
    "name": "2000 донгов",
@@ -6421,7 +6450,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0401",
+   "id": "i0402",
    "kind": "banknote",
    "country": "VN",
    "name": "10 000 донгов",
@@ -6433,7 +6462,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0402",
+   "id": "i0403",
    "kind": "banknote",
    "country": "VN",
    "name": "1000 донгов",
@@ -6446,7 +6475,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0403",
+   "id": "i0404",
    "kind": "banknote",
    "country": "VN",
    "name": "5000 донгов",
@@ -6459,7 +6488,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0404",
+   "id": "i0405",
    "kind": "banknote",
    "country": "TR",
    "name": "5 лир",
@@ -6472,7 +6501,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0405",
+   "id": "i0406",
    "kind": "banknote",
    "country": "MY",
    "name": "1 ринггит",
@@ -6484,7 +6513,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0406",
+   "id": "i0407",
    "kind": "banknote",
    "country": "BR",
    "name": "2 реала",
@@ -6496,7 +6525,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0407",
+   "id": "i0408",
    "kind": "banknote",
    "country": "AZ",
    "name": "1 манат",
@@ -6509,7 +6538,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0408",
+   "id": "i0409",
    "kind": "banknote",
    "country": null,
    "name": "неопознанная банкнота",
@@ -6521,7 +6550,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0409",
+   "id": "i0410",
    "kind": "banknote",
    "country": "MD",
    "name": "1 лей",
@@ -6534,7 +6563,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0410",
+   "id": "i0411",
    "kind": "banknote",
    "country": "CN",
    "name": "1 юань",
@@ -6547,7 +6576,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0411",
+   "id": "i0412",
    "kind": "banknote",
    "country": "BY",
    "name": "10 руб.",
@@ -6560,7 +6589,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0412",
+   "id": "i0413",
    "kind": "banknote",
    "country": "TM",
    "name": "20 манатов",
@@ -6573,7 +6602,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0413",
+   "id": "i0414",
    "kind": "banknote",
    "country": "RS",
    "name": "10 динаров",
@@ -6586,7 +6615,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0414",
+   "id": "i0415",
    "kind": "banknote",
    "country": "US",
    "name": "2 доллара",
@@ -6599,7 +6628,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0415",
+   "id": "i0416",
    "kind": "banknote",
    "country": "US",
    "name": "1 доллар",
@@ -6612,7 +6641,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0416",
+   "id": "i0417",
    "kind": "banknote",
    "country": "BY",
    "name": "5 руб.",
@@ -6625,7 +6654,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0417",
+   "id": "i0418",
    "kind": "banknote",
    "country": "EU",
    "name": "5 евро",
@@ -6638,7 +6667,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0418",
+   "id": "i0419",
    "kind": "banknote",
    "country": "US",
    "name": "1 доллар",
@@ -6651,7 +6680,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0419",
+   "id": "i0420",
    "kind": "banknote",
    "country": "US",
    "name": "1 доллар",
@@ -6664,7 +6693,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0420",
+   "id": "i0421",
    "kind": "banknote",
    "country": "RU",
    "name": "1000 руб. Крестинский / Титов",
@@ -6679,7 +6708,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0421",
+   "id": "i0422",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб. Крестинский / Лошкин",
@@ -6694,7 +6723,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0422",
+   "id": "i0423",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб.",
@@ -6708,7 +6737,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0423",
+   "id": "i0424",
    "kind": "banknote",
    "country": "RU",
    "name": "250 руб. Крестинский / Жихарев, ВЗ «250»",
@@ -6723,7 +6752,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0424",
+   "id": "i0425",
    "kind": "banknote",
    "country": "RU",
    "name": "1000 руб. Крестинский / Гейльман, Московская ф-ка",
@@ -6738,7 +6767,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0425",
+   "id": "i0426",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб.",
@@ -6752,7 +6781,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0426",
+   "id": "i0427",
    "kind": "banknote",
    "country": "RU",
    "name": "500 руб. Крестинский / Стариков, Пензенская ф-ка",
@@ -6767,7 +6796,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0427",
+   "id": "i0428",
    "kind": "banknote",
    "country": "RU",
    "name": "50 руб.",
@@ -6781,7 +6810,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0428",
+   "id": "i0429",
    "kind": "banknote",
    "country": "UA",
    "name": "1 гривна",
@@ -6794,7 +6823,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0429",
+   "id": "i0430",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб.",
@@ -6808,7 +6837,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0430",
+   "id": "i0431",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб.",
@@ -6822,7 +6851,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0431",
+   "id": "i0432",
    "kind": "banknote",
    "country": "UA",
    "name": "500 купонов",
@@ -6835,7 +6864,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0432",
+   "id": "i0433",
    "kind": "banknote",
    "country": "UA",
    "name": "100 купонов",
@@ -6848,7 +6877,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0433",
+   "id": "i0434",
    "kind": "banknote",
    "country": "UA",
    "name": "5 купонов",
@@ -6861,10 +6890,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0434",
+   "id": "i0435",
    "kind": "banknote",
    "country": "RU",
-   "name": "50 коп.",
+   "name": "50 коп., казначейский знак",
    "issuer": "Российская империя",
    "year": "1915–1917",
    "series": "tsar",
@@ -6876,7 +6905,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0435",
+   "id": "i0436",
    "kind": "banknote",
    "country": "EE",
    "name": "1 крона",
@@ -6889,7 +6918,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0436",
+   "id": "i0437",
    "kind": "banknote",
    "country": "UA",
    "name": "1 купон",
@@ -6902,7 +6931,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0437",
+   "id": "i0438",
    "kind": "banknote",
    "country": "RU",
    "name": "200 руб.",
@@ -6915,7 +6944,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0438",
+   "id": "i0439",
    "kind": "banknote",
    "country": "RU",
    "name": "40 руб. «керенка»",
@@ -6930,7 +6959,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0439",
+   "id": "i0440",
    "kind": "banknote",
    "country": "RU",
    "name": "20 руб. «керенка»",
@@ -6945,7 +6974,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0440",
+   "id": "i0441",
    "kind": "banknote",
    "country": "RU",
    "name": "200 руб.",
@@ -6958,27 +6987,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0441",
+   "id": "i0442",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб.",
    "year": "1993",
    "album": "notes-red",
    "sheet": "34",
-   "slot": 1,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0442",
-   "kind": "banknote",
-   "country": "RU",
-   "name": "5 руб.",
-   "issuer": "СССР",
-   "year": "1961",
-   "album": "notes-red",
-   "sheet": "35",
    "slot": 1,
    "qty": 1,
    "status": "have",
@@ -6993,13 +7008,27 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "year": "1961",
    "album": "notes-red",
    "sheet": "35",
-   "slot": 2,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
    "id": "i0444",
+   "kind": "banknote",
+   "country": "RU",
+   "name": "5 руб.",
+   "issuer": "СССР",
+   "year": "1961",
+   "album": "notes-red",
+   "sheet": "35",
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0445",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб.",
@@ -7013,7 +7042,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0445",
+   "id": "i0446",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб., серия АА, пресс",
@@ -7027,7 +7056,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0446",
+   "id": "i0447",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб., пресс",
@@ -7041,7 +7070,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0447",
+   "id": "i0448",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб., серия Гг",
@@ -7055,7 +7084,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0448",
+   "id": "i0449",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб., серия ЗН",
@@ -7069,7 +7098,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0449",
+   "id": "i0450",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб. (2026)",
@@ -7082,7 +7111,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0450",
+   "id": "i0451",
    "kind": "banknote",
    "country": "RU",
    "name": "15 руб. Пятаков / Стариков",
@@ -7097,7 +7126,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "issuer": "РСФСР"
   },
   {
-   "id": "i0451",
+   "id": "i0452",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб.",
@@ -7110,7 +7139,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0452",
+   "id": "i0453",
    "kind": "banknote",
    "country": "UZ",
    "name": "1000 сумов (до реформы)",
@@ -7123,7 +7152,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0453",
+   "id": "i0454",
    "kind": "banknote",
    "country": "UZ",
    "name": "2000 сумов",
@@ -7135,7 +7164,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0454",
+   "id": "i0455",
    "kind": "banknote",
    "country": "UZ",
    "name": "5000 сумов",
@@ -7147,7 +7176,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0455",
+   "id": "i0456",
    "kind": "banknote",
    "country": "UZ",
    "name": "10 000 сумов",
@@ -7159,7 +7188,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0456",
+   "id": "i0457",
    "kind": "banknote",
    "country": "UZ",
    "name": "20 000 сумов",
@@ -7171,7 +7200,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0457",
+   "id": "i0458",
    "kind": "banknote",
    "country": "UZ",
    "name": "50 000 сумов",
@@ -7183,7 +7212,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0458",
+   "id": "i0459",
    "kind": "banknote",
    "country": "UZ",
    "name": "100 000 сумов",
@@ -7195,7 +7224,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0459",
+   "id": "i0460",
    "kind": "banknote",
    "country": "UZ",
    "name": "200 000 сумов",
@@ -7207,7 +7236,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0460",
+   "id": "i0461",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб. Пятаков, серия АА",
@@ -7222,7 +7251,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0461",
+   "id": "i0462",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб. Пятаков / Лошкин, серия АБ",
@@ -7237,7 +7266,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0462",
+   "id": "i0463",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб.",
@@ -7251,7 +7280,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0463",
+   "id": "i0464",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб.",
@@ -7265,7 +7294,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0464",
+   "id": "i0465",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб.",
@@ -7279,7 +7308,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0465",
+   "id": "i0466",
    "kind": "banknote",
    "country": "RU",
    "name": "5 червонцев",
@@ -7293,7 +7322,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0466",
+   "id": "i0467",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб. Шипов / Баринов",
@@ -7308,7 +7337,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0467",
+   "id": "i0468",
    "kind": "banknote",
    "country": "RU",
    "name": "5 руб. Шипов / Чихиржин",
@@ -7323,7 +7352,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0468",
+   "id": "i0469",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб. Шипов / Метц",
@@ -7338,7 +7367,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0469",
+   "id": "i0470",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб. Шипов / Афанасьев",
@@ -7353,7 +7382,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0470",
+   "id": "i0471",
    "kind": "banknote",
    "country": "RU",
    "name": "10 000 руб. Крестинский / Герасимов, Московская ф-ка",
@@ -7368,7 +7397,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0471",
+   "id": "i0472",
    "kind": "banknote",
    "country": "RU",
    "name": "3 руб. Шипов / Овчинников",
@@ -7383,7 +7412,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0472",
+   "id": "i0473",
    "kind": "banknote",
    "country": "RU",
    "name": "5000 руб., кассир Оников",
@@ -7398,7 +7427,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0473",
+   "id": "i0474",
    "kind": "banknote",
    "country": "RU",
    "name": "1 руб. Шипов / Ложкин",
@@ -7413,7 +7442,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0474",
+   "id": "i0475",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Коншин / Афанасьев",
@@ -7428,7 +7457,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0475",
+   "id": "i0476",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Шипов / Афанасьев",
@@ -7443,7 +7472,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0476",
+   "id": "i0477",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Шипов / Бубякин",
@@ -7458,7 +7487,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0477",
+   "id": "i0478",
    "kind": "banknote",
    "country": "RU",
    "name": "10 руб. Шипов / Метц",
@@ -7473,7 +7502,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0478",
+   "id": "i0479",
    "kind": "banknote",
    "country": "RU",
    "name": "100 руб., серия БА",
@@ -7487,7 +7516,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0479",
+   "id": "i0480",
    "kind": "banknote",
    "country": "RU",
    "name": "50 руб., серия СГ",
@@ -7501,7 +7530,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0480",
+   "id": "i0481",
    "kind": "banknote",
    "country": "RU",
    "name": "25 руб. Шипов / Овчинников",
@@ -7516,7 +7545,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0481",
+   "id": "i0482",
    "kind": "banknote",
    "country": "RU",
    "name": "10 червонцев",
@@ -7530,7 +7559,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0482",
+   "id": "i0483",
    "kind": "coin",
    "country": "RU",
    "name": "Крокодил Гена",
@@ -7538,10 +7567,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2020",
+   "sheet": "10",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0483",
+   "id": "i0484",
    "kind": "coin",
    "country": "RU",
    "name": "Ну, погоди!",
@@ -7549,10 +7582,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2018",
+   "sheet": "10",
+   "row": 1,
+   "slot": 2
   },
   {
-   "id": "i0484",
+   "id": "i0485",
    "kind": "coin",
    "country": "RU",
    "name": "Бременские музыканты",
@@ -7560,10 +7597,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2019",
+   "sheet": "10",
+   "row": 1,
+   "slot": 3
   },
   {
-   "id": "i0485",
+   "id": "i0486",
    "kind": "coin",
    "country": "RU",
    "name": "Барбоскины",
@@ -7571,10 +7612,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2020",
+   "sheet": "10",
+   "row": 2,
+   "slot": 1
   },
   {
-   "id": "i0486",
+   "id": "i0487",
    "kind": "coin",
    "country": "RU",
    "name": "Иван Царевич",
@@ -7582,10 +7627,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2022",
+   "sheet": "10",
+   "row": 2,
+   "slot": 2
   },
   {
-   "id": "i0487",
+   "id": "i0488",
    "kind": "coin",
    "country": "RU",
    "name": "Маша и Медведь",
@@ -7593,10 +7642,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2021",
+   "sheet": "10",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0488",
+   "id": "i0489",
    "kind": "coin",
    "country": "RU",
    "name": "Умка",
@@ -7604,10 +7657,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2021",
+   "sheet": "9",
+   "row": 1,
+   "slot": 2
   },
   {
-   "id": "i0489",
+   "id": "i0490",
    "kind": "coin",
    "country": "RU",
    "name": "Дед Мороз и лето",
@@ -7615,10 +7672,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2019",
+   "sheet": "9",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0490",
+   "id": "i0491",
    "kind": "coin",
    "country": "RU",
    "name": "Три богатыря",
@@ -7626,10 +7687,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2017",
+   "sheet": "9",
+   "row": 1,
+   "slot": 3
   },
   {
-   "id": "i0491",
+   "id": "i0492",
    "kind": "coin",
    "country": "RU",
    "name": "Смешарики",
@@ -7637,10 +7702,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2023",
+   "sheet": "9",
+   "row": 2,
+   "slot": 1
   },
   {
-   "id": "i0492",
+   "id": "i0493",
    "kind": "coin",
    "country": "RU",
    "name": "Золотая антилопа",
@@ -7648,10 +7717,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2026",
+   "sheet": "9",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0493",
+   "id": "i0494",
    "kind": "coin",
    "country": "RU",
    "name": "Ёжик в тумане",
@@ -7659,10 +7732,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2024",
+   "sheet": "8",
+   "row": 1,
+   "slot": 2
   },
   {
-   "id": "i0494",
+   "id": "i0495",
    "kind": "coin",
    "country": "RU",
    "name": "Аленький цветочек",
@@ -7670,10 +7747,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "8",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0495",
+   "id": "i0496",
    "kind": "coin",
    "country": "RU",
    "name": "Весёлая карусель. Антошка",
@@ -7681,10 +7761,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2022",
+   "sheet": "8",
+   "row": 1,
+   "slot": 3
   },
   {
-   "id": "i0496",
+   "id": "i0497",
    "kind": "coin",
    "country": "RU",
    "name": "Фиксики",
@@ -7692,10 +7776,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2025",
+   "sheet": "8",
+   "row": 2,
+   "slot": 2
   },
   {
-   "id": "i0497",
+   "id": "i0498",
    "kind": "coin",
    "country": "RU",
    "name": "Винни-Пух",
@@ -7703,19 +7791,11 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0498",
-   "kind": "coin",
-   "country": "RU",
-   "name": "Горы (эмблема Игр)",
-   "year": "2011",
-   "series": "sochi",
-   "album": "book25",
-   "qty": 2,
-   "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2017",
+   "sheet": "9",
+   "row": 2,
+   "slot": 2
   },
   {
    "id": "i0499",
@@ -7727,19 +7807,25 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "1",
+   "row": 1,
+   "slot": 1
   },
   {
    "id": "i0500",
    "kind": "coin",
    "country": "RU",
-   "name": "Лучик и Снежинка",
-   "year": "2013",
+   "name": "Горы (эмблема Игр)",
+   "year": "2011",
    "series": "sochi",
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "1",
+   "row": 1,
+   "slot": 2
   },
   {
    "id": "i0501",
@@ -7751,10 +7837,28 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "1",
+   "row": 1,
+   "slot": 3
   },
   {
    "id": "i0502",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Лучик и Снежинка",
+   "year": "2014",
+   "series": "sochi",
+   "album": "book25",
+   "qty": 2,
+   "status": "have",
+   "image": "",
+   "sheet": "1",
+   "row": 2,
+   "slot": 1
+  },
+  {
+   "id": "i0503",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по практической стрельбе из карабина",
@@ -7763,10 +7867,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "1",
+   "row": 2,
+   "slot": 2
   },
   {
-   "id": "i0503",
+   "id": "i0504",
    "kind": "coin",
    "country": "RU",
    "name": "Творчество Юрия Никулина (ММД)",
@@ -7775,10 +7882,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "1",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0504",
+   "id": "i0505",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Забивака",
@@ -7787,10 +7897,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0505",
+   "id": "i0506",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Кубок",
@@ -7799,10 +7912,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 1,
+   "slot": 2
   },
   {
-   "id": "i0506",
+   "id": "i0507",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Эмблема",
@@ -7811,10 +7927,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 1,
+   "slot": 3
   },
   {
-   "id": "i0507",
+   "id": "i0508",
    "kind": "coin",
    "country": "RU",
    "name": "25 лет Конституции РФ",
@@ -7823,21 +7942,28 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "8",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0508",
+   "id": "i0509",
    "kind": "coin",
    "country": "RU",
    "name": "Армейские международные игры",
+   "year": "2018",
    "series": "misc25",
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 2,
+   "slot": 1
   },
   {
-   "id": "i0509",
+   "id": "i0510",
    "kind": "coin",
    "country": "RU",
    "name": "75 лет полного освобождения Ленинграда от блокады",
@@ -7846,10 +7972,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 2,
+   "slot": 2
   },
   {
-   "id": "i0510",
+   "id": "i0511",
    "kind": "coin",
    "country": "RU",
    "name": "Медицинские работники",
@@ -7858,10 +7987,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "2",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0511",
+   "id": "i0512",
    "kind": "coin",
    "country": "RU",
    "name": "60 лет полёта в космос",
@@ -7870,10 +8002,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "album": "book25",
    "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "sheet": "3",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0512",
+   "id": "i0513",
    "kind": "coin",
    "country": "RU",
    "name": "Дари добро детям",
@@ -7884,7 +8019,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0513",
+   "id": "i0514",
    "kind": "coin",
    "country": "RU",
    "name": "Союзное государство",
@@ -7895,7 +8030,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0514",
+   "id": "i0515",
    "kind": "coin",
    "country": "RU",
    "name": "Москва",
@@ -7908,7 +8043,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0515",
+   "id": "i0516",
    "kind": "coin",
    "country": "RU",
    "name": "Ленинград",
@@ -7921,7 +8056,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0516",
+   "id": "i0517",
    "kind": "coin",
    "country": "RU",
    "name": "Сталинград",
@@ -7934,7 +8069,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0517",
+   "id": "i0518",
    "kind": "coin",
    "country": "RU",
    "name": "Тула",
@@ -7947,7 +8082,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0518",
+   "id": "i0519",
    "kind": "coin",
    "country": "RU",
    "name": "Новороссийск",
@@ -7960,7 +8095,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0519",
+   "id": "i0520",
    "kind": "coin",
    "country": "RU",
    "name": "Мурманск",
@@ -7973,7 +8108,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0520",
+   "id": "i0521",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленск",
@@ -7986,7 +8121,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0521",
+   "id": "i0522",
    "kind": "coin",
    "country": "RU",
    "name": "Керчь",
@@ -7999,7 +8134,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0522",
+   "id": "i0523",
    "kind": "coin",
    "country": "RU",
    "name": "Севастополь",
@@ -8012,7 +8147,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0523",
+   "id": "i0524",
    "kind": "coin",
    "country": "RU",
    "name": "50 руб. «Год защитника Отечества. Саур-Могила» (ММД)",
@@ -8024,7 +8159,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0524",
+   "id": "i0525",
    "kind": "coin",
    "country": "RU",
    "name": "2 руб. «Гагарин» (ММД)",
@@ -8036,7 +8171,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0525",
+   "id": "i0526",
    "kind": "coin",
    "country": "RU",
    "name": "2 руб. «10 лет СНГ»",
@@ -8048,7 +8183,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0526",
+   "id": "i0527",
    "kind": "coin",
    "country": "RU",
    "name": "Севастополь",
@@ -8063,7 +8198,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0527",
+   "id": "i0528",
    "kind": "coin",
    "country": "RU",
    "name": "1150-летие зарождения российской государственности",
@@ -8078,7 +8213,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0528",
+   "id": "i0529",
    "kind": "coin",
    "country": "RU",
    "name": "20 лет Конституции РФ",
@@ -8093,7 +8228,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0529",
+   "id": "i0530",
    "kind": "coin",
    "country": "RU",
    "name": "Талисман Универсиады, Казань",
@@ -8108,7 +8243,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0530",
+   "id": "i0531",
    "kind": "coin",
    "country": "RU",
    "name": "Эмблема Универсиады, Казань",
@@ -8123,7 +8258,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0531",
+   "id": "i0532",
    "kind": "coin",
    "country": "RU",
    "name": "Эмблема Универсиады, Красноярск",
@@ -8138,7 +8273,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0532",
+   "id": "i0533",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Крым",
@@ -8153,7 +8288,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0533",
+   "id": "i0534",
    "kind": "coin",
    "country": "RU",
    "name": "50 лет первого полёта в космос",
@@ -8168,7 +8303,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0534",
+   "id": "i0535",
    "kind": "coin",
    "country": "RU",
    "name": "65 лет Победы",
@@ -8183,7 +8318,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0535",
+   "id": "i0536",
    "kind": "coin",
    "country": "RU",
    "name": "Талисман Универсиады, Красноярск",
@@ -8198,7 +8333,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0536",
+   "id": "i0537",
    "kind": "coin",
    "country": "RU",
    "name": "70 лет разгрома под Сталинградом",
@@ -8213,7 +8348,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0537",
+   "id": "i0538",
    "kind": "coin",
    "country": "RU",
    "name": "Грозный",
@@ -8225,7 +8360,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0538",
+   "id": "i0539",
    "kind": "coin",
    "country": "RU",
    "name": "Феодосия",
@@ -8237,7 +8372,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0539",
+   "id": "i0540",
    "kind": "coin",
    "country": "RU",
    "name": "Старая Русса",
@@ -8249,7 +8384,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0540",
+   "id": "i0541",
    "kind": "coin",
    "country": "RU",
    "name": "Петрозаводск",
@@ -8261,7 +8396,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0541",
+   "id": "i0542",
    "kind": "coin",
    "country": "RU",
    "name": "Гатчина",
@@ -8273,7 +8408,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0542",
+   "id": "i0543",
    "kind": "coin",
    "country": "RU",
    "name": "Псков",
@@ -8283,7 +8418,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0543",
+   "id": "i0544",
    "kind": "coin",
    "country": "RU",
    "name": "Пензенская обл.",
@@ -8296,7 +8431,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0544",
+   "id": "i0545",
    "kind": "coin",
    "country": "RU",
    "name": "Саратовская обл.",
@@ -8309,7 +8444,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0545",
+   "id": "i0546",
    "kind": "coin",
    "country": "RU",
    "name": "Амурская обл.",
@@ -8322,7 +8457,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0546",
+   "id": "i0547",
    "kind": "coin",
    "country": "RU",
    "name": "Белгородская обл.",
@@ -8335,7 +8470,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0547",
+   "id": "i0548",
    "kind": "coin",
    "country": "RU",
    "name": "Иркутская обл.",
@@ -8348,7 +8483,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0548",
+   "id": "i0549",
    "kind": "coin",
    "country": "RU",
    "name": "Ульяновская обл.",
@@ -8361,7 +8496,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0549",
+   "id": "i0550",
    "kind": "coin",
    "country": "RU",
    "name": "Костромская обл.",
@@ -8374,7 +8509,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0550",
+   "id": "i0551",
    "kind": "coin",
    "country": "RU",
    "name": "Московская обл.",
@@ -8387,7 +8522,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0551",
+   "id": "i0552",
    "kind": "coin",
    "country": "RU",
    "name": "Рязанская обл.",
@@ -8400,7 +8535,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0552",
+   "id": "i0553",
    "kind": "coin",
    "country": "RU",
    "name": "Ивановская обл.",
@@ -8413,7 +8548,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0553",
+   "id": "i0554",
    "kind": "coin",
    "country": "RU",
    "name": "Карачаево-Черкесская Республика",
@@ -8426,7 +8561,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0554",
+   "id": "i0555",
    "kind": "coin",
    "country": "RU",
    "name": "Омская обл.",
@@ -8439,7 +8574,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0555",
+   "id": "i0556",
    "kind": "coin",
    "country": "RU",
    "name": "Хабаровский край",
@@ -8452,7 +8587,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0556",
+   "id": "i0557",
    "kind": "coin",
    "country": "RU",
    "name": "Ханты-Мансийский АО",
@@ -8465,7 +8600,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0557",
+   "id": "i0558",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленская обл.",
@@ -8478,7 +8613,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0558",
+   "id": "i0559",
    "kind": "coin",
    "country": "RU",
    "name": "Чувашская Республика",
@@ -8491,7 +8626,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0559",
+   "id": "i0560",
    "kind": "coin",
    "country": "RU",
    "name": "Пермский край",
@@ -8501,7 +8636,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0560",
+   "id": "i0561",
    "kind": "coin",
    "country": "RU",
    "name": "Чеченская Республика",
@@ -8511,7 +8646,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0561",
+   "id": "i0562",
    "kind": "coin",
    "country": "RU",
    "name": "Ямало-Ненецкий АО",
@@ -8521,7 +8656,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0562",
+   "id": "i0563",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Северная Осетия — Алания",
@@ -8532,7 +8667,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0563",
+   "id": "i0564",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Дагестан",
@@ -8543,7 +8678,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0564",
+   "id": "i0565",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Ингушетия",
@@ -8554,7 +8689,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0565",
+   "id": "i0566",
    "kind": "coin",
    "country": "RU",
    "name": "Тюменская обл.",
@@ -8565,7 +8700,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0566",
+   "id": "i0567",
    "kind": "coin",
    "country": "RU",
    "name": "Челябинская обл.",
@@ -8576,7 +8711,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0567",
+   "id": "i0568",
    "kind": "coin",
    "country": "RU",
    "name": "Тамбовская обл.",
@@ -8587,7 +8722,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0568",
+   "id": "i0569",
    "kind": "coin",
    "country": "RU",
    "name": "Курганская обл.",
@@ -8598,7 +8733,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0569",
+   "id": "i0570",
    "kind": "coin",
    "country": "RU",
    "name": "Великие Луки",
@@ -8610,7 +8745,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0570",
+   "id": "i0571",
    "kind": "coin",
    "country": "RU",
    "name": "Вязьма",
@@ -8622,7 +8757,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0571",
+   "id": "i0572",
    "kind": "coin",
    "country": "RU",
    "name": "Городец",
@@ -8634,7 +8769,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0572",
+   "id": "i0573",
    "kind": "coin",
    "country": "RU",
    "name": "Клин",
@@ -8646,7 +8781,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0573",
+   "id": "i0574",
    "kind": "coin",
    "country": "RU",
    "name": "Нижний Новгород",
@@ -8658,7 +8793,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0574",
+   "id": "i0575",
    "kind": "coin",
    "country": "RU",
    "name": "Рыльск",
@@ -8670,7 +8805,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0575",
+   "id": "i0576",
    "kind": "coin",
    "country": "RU",
    "name": "Рыбинск",
@@ -8682,7 +8817,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0576",
+   "id": "i0577",
    "kind": "coin",
    "country": "RU",
    "name": "Козельск",
@@ -8694,7 +8829,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0577",
+   "id": "i0578",
    "kind": "coin",
    "country": "RU",
    "name": "Торопец",
@@ -8706,7 +8841,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0578",
+   "id": "i0579",
    "kind": "coin",
    "country": "RU",
    "name": "Нерехта",
@@ -8716,7 +8851,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0579",
+   "id": "i0580",
    "kind": "coin",
    "country": "RU",
    "name": "Ржев",
@@ -8726,7 +8861,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0580",
+   "id": "i0581",
    "kind": "coin",
    "country": "RU",
    "name": "Зубцов",
@@ -8736,7 +8871,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0581",
+   "id": "i0582",
    "kind": "coin",
    "country": "RU",
    "name": "Олонец",
@@ -8746,7 +8881,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0582",
+   "id": "i0583",
    "kind": "coin",
    "country": "RU",
    "name": "Гороховец",
@@ -8756,7 +8891,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0583",
+   "id": "i0584",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «75-летие Победы» (ММД)",
@@ -8770,40 +8905,82 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0584",
-   "kind": "coin",
-   "country": "RU",
-   "name": "170 лет Русскому географическому обществу",
-   "series": "misc5",
-   "album": "jubilee",
-   "qty": 2,
-   "status": "have",
-   "image": ""
-  },
-  {
    "id": "i0585",
    "kind": "coin",
    "country": "RU",
-   "name": "150 лет Русскому историческому обществу",
+   "name": "170 лет Русскому географическому обществу",
+   "year": "2015",
    "series": "misc5",
    "album": "jubilee",
-   "qty": 4,
+   "sheet": "6",
+   "qty": 2,
    "status": "have",
-   "image": ""
+   "image": "",
+   "row": 3,
+   "slot": 4
   },
   {
    "id": "i0586",
    "kind": "coin",
    "country": "RU",
-   "name": "Курильская десантная операция",
+   "name": "150 лет Русскому историческому обществу",
+   "year": "2016",
    "series": "misc5",
    "album": "jubilee",
+   "sheet": "6",
+   "qty": 4,
+   "status": "have",
+   "image": "",
+   "row": 2,
+   "slot": 4
+  },
+  {
+   "id": "i0587",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Курильская десантная операция",
+   "year": "2020",
+   "series": "misc5",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 1,
+   "slot": 4
+  },
+  {
+   "id": "i0588",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Воронежская обл.",
+   "year": "2011",
+   "series": "regions",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 1,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
-   "id": "i0587",
+   "id": "i0589",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Белозерск",
+   "year": "2012",
+   "series": "ancient",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0590",
    "kind": "coin",
    "country": "RU",
    "name": "Курская битва",
@@ -8815,7 +8992,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0588",
+   "id": "i0591",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Днепр",
@@ -8827,7 +9004,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0589",
+   "id": "i0592",
    "kind": "coin",
    "country": "RU",
    "name": "Битва под Москвой",
@@ -8839,7 +9016,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0590",
+   "id": "i0593",
    "kind": "coin",
    "country": "RU",
    "name": "Днепровско-Карпатская операция",
@@ -8851,7 +9028,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0591",
+   "id": "i0594",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Кавказ",
@@ -8863,7 +9040,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0592",
+   "id": "i0595",
    "kind": "coin",
    "country": "RU",
    "name": "Сталинградская битва",
@@ -8875,7 +9052,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0593",
+   "id": "i0596",
    "kind": "coin",
    "country": "RU",
    "name": "Будапештская операция",
@@ -8887,7 +9064,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0594",
+   "id": "i0597",
    "kind": "coin",
    "country": "RU",
    "name": "Белорусская операция",
@@ -8899,7 +9076,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0595",
+   "id": "i0598",
    "kind": "coin",
    "country": "RU",
    "name": "Берлинская операция",
@@ -8911,7 +9088,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0596",
+   "id": "i0599",
    "kind": "coin",
    "country": "RU",
    "name": "Восточно-Прусская операция",
@@ -8923,7 +9100,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0597",
+   "id": "i0600",
    "kind": "coin",
    "country": "RU",
    "name": "Львовско-Сандомирская операция",
@@ -8935,7 +9112,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0598",
+   "id": "i0601",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Ленинград",
@@ -8947,7 +9124,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0599",
+   "id": "i0602",
    "kind": "coin",
    "country": "RU",
    "name": "Ясско-Кишинёвская операция",
@@ -8959,7 +9136,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0600",
+   "id": "i0603",
    "kind": "coin",
    "country": "RU",
    "name": "Прибалтийская операция",
@@ -8971,7 +9148,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0601",
+   "id": "i0604",
    "kind": "coin",
    "country": "RU",
    "name": "Освобождение Карелии и Заполярья",
@@ -8983,7 +9160,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0602",
+   "id": "i0605",
    "kind": "coin",
    "country": "RU",
    "name": "Висло-Одерская операция",
@@ -8995,7 +9172,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0603",
+   "id": "i0606",
    "kind": "coin",
    "country": "RU",
    "name": "Пражская операция",
@@ -9007,7 +9184,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0604",
+   "id": "i0607",
    "kind": "coin",
    "country": "RU",
    "name": "Венская операция",
@@ -9019,45 +9196,13 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0605",
-   "kind": "coin",
-   "country": "RU",
-   "name": "Оборона Севастополя",
-   "year": "2015",
-   "series": "crimea",
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0606",
-   "kind": "coin",
-   "country": "RU",
-   "name": "Оборона Аджимушкайских каменоломен",
-   "year": "2015",
-   "series": "crimea",
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
-   "id": "i0607",
-   "kind": "coin",
-   "country": "RU",
-   "name": "Керченско-Эльтигенская операция",
-   "year": "2015",
-   "series": "crimea",
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
    "id": "i0608",
    "kind": "coin",
    "country": "RU",
-   "name": "Партизаны и подпольщики Крыма",
+   "name": "Официальная эмблема празднования 70-летия Победы",
    "year": "2015",
-   "series": "crimea",
+   "series": "victory70",
+   "album": "victory70",
    "qty": 1,
    "status": "have",
    "image": ""
@@ -9066,9 +9211,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0609",
    "kind": "coin",
    "country": "RU",
-   "name": "Крымская наступательная операция",
+   "name": "Освобождение мира от фашизма",
    "year": "2015",
-   "series": "crimea",
+   "series": "victory70",
+   "album": "victory70",
    "qty": 1,
    "status": "have",
    "image": ""
@@ -9077,9 +9223,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0610",
    "kind": "coin",
    "country": "RU",
-   "name": "Киев — 6 ноября 1943",
-   "year": "2016",
-   "series": "capitals",
+   "name": "Окончание Второй мировой войны",
+   "year": "2015",
+   "series": "victory70",
+   "album": "victory70",
    "qty": 1,
    "status": "have",
    "image": ""
@@ -9088,15 +9235,109 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "id": "i0611",
    "kind": "coin",
    "country": "RU",
+   "name": "Оборона Севастополя",
+   "year": "2015",
+   "series": "crimea",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 2,
+   "slot": 3
+  },
+  {
+   "id": "i0612",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Оборона Аджимушкайских каменоломен",
+   "year": "2015",
+   "series": "crimea",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 4,
+   "slot": 3
+  },
+  {
+   "id": "i0613",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Керченско-Эльтигенская операция",
+   "year": "2015",
+   "series": "crimea",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 3,
+   "slot": 3
+  },
+  {
+   "id": "i0614",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Партизаны и подпольщики Крыма",
+   "year": "2015",
+   "series": "crimea",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 5,
+   "slot": 3
+  },
+  {
+   "id": "i0615",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Крымская наступательная операция",
+   "year": "2015",
+   "series": "crimea",
+   "album": "jubilee",
+   "sheet": "6",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "row": 1,
+   "slot": 3
+  },
+  {
+   "id": "i0616",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Киев — 6 ноября 1943",
+   "year": "2016",
+   "series": "capitals",
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 3,
+   "slot": 1
+  },
+  {
+   "id": "i0617",
+   "kind": "coin",
+   "country": "RU",
    "name": "Минск — 3 июля 1944",
    "year": "2016",
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 2,
+   "slot": 2
   },
   {
-   "id": "i0612",
+   "id": "i0618",
    "kind": "coin",
    "country": "RU",
    "name": "Вильнюс — 13 июля 1944",
@@ -9104,10 +9345,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 2,
+   "slot": 4
   },
   {
-   "id": "i0613",
+   "id": "i0619",
    "kind": "coin",
    "country": "RU",
    "name": "Кишинёв — 24 августа 1944",
@@ -9115,10 +9360,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 2,
+   "slot": 1
   },
   {
-   "id": "i0614",
+   "id": "i0620",
    "kind": "coin",
    "country": "RU",
    "name": "Бухарест — 31 августа 1944",
@@ -9126,10 +9375,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 2,
+   "slot": 3
   },
   {
-   "id": "i0615",
+   "id": "i0621",
    "kind": "coin",
    "country": "RU",
    "name": "Таллин — 22 сентября 1944",
@@ -9137,10 +9390,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 3,
+   "slot": 2
   },
   {
-   "id": "i0616",
+   "id": "i0622",
    "kind": "coin",
    "country": "RU",
    "name": "Рига — 15 октября 1944",
@@ -9148,10 +9405,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 4,
+   "slot": 1
   },
   {
-   "id": "i0617",
+   "id": "i0623",
    "kind": "coin",
    "country": "RU",
    "name": "Белград — 20 октября 1944",
@@ -9159,10 +9420,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 3,
+   "slot": 3
   },
   {
-   "id": "i0618",
+   "id": "i0624",
    "kind": "coin",
    "country": "RU",
    "name": "Варшава — 17 января 1945",
@@ -9170,10 +9435,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 1,
+   "slot": 3
   },
   {
-   "id": "i0619",
+   "id": "i0625",
    "kind": "coin",
    "country": "RU",
    "name": "Будапешт — 13 февраля 1945",
@@ -9181,10 +9450,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 4,
+   "slot": 2
   },
   {
-   "id": "i0620",
+   "id": "i0626",
    "kind": "coin",
    "country": "RU",
    "name": "Братислава — 4 апреля 1945",
@@ -9192,10 +9465,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 3,
+   "slot": 4
   },
   {
-   "id": "i0621",
+   "id": "i0627",
    "kind": "coin",
    "country": "RU",
    "name": "Вена — 13 апреля 1945",
@@ -9203,10 +9480,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 1,
+   "slot": 2
   },
   {
-   "id": "i0622",
+   "id": "i0628",
    "kind": "coin",
    "country": "RU",
    "name": "Берлин — 2 мая 1945",
@@ -9214,10 +9495,14 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 1,
+   "slot": 1
   },
   {
-   "id": "i0623",
+   "id": "i0629",
    "kind": "coin",
    "country": "RU",
    "name": "Прага — 9 мая 1945",
@@ -9225,10 +9510,190 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "series": "capitals",
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "album": "jubilee",
+   "sheet": "5",
+   "row": 1,
+   "slot": 4
   },
   {
-   "id": "i0624",
+   "id": "i0630",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Битва под Москвой",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0631",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Днепровско-Карпатская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0632",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Битва за Кавказ",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 3,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0633",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Берлинская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 3,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0634",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Битва за Днепр",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 4,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0635",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Львовско-Сандомирская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 4,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0636",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Будапештская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 4,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0637",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Курская битва",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 5,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0638",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Восточно-Прусская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 5,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0639",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Сталинградская битва",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 6,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0640",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Белорусская операция",
+   "year": "2014",
+   "series": "victory70",
+   "album": "jubilee",
+   "sheet": "6",
+   "row": 6,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": "",
+   "dup": true
+  },
+  {
+   "id": "i0641",
    "kind": "coin",
    "country": "RU",
    "name": "Работник металлургической промышленности",
@@ -9239,7 +9704,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0625",
+   "id": "i0642",
    "kind": "coin",
    "country": "RU",
    "name": "Работник транспортной сферы",
@@ -9250,7 +9715,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0626",
+   "id": "i0643",
    "kind": "coin",
    "country": "RU",
    "name": "Работник нефтегазовой отрасли",
@@ -9261,7 +9726,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0627",
+   "id": "i0644",
    "kind": "coin",
    "country": "RU",
    "name": "Работник добывающей промышленности (шахтёр)",
@@ -9272,7 +9737,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0628",
+   "id": "i0645",
    "kind": "coin",
    "country": "RU",
    "name": "Работник строительной сферы",
@@ -9283,7 +9748,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0629",
+   "id": "i0646",
    "kind": "coin",
    "country": "RU",
    "name": "Учитель",
@@ -9294,7 +9759,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0630",
+   "id": "i0647",
    "kind": "coin",
    "country": "RU",
    "name": "Работник сельского хозяйства",
@@ -9305,7 +9770,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0631",
+   "id": "i0648",
    "kind": "coin",
    "country": "DE",
    "name": "2 рейхсмарки",
@@ -9318,7 +9783,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0632",
+   "id": "i0649",
    "kind": "coin",
    "country": "DE",
    "name": "10 рейхспфеннигов",
@@ -9331,7 +9796,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0633",
+   "id": "i0650",
    "kind": "coin",
    "country": "DE",
    "name": "5 рейхспфеннигов",
@@ -9344,7 +9809,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0634",
+   "id": "i0651",
    "kind": "coin",
    "country": "DE",
    "name": "2 рейхспфеннига",
@@ -9357,7 +9822,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0635",
+   "id": "i0652",
    "kind": "coin",
    "country": "DE",
    "name": "1 рейхспфенниг",
@@ -9370,27 +9835,35 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0636",
+   "id": "i0653",
    "kind": "coin",
    "country": "MW",
    "name": "50 квача",
    "year": "2024",
+   "album": "foreign",
+   "sheet": "8",
+   "row": 1,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
-   "id": "i0637",
+   "id": "i0654",
    "kind": "coin",
    "country": "ES",
    "name": "50 сентимо «ЧМ по футболу 1982»",
    "year": "1980",
+   "album": "foreign",
+   "sheet": "8",
+   "row": 2,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
-   "id": "i0638",
+   "id": "i0655",
    "kind": "coin",
    "country": "RU",
    "name": "50 копеек, серебро",
@@ -9402,7 +9875,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0639",
+   "id": "i0656",
    "kind": "coin",
    "country": "RU",
    "name": "5 копеек, медь, ЕМ",
@@ -9414,7 +9887,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0640",
+   "id": "i0657",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «Махтумкули»",
@@ -9426,7 +9899,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0641",
+   "id": "i0658",
    "kind": "coin",
    "country": "RU",
    "name": "50 копеек «50 лет Советской власти»",
@@ -9438,7 +9911,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0642",
+   "id": "i0659",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «100 лет со дня рождения Ленина»",
@@ -9450,7 +9923,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0643",
+   "id": "i0660",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «Низами Гянджеви»",
@@ -9462,7 +9935,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0644",
+   "id": "i0661",
    "kind": "coin",
    "country": "RU",
    "name": "15 копеек «50 лет Советской власти»",
@@ -9474,7 +9947,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0645",
+   "id": "i0662",
    "kind": "coin",
    "country": "RU",
    "name": "Копейка Михаила Фёдоровича, серебро",
@@ -9486,7 +9959,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0646",
+   "id": "i0663",
    "kind": "coin",
    "country": "RU",
    "name": "Копейка Петра I, серебро",
@@ -9498,7 +9971,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0647",
+   "id": "i0664",
    "kind": "coin",
    "country": "IT",
    "name": "Фоллис",
@@ -9509,7 +9982,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0648",
+   "id": "i0665",
    "kind": "coin",
    "country": "IT",
    "name": "Монета после реформы Константина I",
@@ -9519,7 +9992,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0649",
+   "id": "i0666",
    "kind": "coin",
    "country": "GB",
    "name": "3 пенса",
@@ -9529,7 +10002,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0650",
+   "id": "i0667",
    "kind": "coin",
    "country": "GR",
    "name": "5 драхм «Аристотель»",
@@ -9539,7 +10012,7 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0651",
+   "id": "i0668",
    "kind": "coin",
    "country": "TH",
    "name": "20 бат «108 лет Главному аудиторскому управлению»",
@@ -9548,11 +10021,311 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
    "image": ""
   },
   {
-   "id": "i0652",
+   "id": "i0669",
    "kind": "token",
    "country": "RU",
    "name": "Жетон «75 лет Великой Победы»",
    "year": "2020",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0670",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Грабин (ЗиС-3)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "3",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0671",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Котин (ИС-2)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "3",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0672",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Кошкин (Т-34)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "3",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0673",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Малинин (подлодка «Щука»)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "3",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0674",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Петров (М-30)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "3",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0675",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Петляков (Пе-2)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0676",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Симонов (ПТРС)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0677",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Шпагин (ППШ)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0678",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Поликарпов (У-2)",
+   "year": "2019",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0679",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Горюнов (СГ-43)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0680",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Ермаш (Д-3)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "4",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0681",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Маслов (крейсер «Киров»)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0682",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Судаев (ППС-43)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0683",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Токарев (ТТ)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0684",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Туполев (Ту-2)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0685",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Логинов (ПТП 1937)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0686",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Лавочкин (Ла-5)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "5",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0687",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Яковлев (Як-9)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "6",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0688",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Токарев (ТТ)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "6",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i0689",
+   "kind": "coin",
+   "country": "RU",
+   "name": "Ильюшин (Ил-2)",
+   "year": "2020",
+   "series": "weapons25",
+   "album": "book25",
+   "sheet": "6",
+   "row": 1,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -9598,15 +10371,15 @@ function renderAll(){renderStats();renderRussia();renderWorldLead();renderSide()
 
 function seriesProgress(s){
   const its=D.items.filter(i=>i.series===s.id);
-  const h=its.filter(have).length+(s.extra_have||0), o=its.filter(i=>i.status==="ordered").length, m=its.filter(i=>i.status==="missing").length;
+  const h=new Set(its.filter(have).map(i=>i.name)).size+(s.extra_have||0), o=its.filter(i=>i.status==="ordered").length, m=its.filter(i=>i.status==="missing").length;
   return {its,have:h,ordered:o,missing:m,total:s.total||((m||o)?h+o+m:null)};
 }
 function renderStats(){
   const its=D.items, extra=D.series.reduce((a,s)=>a+(s.extra_have||0),0);
   const coins=pcs(its.filter(i=>i.kind!=="banknote"))+extra, notes=pcs(its.filter(i=>i.kind==="banknote"));
-  const ctr=new Set(its.filter(i=>have(i)&&i.country&&i.country!=="EU").map(i=>i.country)).size;
+  const ctr=sovCount();
   const sp=D.series.map(seriesProgress).filter(p=>p.total), full=sp.filter(p=>p.have>=p.total).length;
-  $("#stats").innerHTML=[[coins,"монет"],[notes,"банкнот"],[ctr,"стран"],[full+" из "+sp.length,"серий собрано"]]
+  $("#stats").innerHTML=[[coins,"монет"],[notes,"банкнот"],[`${ctr}<small> из 195</small>`,"стран мира"],[full+" из "+sp.length,"серий собрано"]]
     .map(([v,l])=>`<div class="stat"><b>${v}</b><span>${l}</span></div>`).join("");
 }
 
@@ -9630,7 +10403,7 @@ function renderRussia(){
     const p=seriesProgress(s), done=p.total&&p.have>=p.total;
     const bar=p.total?`<div class="prog"><span class="track"><i style="width:${p.have/p.total*100}%"></i><i class="o" style="width:${p.ordered/p.total*100}%"></i></span><span>${p.have} / ${p.total}</span></div>`
       :`<div class="prog"><span class="snote">${p.have} в коллекции</span><span></span></div>`;
-    const chips=p.its.map(i=>`<span class="chip ${i.status!=="have"?i.status:""}">${esc(i.name)}${i.year&&i.year.length<6&&!/\d{4}/.test(i.name)?" "+esc(i.year):""}${i.qty>1?`<sup>×${i.qty}</sup>`:""}</span>`).join("");
+    const chips=p.its.filter(i=>!i.dup).map(i=>`<span class="chip ${i.status!=="have"?i.status:""}">${esc(i.name)}${i.year&&i.year.length<6&&!/\d{4}/.test(i.name)?" "+esc(i.year):""}${i.qty>1?`<sup>×${i.qty}</sup>`:""}</span>`).join("");
     return `<article class="scard"><div class="meta">${esc(s.denom||"")}</div><h2>${esc(s.name)}</h2>${bar}${done?`<span class="full">Собрана полностью</span>`:""}${chips?`<div class="chips">${chips}</div>`:""}${s.note?`<p class="snote">${esc(s.note)}</p>`:""}</article>`;
   }).join("");
   const rest=D.items.filter(i=>have(i)&&era(i)==="russia"&&!i.series);
@@ -9661,10 +10434,14 @@ function renderGroupsView(v){
 const ruExtra=()=>D.series.reduce((a,s)=>a+(s.extra_have||0),0);
 const cpcs=(c,l)=>pcs(l)+(c==="RU"?ruExtra():0);
 function byCountry(){const m={};for(const it of D.items){if(!have(it))continue;const c=it.country||"";(m[c]=m[c]||[]).push(it)}return m}
+function sovCount(){
+  const s=new Set(D.items.filter(i=>have(i)&&i.country&&i.country!=="EU").map(i=>i.country));
+  if(D.items.some(i=>have(i)&&i.issuer==="Приднестровье"))s.add("PMR");
+  return s.size}
 function renderWorldLead(){
   const m=byCountry(), all=Object.values(m).flat();
-  const n=Object.keys(m).filter(c=>c&&c!=="EU").length;
-  $("#worldlead").innerHTML=`Монеты и банкноты из <b>${n}</b> стран, включая Россию. Нажмите на страну, чтобы увидеть, что из неё есть.`;
+  const n=sovCount(), c=pcs(all.filter(i=>i.kind!=="banknote"))+ruExtra(), b=pcs(all.filter(i=>i.kind==="banknote"));
+  $("#worldlead").innerHTML=`<span class="wl-num"><b>${c}</b> монет · <b>${b}</b> банкнот</span><span class="wl-num"><b>${n}</b> из 195 стран мира</span><span class="wl-bar"><i style="width:${(n/195*100).toFixed(1)}%"></i></span><span class="snote">Считаются все страны и территории, включая Россию, а также непризнанные и с особым или спорным статусом: Тайвань, Приднестровье, Гонконг, Каймановы острова. Евромонеты засчитаны по стране выпуска. 195 — это 193 члена ООН плюс Ватикан и Палестина. Нажмите на страну, чтобы увидеть, что из неё есть.</span>`;
 }
 function itemRow(it){
   return `<div class="irow"><span>${esc(it.name)}${it.year?", "+esc(it.year):""}</span><span class="q">${it.qty>1?"×"+it.qty:""}</span>${it.image?`<img src="${esc(it.image)}" alt="${esc(it.name)}" loading="lazy">`:""}</div>`;
@@ -9754,7 +10531,7 @@ function renderAlbums(){
   if(!curAlbum)curAlbum=albums[0]?.id;
   $("#albar").innerHTML=albums.map(a=>{
     const its=D.items.filter(i=>i.album===a.id&&have(i));
-    const c=pcs(its.filter(i=>i.kind!=="banknote")), n=pcs(its.filter(i=>i.kind==="banknote")), sh=Object.keys(a.sheets).length;
+    const grid=Object.values(a.sheets).some(l=>l.rows), c=grid?its.filter(i=>i.kind!=="banknote").length:pcs(its.filter(i=>i.kind!=="banknote")), n=pcs(its.filter(i=>i.kind==="banknote")), sh=Object.keys(a.sheets).length;
     const parts=[c?c+" мон.":"",n?n+" банкн.":"",sh+" л."].filter(Boolean).join(" · ");
     return `<button aria-pressed="${a.id===curAlbum}" data-a="${a.id}" title="${esc(a.name)}"><b>${esc(a.short||a.name)}</b><span>${parts}</span></button>`}).join("");
   $("#albar").querySelectorAll("button").forEach(b=>b.onclick=()=>{curAlbum=b.dataset.a;$("#aldetail").innerHTML="";renderAlbums()});
@@ -9780,23 +10557,29 @@ function sheetCard(k,lay,its){
     const place={}, extra=[], ok=x=>x.row&&x.slot&&x.slot<=lay.cols&&x.row<=lay.rows;
     its.filter(ok).forEach(x=>(place[x.row+":"+x.slot]=place[x.row+":"+x.slot]||[]).push(x));
     const free=r=>{for(let c=1;c<=lay.cols;c++)if(!place[r+":"+c])return c;return 0};
-    its.filter(x=>!ok(x)).forEach(x=>{
-      let r=x.row&&x.row<=lay.rows?x.row:0, c=r?free(r):0;
-      if(!r)for(let rr=1;rr<=lay.rows&&!c;rr++){c=free(rr);if(c)r=rr}
+    its.filter(x=>!ok(x)&&x.row).forEach(x=>{
+      const r=x.row<=lay.rows?x.row:0, c=r?free(r):0;
       if(r&&c)place[r+":"+c]=[x];else extra.push(x);
+    });
+    its.filter(x=>!x.row).forEach(x=>{
+      if(x.loose){extra.push(x);return}
+      for(let k=0;k<(x.qty||1);k++){
+        let r=0,c=0;for(let rr=1;rr<=lay.rows&&!c;rr++){c=free(rr);if(c)r=rr}
+        if(r&&c)place[r+":"+c]=[x];else{extra.push(x);break}
+      }
     });
     let cells="";
     for(let r=1;r<=lay.rows;r++)for(let c=1;c<=lay.cols;c++){
       const at=place[r+":"+c]||[];
-      cells+=`<div class="cell ${at.length?"f":""} ${at.length>1?"f2":""}" ${at.length?`data-ids="${at.map(x=>x.id).join(",")}" tabindex="0" title="${esc(at.map(x=>cname(x.country)+": "+x.name+(x.year?" "+x.year:"")).join("\n"))}"`:""}>${esc(at.map(x=>x.country||"").join(" "))}</div>`;
+      cells+=`<div class="cell ${at.length?"f":""} ${at.length>1?"f2":""}" ${at.length?`data-ids="${at.map(x=>x.id).join(",")}" tabindex="0" title="${esc(at.map(x=>cname(x.country)+": "+x.name+(x.year?" "+x.year:"")).join("\n"))}"`:""}>${esc(at.map(x=>x.country==="RU"?String(yearOf(x)||""):(x.country||"")).join(" "))}</div>`;
     }
     body=`<div class="grid" style="grid-template-columns:repeat(${lay.cols},minmax(0,1fr))">${cells}</div>`;
-    if(extra.length)body+=`<p class="loose">Также на листе: ${extra.map(x=>"<b>"+esc(cname(x.country)+" "+x.name)+"</b>").join(", ")}</p>`;
+    if(extra.length)body+=`<p class="loose">Также на листе: ${extra.map(x=>"<b>"+esc((x.country==="RU"?"":cname(x.country)+" ")+x.name)+"</b>").join(", ")}</p>`;
   }else{
     if(!its.length)return "";
     body=`<div class="ilist" style="padding:0">${its.map(itemRow).join("")}</div>`;
   }
-  const n=pcs(its);
+  const n=(lay.rows&&lay.cols)?its.reduce((s,x)=>s+(!x.row&&!x.loose?(x.qty||1):1),0):pcs(its);
   return `<div class="sheet"><div class="sheet-h"><b>Лист ${esc(k)}</b><span>${n?n+" шт.":""}</span></div>${body}</div>`;
 }
 function showCell(c){
