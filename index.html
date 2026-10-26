@@ -157,6 +157,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
 .sx-main small{display:block;font:12px var(--mono);color:var(--muted)}
 .sx-place{font:11px var(--mono);color:var(--muted);text-align:right;max-width:220px}
 @media (max-width:560px){.sx-item{grid-template-columns:auto minmax(0,1fr)}.sx-place{grid-column:2;text-align:left;max-width:none}.sx-back{padding-top:max(8px,env(safe-area-inset-top,0px))}}
+nav{scrollbar-width:none;-ms-overflow-style:none}
+nav::-webkit-scrollbar{display:none;height:0}
+@media (max-width:560px){nav{flex-wrap:wrap;overflow:visible;gap:0}nav button{padding:9px 10px;font-size:13px}}
+@media (max-width:560px){.search-btn kbd{display:none}}
 </style>
 </head>
 <body>
@@ -12721,7 +12725,7 @@ function sheetCard(k,lay,its){
     let cells="";
     for(let r=1;r<=lay.rows;r++)for(let c=1;c<=lay.cols;c++){
       const at=place[r+":"+c]||[];
-      cells+=`<div class="cell ${at.length?"f":""} ${at.length>1?"f2":""}" ${at.length?`data-pos="Строка ${r}, слот ${c}" role="button" aria-pressed="false" data-ids="${at.map(x=>x.id).join(",")}" tabindex="0" title="${esc(at.map(x=>cname(x.country)+": "+x.name+(x.year?" "+x.year:"")).join("\n"))}"`:""}>${esc(at.map(x=>x.country==="RU"?String(yearOf(x)||""):(x.country||"")).join(" "))}</div>`;
+      cells+=`<div class="cell ${at.length?"f":""} ${at.length>1?"f2":""}" ${at.length?`data-pos="Строка ${r}, слот ${c}" role="button" aria-pressed="false" data-ids="${at.map(x=>x.id).join(",")}" tabindex="0" title="${esc(at.map(x=>cname(x.country)+": "+x.name+(x.year?" "+x.year:"")).join("\n"))}"`:""}>${esc(at.map(x=>x.country==="RU"?String(yearOf(x)||"RU"):(x.country||"")).join(" "))}</div>`;
     }
     body=`<div class="grid" style="grid-template-columns:repeat(${lay.cols},minmax(0,1fr))">${cells}</div>`;
     if(extra.length)body+=`<p class="loose">Также на листе: ${extra.map(x=>"<b>"+esc((x.country==="RU"?"":cname(x.country)+" ")+x.name)+"</b>").join(", ")}</p>`;
@@ -12780,10 +12784,10 @@ function sxRun(){
   }).sort((a,b)=>cname(a.country).localeCompare(cname(b.country),"ru")||(yearOf(a)||9999)-(yearOf(b)||9999));
   const filtered=q||k||c||yf||yt<9999;
   $("#sxCount").textContent=filtered?(res.length?`Найдено: ${res.length}`:"Ничего не найдено. Попробуйте другое слово или уберите фильтры."):`Всего в коллекции: ${res.length} позиций. Начните вводить или выберите фильтр.`;
-  $("#sxList").innerHTML=res.slice(0,300).map(i=>{
+  $("#sxList").innerHTML=res.map(i=>{
     const pl=placeOf(i);
     return `<button class="sx-item" data-id="${i.id}"><span class="mark ${i.kind==="banknote"?"n":""}"></span><span class="sx-main"><b>${esc(i.name)}</b><small>${esc([i.year,i.issuer||cname(i.country)].filter(Boolean).join(" · "))}${i.qty>1?" · ×"+i.qty:""}</small></span><span class="sx-place">${pl?esc(pl):""}</span></button>`;
-  }).join("")+(res.length>300?`<p class="sx-count">Показаны первые 300 — уточните запрос.</p>`:"");
+  }).join("");
   $("#sxList").querySelectorAll(".sx-item").forEach(b=>b.onclick=()=>sxGo(b.dataset.id));
 }
 let SNAME={};
