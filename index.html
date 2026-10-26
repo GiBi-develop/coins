@@ -167,14 +167,15 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
   </header>
   <section class="stats" id="stats"></section>
   <nav role="tablist">
-    <button role="tab" data-v="russia" aria-selected="true">Современная Россия</button>
-    <button role="tab" data-v="world" aria-selected="false">Мировые</button>
+    <button role="tab" data-v="world" aria-selected="true">Мировые</button>
+    <button role="tab" data-v="russia" aria-selected="false">Современная Россия</button>
+    
     <button role="tab" data-v="ussr" aria-selected="false">СССР</button>
     <button role="tab" data-v="old" aria-selected="false">Старые</button>
     <button role="tab" data-v="albums" aria-selected="false">Альбомы</button>
   </nav>
 
-  <section class="view" id="v-russia"></section>
+  <section class="view" id="v-russia" hidden></section>
 
   <section class="view" id="v-world" hidden>
     <p class="lead" id="worldlead"></p>
@@ -12753,7 +12754,7 @@ function show(v){
   if(v==="world"&&D&&mapDirty)drawMap();
 }
 document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>show(b.dataset.v));
-const h=location.hash.slice(1);show(VIEWS.includes(h)?h:(VIEWS.includes(load("coins:tab"))?load("coins:tab"):"russia"));
+const h=location.hash.slice(1);show(VIEWS.includes(h)?h:"world");
 /* ---------- Search ---------- */
 const norm=s=>String(s??"").toLowerCase().replace(/ё/g,"е");
 function placeOf(i){
