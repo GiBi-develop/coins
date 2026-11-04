@@ -89,10 +89,10 @@ nav button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--bras
 .curl code{font:11px var(--mono);color:var(--muted);font-weight:400}
 .cur-src{padding:10px 14px 4px;margin:0;font-size:11px}
 .miss{display:grid;gap:12px;margin-top:6px}.miss[hidden]{display:none}
-.mh h2{font:700 20px var(--display);margin:0 0 4px}.mh .snote{margin:0;max-width:80ch}
-.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-.mp{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:8px;align-content:start}
-.mp h3{font:700 15px var(--display);margin:0;display:flex;justify-content:space-between;align-items:baseline}
+.mh h2{font:700 20px var(--display);margin:0 0 4px}.mh .snote{margin:0;max-width:none}
+.mgrid{columns:280px;column-gap:12px}
+.mp{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:8px;align-content:start;break-inside:avoid;margin:0 0 12px}
+.mp h3{font:700 15px var(--display);margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:8px}.mp h3 .snote{white-space:nowrap}
 .mchip{cursor:pointer;background:none;border:1px dashed var(--line)}.mchip:hover{border-color:var(--brass);color:var(--brass)}
 .full{color:var(--felt);font-weight:600}
 .albar{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px}
