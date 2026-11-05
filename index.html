@@ -184,7 +184,7 @@ nav::-webkit-scrollbar{display:none;height:0}
 
 .mchip small{font:10px var(--mono);margin-left:6px;color:var(--muted)}
 .mchip.sp{border-style:dotted}
-.mchip.sp-none{opacity:.6}
+.mchip.sp-old{border-color:var(--muted)}
 .mchip.sp-xof,.mchip.sp-xaf,.mchip.sp-xcd{border-color:var(--order)}
 .mchip.sp-nclt{border-color:var(--brass)}
 .sp-key{display:inline-block;width:10px;height:10px;border:1px dotted var(--muted);border-radius:2px;vertical-align:-1px;margin:0 2px}
@@ -26011,23 +26011,23 @@ nav::-webkit-scrollbar{display:none;height:0}
   },
   "special": {
    "PS": [
-    "none",
-    "своей валюты нет",
-    "Платят израильским шекелем и иорданским динаром. Своих денег у Палестины нет; можно взять только милы и фунты Британской Палестины 1927–1948."
+    "old",
+    "только старые",
+    "Сейчас платят шекелем и иорданским динаром, своих денег нет. Страну закрывают милы и фунты Британской Палестины 1927–1948 — на них написано «Palestine»."
    ],
    "LI": [
-    "none",
-    "своей валюты нет",
-    "Платят швейцарским франком. Свои деньги были в 1862–1930-х (кроны, франки) — серебро и золото, обычно дорогие."
+    "old",
+    "только старые",
+    "Сейчас платят швейцарским франком. Страну закрывают старые деньги Лихтенштейна — кроны и франки 1898–1930-х (обычно серебро) или его памятные монеты."
    ],
    "ME": [
-    "none",
-    "своей валюты нет",
-    "Платят евро, своих евромонет Черногория не чеканит. Можно взять перперы Королевства Черногория 1906–1914."
+    "old",
+    "только старые",
+    "Сейчас платят евро, своих евромонет нет. Страну закрывают монеты Королевства Черногория 1906–1914 (перперы, пары)."
    ],
    "FM": [
-    "none",
-    "своей валюты нет",
+    "never",
+    "не закрыть",
     "Платят долларом США; своих монет и банкнот у Микронезии не было никогда."
    ],
    "MH": [
@@ -26270,15 +26270,16 @@ function renderMissing(){
   const R=REF(), m=byCountry(), got=new Set(Object.keys(m).filter(Boolean)), parts=Object.entries(R.parts);
   if(!parts.length){$("#missing").hidden=true;return}
   const inList=new Set(parts.flatMap(([,cs])=>cs));
-  let miss=0, gotUN=0;
+  let miss=0, gotUN=0; const neverAll=[];
   const blocks=parts.map(([p,cs])=>{
-    const l=cs.filter(c=>!got.has(c)).sort((a,b)=>refName(a).localeCompare(refName(b),"ru"));
-    miss+=l.length; gotUN+=cs.length-l.length;
-    return `<div class="mp"><h3>${esc(p)} <span class="snote">${cs.length-l.length} из ${cs.length}</span></h3><div class="chips">${
+    const sp_=R.special||{}, never=cs.filter(c=>!got.has(c)&&(sp_[c]||[])[0]==="never"); neverAll.push(...never);
+    const l=cs.filter(c=>!got.has(c)&&!never.includes(c)).sort((a,b)=>refName(a).localeCompare(refName(b),"ru"));
+    miss+=l.length; gotUN+=cs.length-l.length-never.length;
+    return `<div class="mp"><h3>${esc(p)} <span class="snote">${cs.length-l.length-never.length} из ${cs.length-never.length}</span></h3><div class="chips">${
       l.length?l.map(c=>{const sp=(R.special||{})[c];return `<button class="chip mchip${sp?" sp sp-"+sp[0]:""}" data-c="${esc(c)}"${sp?` title="${esc(sp[2])}"`:""}>${esc(refName(c))}${sp?`<small>${esc(sp[1])}</small>`:""}</button>`}).join(""):'<span class="snote">все собраны</span>'}</div></div>`}).join("");
   const extra=[...got].filter(c=>!inList.has(c)&&!["EU","ECS","WAS"].includes(c)).map(cname);
   if(D.items.some(i=>have(i)&&i.issuer==="Приднестровье"))extra.push("Приднестровье");
-  $("#missing").innerHTML=`<div class="mh"><h2 id="missH">Ещё нет в коллекции</h2><p class="snote">Из списка 195 стран собрано ${gotUN}, не хватает ${miss}. ${extra.length?`Сверх списка есть ${extra.length}: ${esc(extra.sort((a,b)=>a.localeCompare(b,"ru")).join(", "))} — поэтому на счётчике ${sovCount()}.`:""} Нажмите на страну, чтобы посмотреть её валюты.</p><p class="snote">С пометкой — страны без своих денег: <i class="sp-key sp-none"></i> своей валюты нет, <i class="sp-key sp-nclt"></i> только памятные монеты, <i class="sp-key sp-xof"></i> общая валюта союза (франк КФА, восточнокарибский доллар). Как их закрыть — при нажатии на страну.</p></div><div class="mgrid">${blocks}</div>`;
+  $("#missing").innerHTML=`<div class="mh"><h2 id="missH">Ещё нет в коллекции</h2><p class="snote">Из списка 195 стран собрано ${gotUN}, не хватает ${miss}. ${extra.length?`Сверх списка есть ${extra.length}: ${esc(extra.sort((a,b)=>a.localeCompare(b,"ru")).join(", "))} — поэтому на счётчике ${sovCount()}.`:""} Нажмите на страну, чтобы посмотреть её валюты.</p><p class="snote">С пометкой — страны без своих денег сейчас: <i class="sp-key sp-old"></i> закрывают только старые деньги (любой эпохи — они засчитываются так же), <i class="sp-key sp-nclt"></i> только памятные монеты, <i class="sp-key sp-xof"></i> общая валюта союза (франк КФА, восточнокарибский доллар). Как их закрыть — при нажатии на страну.${neverAll.length?` Не показаны, потому что своих денег у них не было никогда: ${esc(neverAll.map(refName).join(", "))}.`:""}</p></div><div class="mgrid">${blocks}</div>`;
   $("#missing").querySelectorAll(".mchip").forEach(b=>b.onclick=()=>{selCountry=b.dataset.c;renderSide();$("#side").scrollIntoView({behavior:"smooth",block:"start"})});
 }
 function itemRow(it){
