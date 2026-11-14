@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "countries": {
   "RU": {
    "name": "Россия",
@@ -1590,6 +1590,9 @@
     },
     "10": {
      "slots": 3
+    },
+    "11": {
+     "slots": 1
     }
    }
   },
@@ -1689,8 +1692,32 @@
     },
     "15": {
      "slots": 1
+    },
+    "16": {
+     "slots": 2
     }
    }
+  },
+  {
+   "id": "coins-blue1",
+   "name": "Синий альбом монет № 1",
+   "short": "Монеты · синий № 1",
+   "kind": "coin",
+   "sheets": {
+    "1": {
+     "rows": 7,
+     "cols": 5
+    },
+    "2": {
+     "rows": 11,
+     "cols": 8
+    },
+    "3": {
+     "rows": 6,
+     "cols": 4
+    }
+   },
+   "note": "начат 13.11.2026; лист 2, ряд 7, слот 2 — ячейка испорчена, не используется"
   },
   {
    "id": "holder",
@@ -3118,7 +3145,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "slot": 3
+   "slot": 3,
+   "year": "1986"
   },
   {
    "id": "i0082",
@@ -3180,9 +3208,9 @@
    "country": "TR",
    "name": "25 курушей",
    "album": "foreign",
-   "sheet": "4",
-   "row": 2,
-   "slot": 1,
+   "sheet": "17",
+   "row": 3,
+   "slot": 4,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -3207,9 +3235,9 @@
    "country": "TR",
    "name": "100 000 лир",
    "album": "foreign",
-   "sheet": "4",
-   "row": 2,
-   "slot": 2,
+   "sheet": "17",
+   "row": 4,
+   "slot": 4,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -4527,7 +4555,8 @@
    "qty": 1,
    "status": "have",
    "image": "",
-   "slot": 6
+   "slot": 6,
+   "year": "2015"
   },
   {
    "id": "i0185",
@@ -5045,7 +5074,7 @@
    "id": "i0222",
    "kind": "coin",
    "country": "SE",
-   "name": "1 крона",
+   "name": "1 крона (Карл XVI Густав)",
    "year": "1981",
    "album": "foreign",
    "sheet": "9",
@@ -5817,12 +5846,13 @@
    "country": "CN",
    "name": "1 цзяо",
    "album": "foreign",
-   "sheet": "13",
-   "row": 1,
-   "slot": 4,
+   "sheet": "18",
+   "row": 10,
+   "slot": 6,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2013"
   },
   {
    "id": "i0278",
@@ -5857,10 +5887,10 @@
    "kind": "coin",
    "country": "US",
    "name": "5 центов «Бизон»",
-   "album": "foreign",
-   "sheet": "14",
-   "row": 1,
-   "slot": 2,
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 2,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -5883,14 +5913,15 @@
    "id": "i0282",
    "kind": "coin",
    "country": "US",
-   "name": "квотер",
+   "name": "квотер «Джордж Вашингтон» (геральдический орёл)",
    "album": "foreign",
-   "sheet": "14",
-   "row": 1,
-   "slot": 3,
+   "sheet": "15",
+   "row": 5,
+   "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "1987"
   },
   {
    "id": "i0283",
@@ -5951,14 +5982,15 @@
    "id": "i0287",
    "kind": "coin",
    "country": "US",
-   "name": "1 цент «Мемориал Линкольна»",
+   "name": "1 цент «Щит»",
    "album": "foreign",
-   "sheet": "14",
-   "row": 2,
-   "slot": 2,
+   "sheet": "18",
+   "row": 10,
+   "slot": 5,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2014"
   },
   {
    "id": "i0288",
@@ -5980,12 +6012,13 @@
    "country": "US",
    "name": "1 цент «Щит»",
    "album": "foreign",
-   "sheet": "14",
-   "row": 2,
-   "slot": 3,
+   "sheet": "18",
+   "row": 10,
+   "slot": 4,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2012"
   },
   {
    "id": "i0290",
@@ -6034,9 +6067,9 @@
    "country": "US",
    "name": "квотер «Аризона»",
    "album": "foreign",
-   "sheet": "14",
-   "row": 3,
-   "slot": 2,
+   "sheet": "15",
+   "row": 5,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6071,14 +6104,15 @@
    "id": "i0296",
    "kind": "coin",
    "country": "US",
-   "name": "квотер «Орегон»",
+   "name": "квотер «Орегон» (Кратерное озеро)",
    "album": "foreign",
-   "sheet": "14",
-   "row": 3,
-   "slot": 3,
+   "sheet": "15",
+   "row": 4,
+   "slot": 2,
    "qty": 1,
    "status": "have",
-   "image": ""
+   "image": "",
+   "year": "2005"
   },
   {
    "id": "i0297",
@@ -6099,9 +6133,9 @@
    "country": "US",
    "name": "квотер «Мэйфлауэр»",
    "album": "foreign",
-   "sheet": "14",
-   "row": 3,
-   "slot": 4,
+   "sheet": "15",
+   "row": 4,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6127,9 +6161,9 @@
    "name": "1 новый пенни",
    "year": "1979",
    "album": "foreign",
-   "sheet": "15",
-   "row": 1,
-   "slot": 1,
+   "sheet": "18",
+   "row": 10,
+   "slot": 8,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6169,9 +6203,9 @@
    "name": "1 фунт",
    "year": "1983",
    "album": "foreign",
-   "sheet": "15",
-   "row": 1,
-   "slot": 2,
+   "sheet": "17",
+   "row": 3,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6240,8 +6274,8 @@
    "year": "2004",
    "album": "foreign",
    "sheet": "15",
-   "row": 1,
-   "slot": 4,
+   "row": 5,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6282,8 +6316,8 @@
    "year": "1996",
    "album": "foreign",
    "sheet": "15",
-   "row": 2,
-   "slot": 2,
+   "row": 5,
+   "slot": 4,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6547,8 +6581,8 @@
    "year": "2002",
    "album": "foreign",
    "sheet": "17",
-   "row": 1,
-   "slot": 1,
+   "row": 5,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6575,7 +6609,7 @@
    "year": "2005",
    "album": "foreign",
    "sheet": "17",
-   "row": 1,
+   "row": 5,
    "slot": 2,
    "qty": 1,
    "status": "have",
@@ -6603,8 +6637,8 @@
    "year": "2000",
    "album": "foreign",
    "sheet": "17",
-   "row": 1,
-   "slot": 3,
+   "row": 5,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6631,8 +6665,8 @@
    "year": "2002",
    "album": "foreign",
    "sheet": "17",
-   "row": 1,
-   "slot": 4,
+   "row": 4,
+   "slot": 1,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6659,8 +6693,8 @@
    "year": "2006",
    "album": "foreign",
    "sheet": "17",
-   "row": 2,
-   "slot": 1,
+   "row": 4,
+   "slot": 2,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -6755,9 +6789,9 @@
    "name": "50 копеек",
    "issuer": "Приднестровье",
    "album": "foreign",
-   "sheet": "11",
-   "row": 4,
-   "slot": 3,
+   "sheet": "18",
+   "row": 10,
+   "slot": 7,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -16091,19 +16125,6 @@
    "image": ""
   },
   {
-   "id": "i1042",
-   "kind": "banknote",
-   "country": "DJ",
-   "name": "40 франков",
-   "year": "2017",
-   "album": "notes-blue2",
-   "sheet": "57",
-   "slot": 2,
-   "qty": 1,
-   "status": "have",
-   "image": ""
-  },
-  {
    "id": "i1043",
    "kind": "banknote",
    "country": "RO",
@@ -16556,7 +16577,7 @@
    "id": "i1076",
    "kind": "coin",
    "country": "FR",
-   "name": "10 сантимов (точки вокруг даты)",
+   "name": "10 сантимов, никелевая бронза (точки вокруг даты)",
    "year": "1939",
    "album": "foreign",
    "sheet": "6",
@@ -16946,7 +16967,7 @@
    "country": "RS",
    "name": "10 пара",
    "issuer": "Югославия",
-   "year": "1965–1981",
+   "year": "1965",
    "album": "foreign",
    "sheet": "5",
    "row": 8,
@@ -17490,7 +17511,7 @@
    "id": "i1143",
    "kind": "coin",
    "country": "US",
-   "name": "1 цент «Щит»",
+   "name": "1 цент «Мемориал Линкольна»",
    "year": "2002",
    "album": "foreign",
    "sheet": "18",
@@ -17504,7 +17525,7 @@
    "id": "i1144",
    "kind": "coin",
    "country": "US",
-   "name": "1 цент «Щит»",
+   "name": "1 цент «Мемориал Линкольна»",
    "year": "2005",
    "album": "foreign",
    "sheet": "18",
@@ -18208,7 +18229,7 @@
    "id": "i1195",
    "kind": "coin",
    "country": "BE",
-   "name": "5 франков «Король Бодуэн»",
+   "name": "5 франков «Король Бодуэн», BELGIË",
    "year": "1986",
    "album": "foreign",
    "sheet": "3",
@@ -18255,7 +18276,7 @@
    "album": "foreign",
    "sheet": "3",
    "row": 6,
-   "slot": 8,
+   "slot": 6,
    "qty": 1,
    "status": "have",
    "image": ""
@@ -19361,7 +19382,7 @@
    "album": "notes-bred2",
    "sheet": "7",
    "slot": 2,
-   "qty": 1,
+   "qty": 2,
    "status": "have",
    "image": ""
   },
@@ -19515,6 +19536,3679 @@
   },
   {
    "id": "i1293",
+   "kind": "banknote",
+   "country": "AT",
+   "name": "1000 крон, вертикальная надпечатка «Deutschösterreich», выпуск 1, P-59",
+   "issuer": "Австро-Венгрия → Немецкая Австрия: банкнота 1902 года с надпечаткой 1919 года",
+   "year": "1902 (1919)",
+   "album": "notes-blue4",
+   "sheet": "11",
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1294",
+   "kind": "banknote",
+   "country": "DE",
+   "name": "50 пфеннигов, Цойленрода, нотгельд «Веккерсдорф» (Grabowski 1470.2.1.2)",
+   "issuer": "Веймарская республика",
+   "year": "1921",
+   "album": "notes-bred2",
+   "sheet": "8",
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1295",
+   "kind": "banknote",
+   "country": "CZ",
+   "name": "100 крон, P-6",
+   "issuer": "Протекторат Богемия и Моравия — оккупированная Германией часть Чехословакии, 1939–1945",
+   "year": "1940",
+   "album": "notes-black",
+   "sheet": "16",
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1295",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "100 тенге «Хамит Ергали — 100 лет», нейзильбер",
+   "year": "2016",
+   "album": "foreign",
+   "sheet": "13",
+   "row": 2,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1296",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 лира",
+   "year": "2010",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1297",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 лира",
+   "year": "2018",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1298",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 лира",
+   "year": "2023",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1299",
+   "kind": "coin",
+   "country": "BE",
+   "name": "5 франков «Король Бодуэн», BELGIË",
+   "year": "1986",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1300",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов, алюминий",
+   "year": "1994",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1301",
+   "kind": "coin",
+   "country": "BE",
+   "name": "5 франков «Король Бодуэн», BELGIQUE",
+   "year": "1986",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 5,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1302",
+   "kind": "coin",
+   "country": "KE",
+   "name": "5 центов (Кениата)",
+   "year": "1971",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 5,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1303",
+   "kind": "coin",
+   "country": "SE",
+   "name": "5 эре (железо, Густав V)",
+   "year": "1949",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 5,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1304",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов, алюминий",
+   "year": "1994",
+   "album": "foreign",
+   "sheet": "13",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1305",
+   "kind": "coin",
+   "country": "ID",
+   "name": "500 рупий «Жасмин», алюминий",
+   "year": "2008",
+   "album": "foreign",
+   "sheet": "13",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1306",
+   "kind": "coin",
+   "country": "SE",
+   "name": "1 крона (Карл XVI Густав)",
+   "year": "1981",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1307",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1000 лир",
+   "year": "1993",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 3,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1308",
+   "kind": "coin",
+   "country": "SE",
+   "name": "1 крона (Карл XVI Густав)",
+   "year": "1990",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 3,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1309",
+   "kind": "coin",
+   "country": "FR",
+   "name": "1 франк «Марианна», алюминий, без знака двора",
+   "year": "1945",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 6,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1310",
+   "kind": "coin",
+   "country": "NL",
+   "name": "1 цент (Юлиана), знак «рыбка»",
+   "year": "1969",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 6,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1311",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 марка «Лев»",
+   "year": "1994",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1312",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 марка (герб)",
+   "year": "1982",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1313",
+   "kind": "coin",
+   "country": "FR",
+   "name": "1 франк «Сеятельница»",
+   "year": "1961",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1314",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 лир",
+   "year": "1986",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1315",
+   "kind": "coin",
+   "country": "GB",
+   "name": "2 новых пенса (NEW PENCE)",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 1,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1316",
+   "kind": "coin",
+   "country": "SE",
+   "name": "1 крона (Карл XVI Густав)",
+   "year": "1981",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1317",
+   "kind": "coin",
+   "country": "SE",
+   "name": "1 крона",
+   "year": "1973",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1318",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет",
+   "year": "1975",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1319",
+   "kind": "coin",
+   "country": "FI",
+   "name": "20 пенни",
+   "year": "1973",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 1,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1320",
+   "kind": "coin",
+   "country": "IT",
+   "name": "200 лир",
+   "year": "1979",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1321",
+   "kind": "coin",
+   "country": "PL",
+   "name": "2 злотых (ПНР)",
+   "year": "1981",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1322",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет",
+   "year": "1957",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1323",
+   "kind": "coin",
+   "country": "SE",
+   "name": "5 эре (бронза, Густав V)",
+   "year": "1941",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 3,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1324",
+   "kind": "coin",
+   "country": "GB",
+   "name": "2 новых пенса (NEW PENCE)",
+   "year": "1978",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 3,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1325",
+   "kind": "coin",
+   "country": "UG",
+   "name": "1 шиллинг (медно-никелевый)",
+   "year": "1976",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 4,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1326",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "2 кроны",
+   "issuer": "Чехословакия",
+   "year": "1975",
+   "album": "foreign",
+   "sheet": "15",
+   "row": 4,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1327",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 лир",
+   "year": "1985",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1328",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 марка «Лев»",
+   "year": "1995",
+   "album": "foreign",
+   "sheet": "17",
+   "row": 5,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1329",
+   "kind": "coin",
+   "country": "BH",
+   "name": "25 филсов",
+   "year": "2015",
+   "album": "foreign",
+   "sheet": "2",
+   "row": 5,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1330",
+   "kind": "coin",
+   "country": "CG",
+   "name": "100 франков BEAC, никель",
+   "issuer": "Центральная Африка (BEAC)",
+   "year": "1971",
+   "album": "holder",
+   "sheet": "1",
+   "row": 4,
+   "slot": 9,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1331",
+   "kind": "coin",
+   "country": "EE",
+   "name": "10 сенти",
+   "year": "2002",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1332",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк «Король Бодуэн», BELGIË",
+   "year": "1991",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1333",
+   "kind": "coin",
+   "country": "ES",
+   "name": "1 евроцент",
+   "year": "2012",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1334",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 куруш",
+   "year": "2015",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1335",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк «Король Бодуэн»",
+   "year": "1990",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1336",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг (шестерёнка и колосья), алюминий",
+   "issuer": "Советская зона оккупации",
+   "year": "1948",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1337",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "1996",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1338",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "1 тенге",
+   "year": "2000",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1339",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1985",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1340",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "1991",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1341",
+   "kind": "coin",
+   "country": "CH",
+   "name": "1 раппен, B",
+   "year": "1951",
+   "album": "foreign",
+   "sheet": "18",
+   "row": 11,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1342",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 юань (хризантема)",
+   "year": "2012",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 2,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1343",
+   "kind": "coin",
+   "country": "GE",
+   "name": "10 тетри",
+   "year": "1993",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 2,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1344",
+   "kind": "coin",
+   "country": "KR",
+   "name": "10 вон (пагода Тапотхап)",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 3,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1345",
+   "kind": "coin",
+   "country": "KR",
+   "name": "10 вон (пагода Тапотхап)",
+   "year": "1987",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 3,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1346",
+   "kind": "coin",
+   "country": "RS",
+   "name": "1 динар",
+   "issuer": "Югославия",
+   "year": "1965",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 3,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1347",
+   "kind": "coin",
+   "country": "TR",
+   "name": "100 000 лир",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1348",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "10 геллеров",
+   "issuer": "Чехословакия",
+   "year": "1954",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 3,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1349",
+   "kind": "coin",
+   "country": "KR",
+   "name": "100 вон «Адмирал Ли Сунсин», медно-никелевая",
+   "year": "1987",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 3,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1350",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет «España 82» (мяч), в звёздах 81",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 4,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1351",
+   "kind": "coin",
+   "country": "KR",
+   "name": "100 вон «Адмирал Ли Сунсин», медно-никелевая",
+   "year": "1986",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1352",
+   "kind": "coin",
+   "country": "AT",
+   "name": "1 шиллинг (эдельвейс)",
+   "year": "1968",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 4,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1353",
+   "kind": "coin",
+   "country": "LT",
+   "name": "2 цента",
+   "year": "1991",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 4,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1354",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 марка «Лев»",
+   "year": "1994",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1355",
+   "kind": "coin",
+   "country": "FI",
+   "name": "20 пенни",
+   "year": "1984",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 4,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1356",
+   "kind": "coin",
+   "country": "HU",
+   "name": "2 форинта «Magyar Népköztársaság»",
+   "year": "1989",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 4,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1357",
+   "kind": "coin",
+   "country": "AT",
+   "name": "1 шиллинг (эдельвейс)",
+   "year": "1973",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 5,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1358",
+   "kind": "coin",
+   "country": "UA",
+   "name": "50 копеек",
+   "year": "1992",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1359",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1360",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "2 кроны",
+   "issuer": "Чехословакия",
+   "year": "1975",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1361",
+   "kind": "coin",
+   "country": "FR",
+   "name": "1 франк «État français» (Виши), алюминий",
+   "issuer": "Французское государство (режим Виши)",
+   "year": "1943",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 5,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1362",
+   "kind": "coin",
+   "country": "IL",
+   "name": "10 агорот",
+   "year": "1985–2017",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1363",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет",
+   "year": "1975",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1364",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "10 геллеров (герб ЧССР)",
+   "issuer": "Чехословакия",
+   "year": "1966",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 5,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1365",
+   "kind": "coin",
+   "country": "IL",
+   "name": "10 агорот",
+   "year": "1985–2017",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1366",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов",
+   "year": "2004",
+   "qty": 3,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1367",
+   "kind": "coin",
+   "country": "KR",
+   "name": "100 вон «Адмирал Ли Сунсин», медно-никелевая",
+   "year": "1992",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1368",
+   "kind": "coin",
+   "country": "NL",
+   "name": "1 цент (Беатрикс)",
+   "year": "1987",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 5,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1369",
+   "kind": "coin",
+   "country": "NL",
+   "name": "5 центов",
+   "year": "1980",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1370",
+   "kind": "token",
+   "country": "RU",
+   "name": "Сувенирный жетон «300 лет Санкт-Петербургу. Адмиралтейство», латунь, СПМД",
+   "year": "2003",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1371",
+   "kind": "coin",
+   "country": "DK",
+   "name": "25 эре (с отверстием)",
+   "year": "1972",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 5,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1372",
+   "kind": "coin",
+   "country": "TR",
+   "name": "25 лир",
+   "year": "1986",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1373",
+   "kind": "coin",
+   "country": "BE",
+   "name": "5 франков «Король Бодуэн», BELGIQUE",
+   "year": "1986",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1374",
+   "kind": "coin",
+   "country": "CY",
+   "name": "50 центов «Похищение Европы» (семиугольная)",
+   "year": "1996",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 6,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1375",
+   "kind": "coin",
+   "country": "GB",
+   "name": "10 пенсов, старый крупный тип (28 мм)",
+   "year": "1992",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 6,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1376",
+   "kind": "coin",
+   "country": "RO",
+   "name": "1 лей (РНР)",
+   "year": "1963",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 6,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1377",
+   "kind": "coin",
+   "country": "FR",
+   "name": "25 сантимов «Liberté Égalité Fraternité» (с отверстием)",
+   "year": "1933",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 6,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1378",
+   "kind": "coin",
+   "country": "GE",
+   "name": "10 тетри",
+   "year": "1993",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1379",
+   "kind": "coin",
+   "country": "DE",
+   "name": "10 пфеннигов",
+   "issuer": "Германская империя",
+   "year": "1875",
+   "album": "holder",
+   "sheet": "1",
+   "row": 4,
+   "slot": 10,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1380",
+   "kind": "coin",
+   "country": "FR",
+   "name": "10 сантимов (с отверстием)",
+   "year": "1919",
+   "album": "holder",
+   "sheet": "1",
+   "row": 4,
+   "slot": 11,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1381",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк (Церера)",
+   "year": "1975",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 6,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1382",
+   "kind": "coin",
+   "country": "DE",
+   "name": "20 пфеннигов",
+   "issuer": "ГДР",
+   "year": "1969",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 7,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1383",
+   "kind": "coin",
+   "country": "ES",
+   "name": "1 песета (Франко)",
+   "year": "1953",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 7,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1384",
+   "kind": "coin",
+   "country": "KG",
+   "name": "3 сома",
+   "year": "2008",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 7,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1385",
+   "kind": "coin",
+   "country": "PT",
+   "name": "5 эскудо",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 7,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1386",
+   "kind": "coin",
+   "country": "FR",
+   "name": "10 сантимов, медно-никелевая (точки вокруг даты)",
+   "year": "1939",
+   "album": "coins-blue1",
+   "sheet": "1",
+   "row": 7,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1387",
+   "kind": "coin",
+   "country": "RO",
+   "name": "10 бань",
+   "year": "2015",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1388",
+   "kind": "coin",
+   "country": "HR",
+   "name": "50 лип (лён)",
+   "year": "2005",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 1,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1389",
+   "kind": "coin",
+   "country": "DE",
+   "name": "10 пфеннигов",
+   "issuer": "ГДР",
+   "year": "1984",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1390",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни (старый тип)",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1391",
+   "kind": "coin",
+   "country": "ES",
+   "name": "1 песета (Франко, новый портрет)",
+   "year": "1966",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 1,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1392",
+   "kind": "coin",
+   "country": "RS",
+   "name": "10 пара",
+   "issuer": "Югославия",
+   "year": "1965",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1393",
+   "kind": "coin",
+   "country": "TR",
+   "name": "100 лир",
+   "year": "1989",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1394",
+   "kind": "coin",
+   "country": "ES",
+   "name": "1 песета (Франко)",
+   "year": "1953",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1395",
+   "kind": "coin",
+   "country": "FR",
+   "name": "10 сантимов, медно-никелевая (точки вокруг даты)",
+   "year": "1939",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1396",
+   "kind": "coin",
+   "country": "LK",
+   "name": "5 центов",
+   "year": "1978",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1397",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 пенни (ONE PENNY)",
+   "year": "1983",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1398",
+   "kind": "coin",
+   "country": "HU",
+   "name": "10 филлеров «Magyar Népköztársaság»",
+   "year": "1985",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1399",
+   "kind": "coin",
+   "country": "BG",
+   "name": "5 стотинок",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1400",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1401",
+   "kind": "coin",
+   "country": "HU",
+   "name": "20 филлеров",
+   "year": "1976",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1402",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1403",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 пенни (медь)",
+   "year": "1967",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1404",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 курушей",
+   "year": "2014",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1405",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "year": "2014",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1406",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1407",
+   "kind": "coin",
+   "country": "DK",
+   "name": "5 эре",
+   "year": "1976",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1408",
+   "kind": "coin",
+   "country": "SE",
+   "name": "5 эре",
+   "year": "1972",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1409",
+   "kind": "coin",
+   "country": "PL",
+   "name": "5 грошей",
+   "year": "2009",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1410",
+   "kind": "coin",
+   "country": "PL",
+   "name": "2 гроша",
+   "year": "2012",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1411",
+   "kind": "coin",
+   "country": "HU",
+   "name": "2 форинта",
+   "year": "1993",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1412",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 лира — середина биметаллической монеты без кольца",
+   "year": "2009–",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1413",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1414",
+   "kind": "coin",
+   "country": "PL",
+   "name": "5 грошей",
+   "year": "1999",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1415",
+   "kind": "coin",
+   "country": "LV",
+   "name": "1 евроцент",
+   "year": "2014",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1416",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ГДР",
+   "year": "1981",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1417",
+   "kind": "coin",
+   "country": "DE",
+   "name": "2 пфеннига (сталь с медным покрытием)",
+   "issuer": "ФРГ",
+   "year": "1977",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 1,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1418",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "2000",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1419",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни (новый тип)",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1420",
+   "kind": "coin",
+   "country": "BY",
+   "name": "2 копейки",
+   "year": "2009",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1421",
+   "kind": "coin",
+   "country": "HR",
+   "name": "20 лип (олива)",
+   "year": "2009",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1422",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "1 тенге",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1423",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "1991",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1424",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "1992",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1425",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1426",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2005",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1427",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1428",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2009",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1429",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2011",
+   "qty": 4,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1430",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2012",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1431",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2013",
+   "qty": 4,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1432",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2014",
+   "qty": 3,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1433",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2015",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1434",
+   "kind": "coin",
+   "country": "BG",
+   "name": "5 стотинок",
+   "year": "2000",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1435",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов",
+   "year": "2004",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1436",
+   "kind": "coin",
+   "country": "PL",
+   "name": "2 гроша",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1437",
+   "kind": "coin",
+   "country": "CA",
+   "name": "1 цент",
+   "year": "1973",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1438",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк «Король Бодуэн»",
+   "year": "1989",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1439",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 злотый (ПНР)",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1440",
+   "kind": "coin",
+   "country": "DK",
+   "name": "50 эре",
+   "year": "2003",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 2,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1441",
+   "kind": "coin",
+   "country": "EE",
+   "name": "10 сенти",
+   "year": "1991",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1442",
+   "kind": "coin",
+   "country": "NL",
+   "name": "25 центов (Юлиана)",
+   "year": "1972",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 2,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1443",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет «Ла-Риоха» (автономные области), M",
+   "year": "1996",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1444",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна», D",
+   "year": "2005",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1445",
+   "kind": "coin",
+   "country": "EE",
+   "name": "10 сенти",
+   "year": "1991",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1446",
+   "kind": "coin",
+   "country": "IE",
+   "name": "1 пенни (птица из Келлской книги)",
+   "year": "1971",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 2,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1447",
+   "kind": "coin",
+   "country": "CA",
+   "name": "1 цент",
+   "year": "1977",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1448",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 пенни",
+   "year": "2009",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 2,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1449",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1450",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "year": "2002",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1451",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1452",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2005",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1453",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2017",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1454",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "year": "2010",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1455",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "10 тиын",
+   "year": "1993",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1456",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош (сталь с латунным покрытием)",
+   "year": "2015",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1457",
+   "kind": "coin",
+   "country": "FI",
+   "name": "50 пенни «Медведь»",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1458",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1991",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 3,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1459",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1966",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1460",
+   "kind": "coin",
+   "country": "CN",
+   "name": "5 цзяо (лотос)",
+   "year": "2014",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 2,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1461",
+   "kind": "coin",
+   "country": "NL",
+   "name": "5 центов",
+   "year": "1977",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 3,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1462",
+   "kind": "coin",
+   "country": "FR",
+   "name": "10 сантимов «Марианна»",
+   "year": "1987",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1463",
+   "kind": "coin",
+   "country": "SE",
+   "name": "2 эре (железо)",
+   "year": "1949",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1464",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна»",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1465",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна»",
+   "year": "1971",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1466",
+   "kind": "coin",
+   "country": "HU",
+   "name": "20 филлеров",
+   "year": "1980",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1467",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1468",
+   "kind": "coin",
+   "country": "PL",
+   "name": "5 грошей",
+   "year": "1990",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1469",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1470",
+   "kind": "coin",
+   "country": "NL",
+   "name": "25 центов (Юлиана)",
+   "year": "1975",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1471",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна»",
+   "year": "1965",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1472",
+   "kind": "coin",
+   "country": "IE",
+   "name": "1 пенни (сталь с медным покрытием)",
+   "year": "1995",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1473",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна»",
+   "year": "2001",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1474",
+   "kind": "coin",
+   "country": "MY",
+   "name": "10 сенов (чонгкак)",
+   "year": "2006",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1475",
+   "kind": "coin",
+   "country": "HR",
+   "name": "10 лип (табак)",
+   "year": "2009",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 4,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1476",
+   "kind": "coin",
+   "country": "HU",
+   "name": "10 филлеров «Magyar Népköztársaság»",
+   "year": "1985",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1477",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1478",
+   "kind": "coin",
+   "country": "SE",
+   "name": "10 эре (Густав VI Адольф)",
+   "year": "1968",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1479",
+   "kind": "coin",
+   "country": "DE",
+   "name": "5 пфеннигов",
+   "issuer": "ГДР",
+   "year": "1968",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1480",
+   "kind": "coin",
+   "country": "MD",
+   "name": "5 копеек",
+   "issuer": "Приднестровье",
+   "year": "2005",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1481",
+   "kind": "coin",
+   "country": "FI",
+   "name": "1 пенни (алюминий)",
+   "year": "1977",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1482",
+   "kind": "coin",
+   "country": "HU",
+   "name": "10 филлеров «Magyar Népköztársaság»",
+   "year": "1969",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1483",
+   "kind": "coin",
+   "country": "SE",
+   "name": "50 эре",
+   "year": "2006",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1484",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "2 тенге",
+   "year": "2005",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1485",
+   "kind": "coin",
+   "country": "CH",
+   "name": "1 раппен, B",
+   "year": "1951",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1486",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош (сталь с латунным покрытием)",
+   "year": "2015",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1487",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош (сталь с латунным покрытием)",
+   "year": "2016",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1488",
+   "kind": "coin",
+   "country": "BG",
+   "name": "2 стотинки (НРБ)",
+   "year": "1974",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 5,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1489",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 новый пенни",
+   "year": "1973",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1490",
+   "kind": "coin",
+   "country": "PL",
+   "name": "2 злотых (ПНР)",
+   "year": "1989",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1491",
+   "kind": "coin",
+   "country": "DE",
+   "name": "2 пфеннига (бронза)",
+   "issuer": "ФРГ",
+   "year": "1962",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1492",
+   "kind": "coin",
+   "country": "DE",
+   "name": "10 пфеннигов",
+   "issuer": "ФРГ",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 3,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1493",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "1 крона",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1494",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 новый пенни",
+   "year": "1979",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1495",
+   "kind": "coin",
+   "country": "MM",
+   "name": "5 пья",
+   "issuer": "Бирма",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1496",
+   "kind": "coin",
+   "country": "PL",
+   "name": "2 гроша",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1497",
+   "kind": "coin",
+   "country": "DE",
+   "name": "5 пфеннигов",
+   "issuer": "ФРГ",
+   "year": "1950",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1498",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "20 геллеров",
+   "issuer": "Чехословакия",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1499",
+   "kind": "coin",
+   "country": "TR",
+   "name": "25 курушей",
+   "year": "2014",
+   "qty": 2,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1500",
+   "kind": "coin",
+   "country": "FI",
+   "name": "50 пенни «Медведь»",
+   "year": "1990",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1501",
+   "kind": "coin",
+   "country": "TR",
+   "name": "5 курушей",
+   "year": "2016",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1502",
+   "kind": "coin",
+   "country": "NL",
+   "name": "25 центов (Беатрикс)",
+   "year": "1989",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1503",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 пенни",
+   "year": "1999",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 3,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1504",
+   "kind": "coin",
+   "country": "SE",
+   "name": "10 эре (Густав VI Адольф)",
+   "year": "1966",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1505",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк (Церера), BELGIË",
+   "year": "1952",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1506",
+   "kind": "coin",
+   "country": "RO",
+   "name": "10 бань",
+   "year": "2006",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1507",
+   "kind": "coin",
+   "country": "TR",
+   "name": "100 000 лир",
+   "year": "2003",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1508",
+   "kind": "coin",
+   "country": "CA",
+   "name": "1 цент",
+   "year": "1985",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 6,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1509",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк «Альберт II»",
+   "year": "1994",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1510",
+   "kind": "coin",
+   "country": "SE",
+   "name": "1 эре (железо, три короны)",
+   "year": "1947",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1511",
+   "kind": "coin",
+   "country": "DE",
+   "name": "2 пфеннига (сталь с медным покрытием)",
+   "issuer": "ФРГ",
+   "year": "1995",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1512",
+   "kind": "coin",
+   "country": "BG",
+   "name": "10 стотинок (НРБ)",
+   "year": "1974",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1513",
+   "kind": "coin",
+   "country": "BG",
+   "name": "20 стотинок (НРБ)",
+   "year": "1974",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 3,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1514",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 курушей",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1515",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Щит»",
+   "year": "2016",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1516",
+   "kind": "coin",
+   "country": "HU",
+   "name": "20 филлеров",
+   "year": "1968",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1517",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 новый пенни",
+   "year": "1971",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1518",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 курушей",
+   "year": "2014",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1519",
+   "kind": "coin",
+   "country": "BE",
+   "name": "1 франк «Альберт II»",
+   "year": "1998",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1520",
+   "kind": "coin",
+   "country": "TR",
+   "name": "1 новый куруш (Yeni Kuruş)",
+   "year": "2005",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1521",
+   "kind": "coin",
+   "country": "FR",
+   "name": "1 евроцент",
+   "year": "2009",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1522",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна»",
+   "year": "2007",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1523",
+   "kind": "coin",
+   "country": "LV",
+   "name": "1 сантим",
+   "year": "1992",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1524",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 евроцент",
+   "year": "2002",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1525",
+   "kind": "coin",
+   "country": "CN",
+   "name": "1 цзяо",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1526",
+   "kind": "coin",
+   "country": "TR",
+   "name": "5 курушей",
+   "year": "2015",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1527",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1528",
+   "kind": "coin",
+   "country": "TR",
+   "name": "5 новых курушей (Yeni Kuruş)",
+   "year": "2005–2008",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 7,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1529",
+   "kind": "coin",
+   "country": "CA",
+   "name": "1 цент",
+   "year": "1979",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1530",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни",
+   "year": "1997",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1531",
+   "kind": "coin",
+   "country": "DK",
+   "name": "5 эре",
+   "year": "1977",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1532",
+   "kind": "coin",
+   "country": "NL",
+   "name": "10 центов (Юлиана)",
+   "year": "1960",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 8,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1533",
+   "kind": "coin",
+   "country": "SE",
+   "name": "5 эре",
+   "year": "1972",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1534",
+   "kind": "coin",
+   "country": "BG",
+   "name": "2 стотинки (НРБ)",
+   "year": "1974",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1535",
+   "kind": "coin",
+   "country": "KG",
+   "name": "1 сом",
+   "year": "2008",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1536",
+   "kind": "coin",
+   "country": "TR",
+   "name": "25 курушей",
+   "year": "2014",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1537",
+   "kind": "coin",
+   "country": "BG",
+   "name": "2 стотинки",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1538",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1539",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1540",
+   "kind": "coin",
+   "country": "SE",
+   "name": "10 эре (Карл XVI Густав)",
+   "year": "1980",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1541",
+   "kind": "coin",
+   "country": "LT",
+   "name": "1 цент",
+   "year": "1991",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1542",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1950",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1543",
+   "kind": "coin",
+   "country": "NL",
+   "name": "1 цент (Юлиана)",
+   "year": "1964",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1544",
+   "kind": "coin",
+   "country": "NL",
+   "name": "1 цент (Юлиана)",
+   "year": "1965",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1545",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1546",
+   "kind": "coin",
+   "country": "ES",
+   "name": "1 песета (Франко, новый портрет)",
+   "year": "1966",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1547",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "5 тенге",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1548",
+   "kind": "coin",
+   "country": "PL",
+   "name": "10 грошей",
+   "year": "1992",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1549",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка (НРБ)",
+   "year": "1974",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1550",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка (НРБ, выпуск 1962)",
+   "year": "1962",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 9,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1551",
+   "kind": "coin",
+   "country": "EE",
+   "name": "10 сенти",
+   "year": "1998",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1552",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош (сталь с латунным покрытием)",
+   "year": "2014",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1553",
+   "kind": "coin",
+   "country": "HR",
+   "name": "5 лип",
+   "year": "2015",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1554",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 новый пенни",
+   "year": "1979",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1555",
+   "kind": "coin",
+   "country": "UA",
+   "name": "10 копеек",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1556",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2017",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1557",
+   "kind": "coin",
+   "country": "TR",
+   "name": "25 курушей",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1558",
+   "kind": "coin",
+   "country": "PL",
+   "name": "5 грошей",
+   "year": "2001",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1559",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1560",
+   "kind": "coin",
+   "country": "SG",
+   "name": "1 цент",
+   "year": "1990",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1561",
+   "kind": "coin",
+   "country": "FI",
+   "name": "10 пенни (новый тип)",
+   "year": "1990",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1562",
+   "kind": "coin",
+   "country": "US",
+   "name": "1 цент «Мемориал Линкольна», D",
+   "year": "2001",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1563",
+   "kind": "coin",
+   "country": "TR",
+   "name": "5 курушей",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1564",
+   "kind": "coin",
+   "country": "AM",
+   "name": "10 драмов",
+   "year": "2004",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1565",
+   "kind": "coin",
+   "country": "TR",
+   "name": "10 курушей",
+   "year": "2011",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1566",
+   "kind": "coin",
+   "country": "BG",
+   "name": "1 стотинка",
+   "year": "2000",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1567",
+   "kind": "coin",
+   "country": "PL",
+   "name": "5 грошей",
+   "year": "2016",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1568",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош (сталь с латунным покрытием)",
+   "year": "2016",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1569",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1981",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1570",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "10 геллеров",
+   "issuer": "Чехословакия",
+   "year": "1976",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1571",
+   "kind": "coin",
+   "country": "DE",
+   "name": "1 пфенниг",
+   "issuer": "ФРГ",
+   "year": "1982",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1572",
+   "kind": "coin",
+   "country": "ES",
+   "name": "5 песет «Иллес-Балеарс» (автономные области), M",
+   "year": "1997",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 10,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1573",
+   "kind": "coin",
+   "country": "LV",
+   "name": "2 евроцента",
+   "year": "2014",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 2,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1574",
+   "kind": "coin",
+   "country": "SG",
+   "name": "10 центов",
+   "year": "1990",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1575",
+   "kind": "coin",
+   "country": "FR",
+   "name": "10 сантимов",
+   "year": "1963",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1576",
+   "kind": "coin",
+   "country": "IT",
+   "name": "1 евроцент «Кастель-дель-Монте», R",
+   "year": "2002",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 3,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1577",
+   "kind": "coin",
+   "country": "TR",
+   "name": "25 курушей",
+   "year": "2019",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1578",
+   "kind": "coin",
+   "country": "CZ",
+   "name": "10 геллеров",
+   "issuer": "Чехословакия",
+   "year": "1983",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1579",
+   "kind": "coin",
+   "country": "NL",
+   "name": "5 центов (Беатрикс)",
+   "year": "1989",
+   "album": "coins-blue1",
+   "sheet": "3",
+   "row": 4,
+   "slot": 1,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1580",
+   "kind": "coin",
+   "country": "CA",
+   "name": "1 цент",
+   "year": "2001",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 4,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1581",
+   "kind": "coin",
+   "country": "FI",
+   "name": "5 пенни",
+   "year": "1968",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 5,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1582",
+   "kind": "coin",
+   "country": "BE",
+   "name": "20 сантимов, BELGIE",
+   "year": "1954",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 6,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1583",
+   "kind": "coin",
+   "country": "GB",
+   "name": "1 пенни",
+   "year": "1999",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1584",
+   "kind": "coin",
+   "country": "SE",
+   "name": "5 эре",
+   "year": "1972",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1585",
+   "kind": "coin",
+   "country": "PL",
+   "name": "1 грош",
+   "year": "2017",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1586",
+   "kind": "coin",
+   "country": "KZ",
+   "name": "2 тенге",
+   "year": "2005",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1587",
+   "kind": "coin",
+   "country": "TW",
+   "name": "1 доллар (юань), Чан Кайши",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 7,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1588",
+   "kind": "coin",
+   "country": "CN",
+   "name": "5 цзяо (лотос)",
+   "year": "2013",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1589",
+   "kind": "coin",
+   "country": "JP",
+   "name": "1 иена",
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1590",
+   "kind": "coin",
+   "country": "TH",
+   "name": "1 бат",
+   "qty": 7,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1591",
+   "kind": "coin",
+   "country": "EG",
+   "name": "5 миллимов «Декоративная ваза»",
+   "year": "2004",
+   "album": "coins-blue1",
+   "sheet": "2",
+   "row": 11,
+   "slot": 8,
+   "qty": 1,
+   "status": "have",
+   "image": ""
+  },
+  {
+   "id": "i1592",
    "kind": "coin",
    "country": "RU",
    "name": "Крокодил Гена",
@@ -19529,7 +23223,7 @@
    "slot": 1
   },
   {
-   "id": "i1294",
+   "id": "i1593",
    "kind": "coin",
    "country": "RU",
    "name": "Ну, погоди!",
@@ -19544,7 +23238,7 @@
    "slot": 2
   },
   {
-   "id": "i1295",
+   "id": "i1594",
    "kind": "coin",
    "country": "RU",
    "name": "Бременские музыканты",
@@ -19559,7 +23253,7 @@
    "slot": 3
   },
   {
-   "id": "i1296",
+   "id": "i1595",
    "kind": "coin",
    "country": "RU",
    "name": "Барбоскины",
@@ -19574,7 +23268,7 @@
    "slot": 1
   },
   {
-   "id": "i1297",
+   "id": "i1596",
    "kind": "coin",
    "country": "RU",
    "name": "Иван Царевич",
@@ -19589,7 +23283,7 @@
    "slot": 2
   },
   {
-   "id": "i1298",
+   "id": "i1597",
    "kind": "coin",
    "country": "RU",
    "name": "Маша и Медведь",
@@ -19604,7 +23298,7 @@
    "slot": 3
   },
   {
-   "id": "i1299",
+   "id": "i1598",
    "kind": "coin",
    "country": "RU",
    "name": "Умка",
@@ -19619,7 +23313,7 @@
    "slot": 2
   },
   {
-   "id": "i1300",
+   "id": "i1599",
    "kind": "coin",
    "country": "RU",
    "name": "Дед Мороз и лето",
@@ -19634,7 +23328,7 @@
    "slot": 1
   },
   {
-   "id": "i1301",
+   "id": "i1600",
    "kind": "coin",
    "country": "RU",
    "name": "Три богатыря",
@@ -19649,7 +23343,7 @@
    "slot": 3
   },
   {
-   "id": "i1302",
+   "id": "i1601",
    "kind": "coin",
    "country": "RU",
    "name": "Смешарики",
@@ -19664,7 +23358,7 @@
    "slot": 1
   },
   {
-   "id": "i1303",
+   "id": "i1602",
    "kind": "coin",
    "country": "RU",
    "name": "Золотая антилопа",
@@ -19679,7 +23373,7 @@
    "slot": 3
   },
   {
-   "id": "i1304",
+   "id": "i1603",
    "kind": "coin",
    "country": "RU",
    "name": "Ёжик в тумане",
@@ -19694,7 +23388,7 @@
    "slot": 2
   },
   {
-   "id": "i1305",
+   "id": "i1604",
    "kind": "coin",
    "country": "RU",
    "name": "Аленький цветочек",
@@ -19708,7 +23402,7 @@
    "slot": 3
   },
   {
-   "id": "i1306",
+   "id": "i1605",
    "kind": "coin",
    "country": "RU",
    "name": "Весёлая карусель. Антошка",
@@ -19723,7 +23417,7 @@
    "slot": 3
   },
   {
-   "id": "i1307",
+   "id": "i1606",
    "kind": "coin",
    "country": "RU",
    "name": "Фиксики",
@@ -19738,7 +23432,7 @@
    "slot": 2
   },
   {
-   "id": "i1308",
+   "id": "i1607",
    "kind": "coin",
    "country": "RU",
    "name": "Винни-Пух",
@@ -19753,7 +23447,7 @@
    "slot": 2
   },
   {
-   "id": "i1309",
+   "id": "i1608",
    "kind": "coin",
    "country": "RU",
    "name": "Талисманы — Леопард, Белый мишка, Зайка",
@@ -19768,7 +23462,7 @@
    "slot": 1
   },
   {
-   "id": "i1310",
+   "id": "i1609",
    "kind": "coin",
    "country": "RU",
    "name": "Горы (эмблема Игр)",
@@ -19783,7 +23477,7 @@
    "slot": 2
   },
   {
-   "id": "i1311",
+   "id": "i1610",
    "kind": "coin",
    "country": "RU",
    "name": "Факел",
@@ -19798,7 +23492,7 @@
    "slot": 3
   },
   {
-   "id": "i1312",
+   "id": "i1611",
    "kind": "coin",
    "country": "RU",
    "name": "Лучик и Снежинка",
@@ -19813,7 +23507,7 @@
    "slot": 1
   },
   {
-   "id": "i1313",
+   "id": "i1612",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по практической стрельбе из карабина",
@@ -19828,7 +23522,7 @@
    "slot": 2
   },
   {
-   "id": "i1314",
+   "id": "i1613",
    "kind": "coin",
    "country": "RU",
    "name": "Творчество Юрия Никулина (ММД)",
@@ -19843,7 +23537,7 @@
    "slot": 3
   },
   {
-   "id": "i1315",
+   "id": "i1614",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Забивака",
@@ -19858,7 +23552,7 @@
    "slot": 1
   },
   {
-   "id": "i1316",
+   "id": "i1615",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Кубок",
@@ -19873,7 +23567,7 @@
    "slot": 2
   },
   {
-   "id": "i1317",
+   "id": "i1616",
    "kind": "coin",
    "country": "RU",
    "name": "ЧМ по футболу 2018 — Эмблема",
@@ -19888,7 +23582,7 @@
    "slot": 3
   },
   {
-   "id": "i1318",
+   "id": "i1617",
    "kind": "coin",
    "country": "RU",
    "name": "25 лет Конституции РФ",
@@ -19903,7 +23597,7 @@
    "slot": 2
   },
   {
-   "id": "i1319",
+   "id": "i1618",
    "kind": "coin",
    "country": "RU",
    "name": "Армейские международные игры",
@@ -19918,7 +23612,7 @@
    "slot": 1
   },
   {
-   "id": "i1320",
+   "id": "i1619",
    "kind": "coin",
    "country": "RU",
    "name": "75 лет полного освобождения Ленинграда от блокады",
@@ -19933,7 +23627,7 @@
    "slot": 2
   },
   {
-   "id": "i1321",
+   "id": "i1620",
    "kind": "coin",
    "country": "RU",
    "name": "Медицинские работники",
@@ -19948,7 +23642,7 @@
    "slot": 3
   },
   {
-   "id": "i1322",
+   "id": "i1621",
    "kind": "coin",
    "country": "RU",
    "name": "60 лет полёта в космос",
@@ -19963,7 +23657,7 @@
    "slot": 1
   },
   {
-   "id": "i1323",
+   "id": "i1622",
    "kind": "coin",
    "country": "RU",
    "name": "Дари добро детям",
@@ -19974,7 +23668,7 @@
    "image": ""
   },
   {
-   "id": "i1324",
+   "id": "i1623",
    "kind": "coin",
    "country": "RU",
    "name": "Союзное государство",
@@ -19985,7 +23679,7 @@
    "image": ""
   },
   {
-   "id": "i1325",
+   "id": "i1624",
    "kind": "coin",
    "country": "RU",
    "name": "Москва",
@@ -20000,7 +23694,7 @@
    "slot": 4
   },
   {
-   "id": "i1326",
+   "id": "i1625",
    "kind": "coin",
    "country": "RU",
    "name": "Ленинград",
@@ -20015,7 +23709,7 @@
    "slot": 2
   },
   {
-   "id": "i1327",
+   "id": "i1626",
    "kind": "coin",
    "country": "RU",
    "name": "Сталинград",
@@ -20030,7 +23724,7 @@
    "slot": 3
   },
   {
-   "id": "i1328",
+   "id": "i1627",
    "kind": "coin",
    "country": "RU",
    "name": "Тула",
@@ -20045,7 +23739,7 @@
    "slot": 2
   },
   {
-   "id": "i1329",
+   "id": "i1628",
    "kind": "coin",
    "country": "RU",
    "name": "Новороссийск",
@@ -20060,7 +23754,7 @@
    "slot": 1
   },
   {
-   "id": "i1330",
+   "id": "i1629",
    "kind": "coin",
    "country": "RU",
    "name": "Мурманск",
@@ -20075,7 +23769,7 @@
    "slot": 4
   },
   {
-   "id": "i1331",
+   "id": "i1630",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленск",
@@ -20090,7 +23784,7 @@
    "slot": 3
   },
   {
-   "id": "i1332",
+   "id": "i1631",
    "kind": "coin",
    "country": "RU",
    "name": "Керчь",
@@ -20105,7 +23799,7 @@
    "slot": 3
   },
   {
-   "id": "i1333",
+   "id": "i1632",
    "kind": "coin",
    "country": "RU",
    "name": "Севастополь",
@@ -20120,7 +23814,7 @@
    "slot": 3
   },
   {
-   "id": "i1334",
+   "id": "i1633",
    "kind": "coin",
    "country": "RU",
    "name": "50 руб. «Год защитника Отечества. Саур-Могила» (ММД)",
@@ -20134,7 +23828,7 @@
    "slot": 4
   },
   {
-   "id": "i1335",
+   "id": "i1634",
    "kind": "coin",
    "country": "RU",
    "name": "2 руб. «40 лет полёта Гагарина» (ММД)",
@@ -20148,7 +23842,7 @@
    "slot": 1
   },
   {
-   "id": "i1336",
+   "id": "i1635",
    "kind": "coin",
    "country": "RU",
    "name": "1 руб. «10 лет СНГ»",
@@ -20162,7 +23856,7 @@
    "slot": 1
   },
   {
-   "id": "i1337",
+   "id": "i1636",
    "kind": "coin",
    "country": "RU",
    "name": "2 рубля, регулярная — для показа аверса 2000 г.",
@@ -20175,7 +23869,7 @@
    "slot": 1
   },
   {
-   "id": "i1338",
+   "id": "i1637",
    "kind": "coin",
    "country": "RU",
    "name": "2 рубля, регулярная — для показа аверса 2001 г.",
@@ -20188,7 +23882,7 @@
    "slot": 4
   },
   {
-   "id": "i1339",
+   "id": "i1638",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль со знаком ₽",
@@ -20202,7 +23896,7 @@
    "slot": 2
   },
   {
-   "id": "i1340",
+   "id": "i1639",
    "kind": "coin",
    "country": "RU",
    "name": "Севастополь",
@@ -20217,7 +23911,7 @@
    "image": ""
   },
   {
-   "id": "i1341",
+   "id": "i1640",
    "kind": "coin",
    "country": "RU",
    "name": "1150-летие зарождения российской государственности",
@@ -20232,7 +23926,7 @@
    "image": ""
   },
   {
-   "id": "i1342",
+   "id": "i1641",
    "kind": "coin",
    "country": "RU",
    "name": "20 лет Конституции РФ",
@@ -20247,7 +23941,7 @@
    "image": ""
   },
   {
-   "id": "i1343",
+   "id": "i1642",
    "kind": "coin",
    "country": "RU",
    "name": "Талисман Универсиады, Казань",
@@ -20262,7 +23956,7 @@
    "image": ""
   },
   {
-   "id": "i1344",
+   "id": "i1643",
    "kind": "coin",
    "country": "RU",
    "name": "Эмблема Универсиады, Казань",
@@ -20277,7 +23971,7 @@
    "image": ""
   },
   {
-   "id": "i1345",
+   "id": "i1644",
    "kind": "coin",
    "country": "RU",
    "name": "Эмблема Универсиады, Красноярск",
@@ -20292,7 +23986,7 @@
    "image": ""
   },
   {
-   "id": "i1346",
+   "id": "i1645",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Крым",
@@ -20307,7 +24001,7 @@
    "image": ""
   },
   {
-   "id": "i1347",
+   "id": "i1646",
    "kind": "coin",
    "country": "RU",
    "name": "50 лет первого полёта в космос",
@@ -20322,7 +24016,7 @@
    "image": ""
   },
   {
-   "id": "i1348",
+   "id": "i1647",
    "kind": "coin",
    "country": "RU",
    "name": "65 лет Победы",
@@ -20337,7 +24031,7 @@
    "image": ""
   },
   {
-   "id": "i1349",
+   "id": "i1648",
    "kind": "coin",
    "country": "RU",
    "name": "Талисман Универсиады, Красноярск",
@@ -20352,7 +24046,7 @@
    "image": ""
   },
   {
-   "id": "i1350",
+   "id": "i1649",
    "kind": "coin",
    "country": "RU",
    "name": "70 лет разгрома под Сталинградом",
@@ -20367,7 +24061,7 @@
    "image": ""
   },
   {
-   "id": "i1351",
+   "id": "i1650",
    "kind": "coin",
    "country": "RU",
    "name": "Феодосия",
@@ -20382,7 +24076,7 @@
    "image": ""
   },
   {
-   "id": "i1352",
+   "id": "i1651",
    "kind": "coin",
    "country": "RU",
    "name": "Грозный",
@@ -20397,7 +24091,7 @@
    "image": ""
   },
   {
-   "id": "i1353",
+   "id": "i1652",
    "kind": "coin",
    "country": "RU",
    "name": "Петрозаводск",
@@ -20412,7 +24106,7 @@
    "image": ""
   },
   {
-   "id": "i1354",
+   "id": "i1653",
    "kind": "coin",
    "country": "RU",
    "name": "Старая Русса",
@@ -20427,7 +24121,7 @@
    "image": ""
   },
   {
-   "id": "i1355",
+   "id": "i1654",
    "kind": "coin",
    "country": "RU",
    "name": "Гатчина",
@@ -20442,7 +24136,7 @@
    "image": ""
   },
   {
-   "id": "i1356",
+   "id": "i1655",
    "kind": "coin",
    "country": "RU",
    "name": "Псков",
@@ -20454,7 +24148,7 @@
    "image": ""
   },
   {
-   "id": "i1357",
+   "id": "i1656",
    "kind": "coin",
    "country": "RU",
    "name": "Пензенская обл.",
@@ -20469,7 +24163,7 @@
    "slot": 4
   },
   {
-   "id": "i1358",
+   "id": "i1657",
    "kind": "coin",
    "country": "RU",
    "name": "Саратовская обл.",
@@ -20484,7 +24178,7 @@
    "slot": 3
   },
   {
-   "id": "i1359",
+   "id": "i1658",
    "kind": "coin",
    "country": "RU",
    "name": "Амурская обл.",
@@ -20499,7 +24193,7 @@
    "slot": 2
   },
   {
-   "id": "i1360",
+   "id": "i1659",
    "kind": "coin",
    "country": "RU",
    "name": "Белгородская обл.",
@@ -20514,7 +24208,7 @@
    "slot": 1
   },
   {
-   "id": "i1361",
+   "id": "i1660",
    "kind": "coin",
    "country": "RU",
    "name": "Иркутская обл.",
@@ -20529,7 +24223,7 @@
    "slot": 4
   },
   {
-   "id": "i1362",
+   "id": "i1661",
    "kind": "coin",
    "country": "RU",
    "name": "Ульяновская обл.",
@@ -20544,7 +24238,7 @@
    "slot": 3
   },
   {
-   "id": "i1363",
+   "id": "i1662",
    "kind": "coin",
    "country": "RU",
    "name": "Костромская обл.",
@@ -20559,7 +24253,7 @@
    "slot": 2
   },
   {
-   "id": "i1364",
+   "id": "i1663",
    "kind": "coin",
    "country": "RU",
    "name": "Московская обл.",
@@ -20574,7 +24268,7 @@
    "slot": 1
   },
   {
-   "id": "i1365",
+   "id": "i1664",
    "kind": "coin",
    "country": "RU",
    "name": "Рязанская обл.",
@@ -20589,7 +24283,7 @@
    "slot": 4
   },
   {
-   "id": "i1366",
+   "id": "i1665",
    "kind": "coin",
    "country": "RU",
    "name": "Ивановская обл.",
@@ -20604,7 +24298,7 @@
    "slot": 3
   },
   {
-   "id": "i1367",
+   "id": "i1666",
    "kind": "coin",
    "country": "RU",
    "name": "Карачаево-Черкесская Республика",
@@ -20619,7 +24313,7 @@
    "slot": 2
   },
   {
-   "id": "i1368",
+   "id": "i1667",
    "kind": "coin",
    "country": "RU",
    "name": "Омская обл.",
@@ -20634,7 +24328,7 @@
    "slot": 1
   },
   {
-   "id": "i1369",
+   "id": "i1668",
    "kind": "coin",
    "country": "RU",
    "name": "Хабаровский край",
@@ -20649,7 +24343,7 @@
    "slot": 4
   },
   {
-   "id": "i1370",
+   "id": "i1669",
    "kind": "coin",
    "country": "RU",
    "name": "Ханты-Мансийский АО",
@@ -20664,7 +24358,7 @@
    "slot": 3
   },
   {
-   "id": "i1371",
+   "id": "i1670",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленская обл.",
@@ -20679,7 +24373,7 @@
    "slot": 2
   },
   {
-   "id": "i1372",
+   "id": "i1671",
    "kind": "coin",
    "country": "RU",
    "name": "Чувашская Республика",
@@ -20694,7 +24388,7 @@
    "slot": 1
   },
   {
-   "id": "i1373",
+   "id": "i1672",
    "kind": "coin",
    "country": "RU",
    "name": "Пермский край",
@@ -20704,7 +24398,7 @@
    "image": ""
   },
   {
-   "id": "i1374",
+   "id": "i1673",
    "kind": "coin",
    "country": "RU",
    "name": "Чеченская Республика",
@@ -20714,7 +24408,7 @@
    "image": ""
   },
   {
-   "id": "i1375",
+   "id": "i1674",
    "kind": "coin",
    "country": "RU",
    "name": "Ямало-Ненецкий АО",
@@ -20724,7 +24418,7 @@
    "image": ""
   },
   {
-   "id": "i1376",
+   "id": "i1675",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Северная Осетия — Алания",
@@ -20739,7 +24433,7 @@
    "slot": 2
   },
   {
-   "id": "i1377",
+   "id": "i1676",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Дагестан",
@@ -20754,7 +24448,7 @@
    "slot": 3
   },
   {
-   "id": "i1378",
+   "id": "i1677",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Ингушетия",
@@ -20769,7 +24463,7 @@
    "slot": 1
   },
   {
-   "id": "i1379",
+   "id": "i1678",
    "kind": "coin",
    "country": "RU",
    "name": "Тюменская обл.",
@@ -20784,7 +24478,7 @@
    "slot": 1
   },
   {
-   "id": "i1380",
+   "id": "i1679",
    "kind": "coin",
    "country": "RU",
    "name": "Челябинская обл.",
@@ -20799,7 +24493,7 @@
    "slot": 2
   },
   {
-   "id": "i1381",
+   "id": "i1680",
    "kind": "coin",
    "country": "RU",
    "name": "Тамбовская обл.",
@@ -20814,7 +24508,7 @@
    "slot": 2
   },
   {
-   "id": "i1382",
+   "id": "i1681",
    "kind": "coin",
    "country": "RU",
    "name": "Курганская обл.",
@@ -20829,7 +24523,7 @@
    "slot": 4
   },
   {
-   "id": "i1383",
+   "id": "i1682",
    "kind": "coin",
    "country": "RU",
    "name": "Великие Луки",
@@ -20843,7 +24537,7 @@
    "slot": 1
   },
   {
-   "id": "i1384",
+   "id": "i1683",
    "kind": "coin",
    "country": "RU",
    "name": "Вязьма",
@@ -20857,7 +24551,7 @@
    "slot": 2
   },
   {
-   "id": "i1385",
+   "id": "i1684",
    "kind": "coin",
    "country": "RU",
    "name": "Городец",
@@ -20871,7 +24565,7 @@
    "slot": 3
   },
   {
-   "id": "i1386",
+   "id": "i1685",
    "kind": "coin",
    "country": "RU",
    "name": "Клин",
@@ -20885,7 +24579,7 @@
    "slot": 4
   },
   {
-   "id": "i1387",
+   "id": "i1686",
    "kind": "coin",
    "country": "RU",
    "name": "Нижний Новгород",
@@ -20899,7 +24593,7 @@
    "slot": 4
   },
   {
-   "id": "i1388",
+   "id": "i1687",
    "kind": "coin",
    "country": "RU",
    "name": "Рыльск",
@@ -20913,7 +24607,7 @@
    "slot": 3
   },
   {
-   "id": "i1389",
+   "id": "i1688",
    "kind": "coin",
    "country": "RU",
    "name": "Рыбинск",
@@ -20927,7 +24621,7 @@
    "slot": 2
   },
   {
-   "id": "i1390",
+   "id": "i1689",
    "kind": "coin",
    "country": "RU",
    "name": "Козельск",
@@ -20941,7 +24635,7 @@
    "slot": 1
   },
   {
-   "id": "i1391",
+   "id": "i1690",
    "kind": "coin",
    "country": "RU",
    "name": "Торопец",
@@ -20955,7 +24649,7 @@
    "slot": 1
   },
   {
-   "id": "i1392",
+   "id": "i1691",
    "kind": "coin",
    "country": "RU",
    "name": "Нерехта",
@@ -20970,7 +24664,7 @@
    "year": "2014"
   },
   {
-   "id": "i1393",
+   "id": "i1692",
    "kind": "coin",
    "country": "RU",
    "name": "Ржев",
@@ -20985,7 +24679,7 @@
    "year": "2016"
   },
   {
-   "id": "i1394",
+   "id": "i1693",
    "kind": "coin",
    "country": "RU",
    "name": "Зубцов",
@@ -21000,7 +24694,7 @@
    "year": "2016"
   },
   {
-   "id": "i1395",
+   "id": "i1694",
    "kind": "coin",
    "country": "RU",
    "name": "Олонец",
@@ -21015,7 +24709,7 @@
    "year": "2017"
   },
   {
-   "id": "i1396",
+   "id": "i1695",
    "kind": "coin",
    "country": "RU",
    "name": "Гороховец",
@@ -21030,7 +24724,7 @@
    "year": "2018"
   },
   {
-   "id": "i1397",
+   "id": "i1696",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «75-летие Победы» (ММД)",
@@ -21044,7 +24738,7 @@
    "image": ""
   },
   {
-   "id": "i1398",
+   "id": "i1697",
    "kind": "coin",
    "country": "RU",
    "name": "170 лет Русскому географическому обществу",
@@ -21059,7 +24753,7 @@
    "slot": 4
   },
   {
-   "id": "i1399",
+   "id": "i1698",
    "kind": "coin",
    "country": "RU",
    "name": "150 лет Русскому историческому обществу",
@@ -21074,7 +24768,7 @@
    "slot": 4
   },
   {
-   "id": "i1400",
+   "id": "i1699",
    "kind": "coin",
    "country": "RU",
    "name": "Курильская десантная операция",
@@ -21089,7 +24783,7 @@
    "slot": 4
   },
   {
-   "id": "i1401",
+   "id": "i1700",
    "kind": "coin",
    "country": "RU",
    "name": "Воронежская обл.",
@@ -21104,7 +24798,7 @@
    "image": ""
   },
   {
-   "id": "i1402",
+   "id": "i1701",
    "kind": "coin",
    "country": "RU",
    "name": "Белозерск",
@@ -21119,7 +24813,7 @@
    "image": ""
   },
   {
-   "id": "i1403",
+   "id": "i1702",
    "kind": "coin",
    "country": "RU",
    "name": "Курская битва",
@@ -21131,7 +24825,7 @@
    "image": ""
   },
   {
-   "id": "i1404",
+   "id": "i1703",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Днепр",
@@ -21143,7 +24837,7 @@
    "image": ""
   },
   {
-   "id": "i1405",
+   "id": "i1704",
    "kind": "coin",
    "country": "RU",
    "name": "Битва под Москвой",
@@ -21155,7 +24849,7 @@
    "image": ""
   },
   {
-   "id": "i1406",
+   "id": "i1705",
    "kind": "coin",
    "country": "RU",
    "name": "Днепровско-Карпатская операция",
@@ -21167,7 +24861,7 @@
    "image": ""
   },
   {
-   "id": "i1407",
+   "id": "i1706",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Кавказ",
@@ -21179,7 +24873,7 @@
    "image": ""
   },
   {
-   "id": "i1408",
+   "id": "i1707",
    "kind": "coin",
    "country": "RU",
    "name": "Сталинградская битва",
@@ -21191,7 +24885,7 @@
    "image": ""
   },
   {
-   "id": "i1409",
+   "id": "i1708",
    "kind": "coin",
    "country": "RU",
    "name": "Будапештская операция",
@@ -21203,7 +24897,7 @@
    "image": ""
   },
   {
-   "id": "i1410",
+   "id": "i1709",
    "kind": "coin",
    "country": "RU",
    "name": "Белорусская операция",
@@ -21215,7 +24909,7 @@
    "image": ""
   },
   {
-   "id": "i1411",
+   "id": "i1710",
    "kind": "coin",
    "country": "RU",
    "name": "Берлинская операция",
@@ -21227,7 +24921,7 @@
    "image": ""
   },
   {
-   "id": "i1412",
+   "id": "i1711",
    "kind": "coin",
    "country": "RU",
    "name": "Восточно-Прусская операция",
@@ -21239,7 +24933,7 @@
    "image": ""
   },
   {
-   "id": "i1413",
+   "id": "i1712",
    "kind": "coin",
    "country": "RU",
    "name": "Львовско-Сандомирская операция",
@@ -21251,7 +24945,7 @@
    "image": ""
   },
   {
-   "id": "i1414",
+   "id": "i1713",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Ленинград",
@@ -21263,7 +24957,7 @@
    "image": ""
   },
   {
-   "id": "i1415",
+   "id": "i1714",
    "kind": "coin",
    "country": "RU",
    "name": "Ясско-Кишинёвская операция",
@@ -21275,7 +24969,7 @@
    "image": ""
   },
   {
-   "id": "i1416",
+   "id": "i1715",
    "kind": "coin",
    "country": "RU",
    "name": "Прибалтийская операция",
@@ -21287,7 +24981,7 @@
    "image": ""
   },
   {
-   "id": "i1417",
+   "id": "i1716",
    "kind": "coin",
    "country": "RU",
    "name": "Освобождение Карелии и Заполярья",
@@ -21299,7 +24993,7 @@
    "image": ""
   },
   {
-   "id": "i1418",
+   "id": "i1717",
    "kind": "coin",
    "country": "RU",
    "name": "Висло-Одерская операция",
@@ -21311,7 +25005,7 @@
    "image": ""
   },
   {
-   "id": "i1419",
+   "id": "i1718",
    "kind": "coin",
    "country": "RU",
    "name": "Пражская операция",
@@ -21323,7 +25017,7 @@
    "image": ""
   },
   {
-   "id": "i1420",
+   "id": "i1719",
    "kind": "coin",
    "country": "RU",
    "name": "Венская операция",
@@ -21335,7 +25029,7 @@
    "image": ""
   },
   {
-   "id": "i1421",
+   "id": "i1720",
    "kind": "coin",
    "country": "RU",
    "name": "Официальная эмблема празднования 70-летия Победы",
@@ -21347,7 +25041,7 @@
    "image": ""
   },
   {
-   "id": "i1422",
+   "id": "i1721",
    "kind": "coin",
    "country": "RU",
    "name": "Освобождение мира от фашизма",
@@ -21359,7 +25053,7 @@
    "image": ""
   },
   {
-   "id": "i1423",
+   "id": "i1722",
    "kind": "coin",
    "country": "RU",
    "name": "Окончание Второй мировой войны",
@@ -21371,7 +25065,7 @@
    "image": ""
   },
   {
-   "id": "i1424",
+   "id": "i1723",
    "kind": "coin",
    "country": "RU",
    "name": "Оборона Севастополя",
@@ -21386,7 +25080,7 @@
    "slot": 3
   },
   {
-   "id": "i1425",
+   "id": "i1724",
    "kind": "coin",
    "country": "RU",
    "name": "Оборона Аджимушкайских каменоломен",
@@ -21401,7 +25095,7 @@
    "slot": 3
   },
   {
-   "id": "i1426",
+   "id": "i1725",
    "kind": "coin",
    "country": "RU",
    "name": "Керченско-Эльтигенская операция",
@@ -21416,7 +25110,7 @@
    "slot": 3
   },
   {
-   "id": "i1427",
+   "id": "i1726",
    "kind": "coin",
    "country": "RU",
    "name": "Партизаны и подпольщики Крыма",
@@ -21431,7 +25125,7 @@
    "slot": 3
   },
   {
-   "id": "i1428",
+   "id": "i1727",
    "kind": "coin",
    "country": "RU",
    "name": "Крымская наступательная операция",
@@ -21446,7 +25140,7 @@
    "slot": 3
   },
   {
-   "id": "i1429",
+   "id": "i1728",
    "kind": "coin",
    "country": "RU",
    "name": "Киев — 6 ноября 1943",
@@ -21461,7 +25155,7 @@
    "slot": 1
   },
   {
-   "id": "i1430",
+   "id": "i1729",
    "kind": "coin",
    "country": "RU",
    "name": "Минск — 3 июля 1944",
@@ -21476,7 +25170,7 @@
    "slot": 2
   },
   {
-   "id": "i1431",
+   "id": "i1730",
    "kind": "coin",
    "country": "RU",
    "name": "Вильнюс — 13 июля 1944",
@@ -21491,7 +25185,7 @@
    "slot": 4
   },
   {
-   "id": "i1432",
+   "id": "i1731",
    "kind": "coin",
    "country": "RU",
    "name": "Кишинёв — 24 августа 1944",
@@ -21506,7 +25200,7 @@
    "slot": 1
   },
   {
-   "id": "i1433",
+   "id": "i1732",
    "kind": "coin",
    "country": "RU",
    "name": "Бухарест — 31 августа 1944",
@@ -21521,7 +25215,7 @@
    "slot": 3
   },
   {
-   "id": "i1434",
+   "id": "i1733",
    "kind": "coin",
    "country": "RU",
    "name": "Таллин — 22 сентября 1944",
@@ -21536,7 +25230,7 @@
    "slot": 2
   },
   {
-   "id": "i1435",
+   "id": "i1734",
    "kind": "coin",
    "country": "RU",
    "name": "Рига — 15 октября 1944",
@@ -21551,7 +25245,7 @@
    "slot": 1
   },
   {
-   "id": "i1436",
+   "id": "i1735",
    "kind": "coin",
    "country": "RU",
    "name": "Белград — 20 октября 1944",
@@ -21566,7 +25260,7 @@
    "slot": 3
   },
   {
-   "id": "i1437",
+   "id": "i1736",
    "kind": "coin",
    "country": "RU",
    "name": "Варшава — 17 января 1945",
@@ -21581,7 +25275,7 @@
    "slot": 3
   },
   {
-   "id": "i1438",
+   "id": "i1737",
    "kind": "coin",
    "country": "RU",
    "name": "Будапешт — 13 февраля 1945",
@@ -21596,7 +25290,7 @@
    "slot": 2
   },
   {
-   "id": "i1439",
+   "id": "i1738",
    "kind": "coin",
    "country": "RU",
    "name": "Братислава — 4 апреля 1945",
@@ -21611,7 +25305,7 @@
    "slot": 4
   },
   {
-   "id": "i1440",
+   "id": "i1739",
    "kind": "coin",
    "country": "RU",
    "name": "Вена — 13 апреля 1945",
@@ -21626,7 +25320,7 @@
    "slot": 2
   },
   {
-   "id": "i1441",
+   "id": "i1740",
    "kind": "coin",
    "country": "RU",
    "name": "Берлин — 2 мая 1945",
@@ -21641,7 +25335,7 @@
    "slot": 1
   },
   {
-   "id": "i1442",
+   "id": "i1741",
    "kind": "coin",
    "country": "RU",
    "name": "Прага — 9 мая 1945",
@@ -21656,7 +25350,7 @@
    "slot": 4
   },
   {
-   "id": "i1443",
+   "id": "i1742",
    "kind": "coin",
    "country": "RU",
    "name": "Битва под Москвой",
@@ -21672,7 +25366,7 @@
    "dup": true
   },
   {
-   "id": "i1444",
+   "id": "i1743",
    "kind": "coin",
    "country": "RU",
    "name": "Днепровско-Карпатская операция",
@@ -21688,7 +25382,7 @@
    "dup": true
   },
   {
-   "id": "i1445",
+   "id": "i1744",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Кавказ",
@@ -21704,7 +25398,7 @@
    "dup": true
   },
   {
-   "id": "i1446",
+   "id": "i1745",
    "kind": "coin",
    "country": "RU",
    "name": "Берлинская операция",
@@ -21720,7 +25414,7 @@
    "dup": true
   },
   {
-   "id": "i1447",
+   "id": "i1746",
    "kind": "coin",
    "country": "RU",
    "name": "Битва за Днепр",
@@ -21736,7 +25430,7 @@
    "dup": true
   },
   {
-   "id": "i1448",
+   "id": "i1747",
    "kind": "coin",
    "country": "RU",
    "name": "Львовско-Сандомирская операция",
@@ -21752,7 +25446,7 @@
    "dup": true
   },
   {
-   "id": "i1449",
+   "id": "i1748",
    "kind": "coin",
    "country": "RU",
    "name": "Будапештская операция",
@@ -21768,7 +25462,7 @@
    "dup": true
   },
   {
-   "id": "i1450",
+   "id": "i1749",
    "kind": "coin",
    "country": "RU",
    "name": "Курская битва",
@@ -21784,7 +25478,7 @@
    "dup": true
   },
   {
-   "id": "i1451",
+   "id": "i1750",
    "kind": "coin",
    "country": "RU",
    "name": "Восточно-Прусская операция",
@@ -21800,7 +25494,7 @@
    "dup": true
   },
   {
-   "id": "i1452",
+   "id": "i1751",
    "kind": "coin",
    "country": "RU",
    "name": "Сталинградская битва",
@@ -21816,7 +25510,7 @@
    "dup": true
   },
   {
-   "id": "i1453",
+   "id": "i1752",
    "kind": "coin",
    "country": "RU",
    "name": "Белорусская операция",
@@ -21832,7 +25526,7 @@
    "dup": true
   },
   {
-   "id": "i1454",
+   "id": "i1753",
    "kind": "coin",
    "country": "RU",
    "name": "Работник металлургической промышленности",
@@ -21844,7 +25538,7 @@
    "album": "labor"
   },
   {
-   "id": "i1455",
+   "id": "i1754",
    "kind": "coin",
    "country": "RU",
    "name": "Работник транспортной сферы",
@@ -21856,7 +25550,7 @@
    "album": "labor"
   },
   {
-   "id": "i1456",
+   "id": "i1755",
    "kind": "coin",
    "country": "RU",
    "name": "Работник нефтегазовой отрасли",
@@ -21868,7 +25562,7 @@
    "album": "labor"
   },
   {
-   "id": "i1457",
+   "id": "i1756",
    "kind": "coin",
    "country": "RU",
    "name": "Работник добывающей промышленности (шахтёр)",
@@ -21880,7 +25574,7 @@
    "album": "labor"
   },
   {
-   "id": "i1458",
+   "id": "i1757",
    "kind": "coin",
    "country": "RU",
    "name": "Работник строительной сферы",
@@ -21892,7 +25586,7 @@
    "album": "labor"
   },
   {
-   "id": "i1459",
+   "id": "i1758",
    "kind": "coin",
    "country": "RU",
    "name": "Учитель",
@@ -21904,7 +25598,7 @@
    "album": "labor"
   },
   {
-   "id": "i1460",
+   "id": "i1759",
    "kind": "coin",
    "country": "RU",
    "name": "Работник сельского хозяйства",
@@ -21916,7 +25610,7 @@
    "album": "labor"
   },
   {
-   "id": "i1461",
+   "id": "i1760",
    "kind": "coin",
    "country": "DE",
    "name": "2 рейхсмарки",
@@ -21929,7 +25623,7 @@
    "image": ""
   },
   {
-   "id": "i1462",
+   "id": "i1761",
    "kind": "coin",
    "country": "DE",
    "name": "10 рейхспфеннигов",
@@ -21942,7 +25636,7 @@
    "image": ""
   },
   {
-   "id": "i1463",
+   "id": "i1762",
    "kind": "coin",
    "country": "DE",
    "name": "5 рейхспфеннигов",
@@ -21955,7 +25649,7 @@
    "image": ""
   },
   {
-   "id": "i1464",
+   "id": "i1763",
    "kind": "coin",
    "country": "DE",
    "name": "2 рейхспфеннига",
@@ -21968,7 +25662,7 @@
    "image": ""
   },
   {
-   "id": "i1465",
+   "id": "i1764",
    "kind": "coin",
    "country": "DE",
    "name": "1 рейхспфенниг",
@@ -21981,7 +25675,7 @@
    "image": ""
   },
   {
-   "id": "i1466",
+   "id": "i1765",
    "kind": "coin",
    "country": "MW",
    "name": "50 квача",
@@ -21995,7 +25689,7 @@
    "image": ""
   },
   {
-   "id": "i1467",
+   "id": "i1766",
    "kind": "coin",
    "country": "ES",
    "name": "50 сентимо «ЧМ по футболу 1982»",
@@ -22009,7 +25703,7 @@
    "image": ""
   },
   {
-   "id": "i1468",
+   "id": "i1767",
    "kind": "coin",
    "country": "RU",
    "name": "50 копеек, серебро",
@@ -22021,7 +25715,7 @@
    "image": ""
   },
   {
-   "id": "i1469",
+   "id": "i1768",
    "kind": "coin",
    "country": "RU",
    "name": "5 копеек, медь, ЕМ",
@@ -22033,7 +25727,7 @@
    "image": ""
   },
   {
-   "id": "i1470",
+   "id": "i1769",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «Махтумкули»",
@@ -22045,7 +25739,7 @@
    "image": ""
   },
   {
-   "id": "i1471",
+   "id": "i1770",
    "kind": "coin",
    "country": "RU",
    "name": "50 копеек «50 лет Советской власти»",
@@ -22057,7 +25751,7 @@
    "image": ""
   },
   {
-   "id": "i1472",
+   "id": "i1771",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «100 лет со дня рождения Ленина»",
@@ -22069,7 +25763,7 @@
    "image": ""
   },
   {
-   "id": "i1473",
+   "id": "i1772",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль «Низами Гянджеви»",
@@ -22081,7 +25775,7 @@
    "image": ""
   },
   {
-   "id": "i1474",
+   "id": "i1773",
    "kind": "coin",
    "country": "RU",
    "name": "15 копеек «50 лет Советской власти»",
@@ -22093,7 +25787,7 @@
    "image": ""
   },
   {
-   "id": "i1475",
+   "id": "i1774",
    "kind": "coin",
    "country": "RU",
    "name": "Копейка Михаила Фёдоровича, серебро",
@@ -22105,7 +25799,7 @@
    "image": ""
   },
   {
-   "id": "i1476",
+   "id": "i1775",
    "kind": "coin",
    "country": "RU",
    "name": "Копейка Петра I, серебро",
@@ -22117,7 +25811,7 @@
    "image": ""
   },
   {
-   "id": "i1477",
+   "id": "i1776",
    "kind": "coin",
    "country": "IT",
    "name": "Фоллис",
@@ -22128,7 +25822,7 @@
    "image": ""
   },
   {
-   "id": "i1478",
+   "id": "i1777",
    "kind": "coin",
    "country": "IT",
    "name": "Монета после реформы Константина I",
@@ -22138,7 +25832,7 @@
    "image": ""
   },
   {
-   "id": "i1479",
+   "id": "i1778",
    "kind": "coin",
    "country": "GB",
    "name": "3 пенса",
@@ -22148,7 +25842,7 @@
    "image": ""
   },
   {
-   "id": "i1480",
+   "id": "i1779",
    "kind": "coin",
    "country": "GR",
    "name": "5 драхм «Аристотель»",
@@ -22158,7 +25852,7 @@
    "image": ""
   },
   {
-   "id": "i1481",
+   "id": "i1780",
    "kind": "coin",
    "country": "TH",
    "name": "20 бат «108 лет Главному аудиторскому управлению»",
@@ -22167,7 +25861,7 @@
    "image": ""
   },
   {
-   "id": "i1482",
+   "id": "i1781",
    "kind": "token",
    "country": "RU",
    "name": "Жетон «75 лет Великой Победы»",
@@ -22177,7 +25871,7 @@
    "image": ""
   },
   {
-   "id": "i1483",
+   "id": "i1782",
    "kind": "coin",
    "country": "RU",
    "name": "Грабин (ЗиС-3)",
@@ -22192,7 +25886,7 @@
    "image": ""
   },
   {
-   "id": "i1484",
+   "id": "i1783",
    "kind": "coin",
    "country": "RU",
    "name": "Котин (ИС-2)",
@@ -22207,7 +25901,7 @@
    "image": ""
   },
   {
-   "id": "i1485",
+   "id": "i1784",
    "kind": "coin",
    "country": "RU",
    "name": "Кошкин (Т-34)",
@@ -22222,7 +25916,7 @@
    "image": ""
   },
   {
-   "id": "i1486",
+   "id": "i1785",
    "kind": "coin",
    "country": "RU",
    "name": "Малинин (подлодка «Щука»)",
@@ -22237,7 +25931,7 @@
    "image": ""
   },
   {
-   "id": "i1487",
+   "id": "i1786",
    "kind": "coin",
    "country": "RU",
    "name": "Петров (М-30)",
@@ -22252,7 +25946,7 @@
    "image": ""
   },
   {
-   "id": "i1488",
+   "id": "i1787",
    "kind": "coin",
    "country": "RU",
    "name": "Петляков (Пе-2)",
@@ -22267,7 +25961,7 @@
    "image": ""
   },
   {
-   "id": "i1489",
+   "id": "i1788",
    "kind": "coin",
    "country": "RU",
    "name": "Симонов (ПТРС)",
@@ -22282,7 +25976,7 @@
    "image": ""
   },
   {
-   "id": "i1490",
+   "id": "i1789",
    "kind": "coin",
    "country": "RU",
    "name": "Шпагин (ППШ)",
@@ -22297,7 +25991,7 @@
    "image": ""
   },
   {
-   "id": "i1491",
+   "id": "i1790",
    "kind": "coin",
    "country": "RU",
    "name": "Поликарпов (У-2)",
@@ -22312,7 +26006,7 @@
    "image": ""
   },
   {
-   "id": "i1492",
+   "id": "i1791",
    "kind": "coin",
    "country": "RU",
    "name": "Горюнов (СГ-43)",
@@ -22327,7 +26021,7 @@
    "image": ""
   },
   {
-   "id": "i1493",
+   "id": "i1792",
    "kind": "coin",
    "country": "RU",
    "name": "Ермаш (Д-3)",
@@ -22342,7 +26036,7 @@
    "image": ""
   },
   {
-   "id": "i1494",
+   "id": "i1793",
    "kind": "coin",
    "country": "RU",
    "name": "Маслов (крейсер «Киров»)",
@@ -22357,7 +26051,7 @@
    "image": ""
   },
   {
-   "id": "i1495",
+   "id": "i1794",
    "kind": "coin",
    "country": "RU",
    "name": "Судаев (ППС-43)",
@@ -22372,7 +26066,7 @@
    "image": ""
   },
   {
-   "id": "i1496",
+   "id": "i1795",
    "kind": "coin",
    "country": "RU",
    "name": "Токарев (ТТ)",
@@ -22387,7 +26081,7 @@
    "image": ""
   },
   {
-   "id": "i1497",
+   "id": "i1796",
    "kind": "coin",
    "country": "RU",
    "name": "Туполев (Ту-2)",
@@ -22402,7 +26096,7 @@
    "image": ""
   },
   {
-   "id": "i1498",
+   "id": "i1797",
    "kind": "coin",
    "country": "RU",
    "name": "Логинов (ПТП 1937)",
@@ -22417,7 +26111,7 @@
    "image": ""
   },
   {
-   "id": "i1499",
+   "id": "i1798",
    "kind": "coin",
    "country": "RU",
    "name": "Лавочкин (Ла-5)",
@@ -22432,7 +26126,7 @@
    "image": ""
   },
   {
-   "id": "i1500",
+   "id": "i1799",
    "kind": "coin",
    "country": "RU",
    "name": "Яковлев (Як-9)",
@@ -22447,7 +26141,7 @@
    "image": ""
   },
   {
-   "id": "i1501",
+   "id": "i1800",
    "kind": "coin",
    "country": "RU",
    "name": "Токарев (ТТ)",
@@ -22462,7 +26156,7 @@
    "dup": true
   },
   {
-   "id": "i1502",
+   "id": "i1801",
    "kind": "coin",
    "country": "RU",
    "name": "Ильюшин (Ил-2)",
@@ -22477,7 +26171,7 @@
    "image": ""
   },
   {
-   "id": "i1503",
+   "id": "i1802",
    "kind": "coin",
    "country": "RU",
    "name": "10 рублей",
@@ -22490,7 +26184,7 @@
    "slot": 1
   },
   {
-   "id": "i1504",
+   "id": "i1803",
    "kind": "coin",
    "country": "RU",
    "name": "5 рублей",
@@ -22503,7 +26197,7 @@
    "slot": 2
   },
   {
-   "id": "i1505",
+   "id": "i1804",
    "kind": "coin",
    "country": "RU",
    "name": "2 рубля",
@@ -22516,7 +26210,7 @@
    "slot": 3
   },
   {
-   "id": "i1506",
+   "id": "i1805",
    "kind": "coin",
    "country": "RU",
    "name": "1 рубль",
@@ -22529,7 +26223,7 @@
    "slot": 4
   },
   {
-   "id": "i1507",
+   "id": "i1806",
    "kind": "coin",
    "country": "RU",
    "name": "50 копеек",
@@ -22542,7 +26236,7 @@
    "slot": 5
   },
   {
-   "id": "i1508",
+   "id": "i1807",
    "kind": "coin",
    "country": "RU",
    "name": "10 копеек",
@@ -22555,7 +26249,7 @@
    "slot": 6
   },
   {
-   "id": "i1509",
+   "id": "i1808",
    "kind": "coin",
    "country": "SK",
    "name": "5 крон",
@@ -22568,7 +26262,7 @@
    "image": ""
   },
   {
-   "id": "i1510",
+   "id": "i1809",
    "kind": "coin",
    "country": "SK",
    "name": "2 кроны",
@@ -22581,7 +26275,7 @@
    "image": ""
   },
   {
-   "id": "i1511",
+   "id": "i1810",
    "kind": "coin",
    "country": "SK",
    "name": "1 крона",
@@ -22594,7 +26288,7 @@
    "image": ""
   },
   {
-   "id": "i1512",
+   "id": "i1811",
    "kind": "coin",
    "country": "DE",
    "name": "20 пфеннигов",
@@ -22609,7 +26303,7 @@
    "image": ""
   },
   {
-   "id": "i1513",
+   "id": "i1812",
    "kind": "coin",
    "country": "LV",
    "name": "1 лат",
@@ -22622,7 +26316,7 @@
    "image": ""
   },
   {
-   "id": "i1514",
+   "id": "i1813",
    "kind": "coin",
    "country": "LV",
    "name": "5 сантимов",
@@ -22635,7 +26329,7 @@
    "image": ""
   },
   {
-   "id": "i1515",
+   "id": "i1814",
    "kind": "coin",
    "country": "MX",
    "name": "5 песо",
@@ -22648,7 +26342,7 @@
    "image": ""
   },
   {
-   "id": "i1516",
+   "id": "i1815",
    "kind": "coin",
    "country": "MX",
    "name": "1 песо",
@@ -22661,7 +26355,7 @@
    "image": ""
   },
   {
-   "id": "i1517",
+   "id": "i1816",
    "kind": "coin",
    "country": "SG",
    "name": "20 центов",
@@ -22674,7 +26368,7 @@
    "image": ""
   },
   {
-   "id": "i1518",
+   "id": "i1817",
    "kind": "coin",
    "country": "SG",
    "name": "10 центов",
@@ -22687,7 +26381,7 @@
    "image": ""
   },
   {
-   "id": "i1519",
+   "id": "i1818",
    "kind": "coin",
    "country": "SG",
    "name": "1 доллар",
@@ -22700,7 +26394,7 @@
    "image": ""
   },
   {
-   "id": "i1520",
+   "id": "i1819",
    "kind": "coin",
    "country": "SG",
    "name": "10 центов",
@@ -22713,7 +26407,7 @@
    "image": ""
   },
   {
-   "id": "i1521",
+   "id": "i1820",
    "kind": "coin",
    "country": "ZA",
    "name": "2 ранда",
@@ -22726,7 +26420,7 @@
    "image": ""
   },
   {
-   "id": "i1522",
+   "id": "i1821",
    "kind": "coin",
    "country": "ZA",
    "name": "1 ранд",
@@ -22739,7 +26433,7 @@
    "image": ""
   },
   {
-   "id": "i1523",
+   "id": "i1822",
    "kind": "coin",
    "country": "ZA",
    "name": "1 ранд",
@@ -22752,7 +26446,7 @@
    "image": ""
   },
   {
-   "id": "i1524",
+   "id": "i1823",
    "kind": "coin",
    "country": "ZA",
    "name": "1 ранд",
@@ -22765,7 +26459,7 @@
    "image": ""
   },
   {
-   "id": "i1525",
+   "id": "i1824",
    "kind": "coin",
    "country": "ZA",
    "name": "10 центов (с пчелой)",
@@ -22778,7 +26472,7 @@
    "image": ""
   },
   {
-   "id": "i1526",
+   "id": "i1825",
    "kind": "coin",
    "country": "UZ",
    "name": "1000 сумов",
@@ -22791,7 +26485,7 @@
    "image": ""
   },
   {
-   "id": "i1527",
+   "id": "i1826",
    "kind": "coin",
    "country": "UZ",
    "name": "500 сумов",
@@ -22804,7 +26498,7 @@
    "image": ""
   },
   {
-   "id": "i1528",
+   "id": "i1827",
    "kind": "coin",
    "country": "UZ",
    "name": "200 сумов",
@@ -22817,7 +26511,7 @@
    "image": ""
   },
   {
-   "id": "i1529",
+   "id": "i1828",
    "kind": "coin",
    "country": "UZ",
    "name": "100 сумов",
@@ -22830,21 +26524,21 @@
    "image": ""
   },
   {
-   "id": "i1530",
+   "id": "i1829",
    "kind": "coin",
    "country": "DE",
    "name": "50 евроцентов (Бранденбургские ворота)",
    "year": "2003",
    "album": "foreign",
    "sheet": "17",
-   "row": 2,
-   "slot": 2,
+   "row": 4,
+   "slot": 3,
    "qty": 1,
    "status": "have",
    "image": ""
   },
   {
-   "id": "i1531",
+   "id": "i1830",
    "kind": "coin",
    "country": "KG",
    "name": "5 сомов",
@@ -22857,7 +26551,7 @@
    "image": ""
   },
   {
-   "id": "i1532",
+   "id": "i1831",
    "kind": "coin",
    "country": "KG",
    "name": "1 сом",
@@ -22870,7 +26564,7 @@
    "image": ""
   },
   {
-   "id": "i1533",
+   "id": "i1832",
    "kind": "coin",
    "country": "KG",
    "name": "50 тыйын",
@@ -22883,7 +26577,7 @@
    "image": ""
   },
   {
-   "id": "i1534",
+   "id": "i1833",
    "kind": "coin",
    "country": "CU",
    "name": "1 песо",
@@ -22896,7 +26590,7 @@
    "image": ""
   },
   {
-   "id": "i1535",
+   "id": "i1834",
    "kind": "coin",
    "country": "CU",
    "name": "25 сентаво",
@@ -22909,7 +26603,7 @@
    "image": ""
   },
   {
-   "id": "i1536",
+   "id": "i1835",
    "kind": "coin",
    "country": "RU",
    "name": "10 рублей — для показа аверса",
@@ -22922,7 +26616,7 @@
    "image": ""
   },
   {
-   "id": "i1537",
+   "id": "i1836",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «55 лет Победы» (ММД)",
@@ -22936,7 +26630,7 @@
    "image": ""
   },
   {
-   "id": "i1538",
+   "id": "i1837",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «55 лет Победы» (СПМД)",
@@ -22950,7 +26644,7 @@
    "image": ""
   },
   {
-   "id": "i1539",
+   "id": "i1838",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «40 лет полёта Гагарина» (ММД)",
@@ -22964,7 +26658,7 @@
    "image": ""
   },
   {
-   "id": "i1540",
+   "id": "i1839",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «40 лет полёта Гагарина» (СПМД)",
@@ -22978,7 +26672,7 @@
    "image": ""
   },
   {
-   "id": "i1541",
+   "id": "i1840",
    "kind": "coin",
    "country": "RU",
    "name": "Вооружённые силы РФ",
@@ -22992,7 +26686,7 @@
    "image": ""
   },
   {
-   "id": "i1542",
+   "id": "i1841",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство иностранных дел",
@@ -23006,7 +26700,7 @@
    "image": ""
   },
   {
-   "id": "i1543",
+   "id": "i1842",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство юстиции",
@@ -23020,7 +26714,7 @@
    "image": ""
   },
   {
-   "id": "i1544",
+   "id": "i1843",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство внутренних дел",
@@ -23034,7 +26728,7 @@
    "image": ""
   },
   {
-   "id": "i1545",
+   "id": "i1844",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство финансов",
@@ -23048,7 +26742,7 @@
    "image": ""
   },
   {
-   "id": "i1546",
+   "id": "i1845",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство экономического развития",
@@ -23062,7 +26756,7 @@
    "image": ""
   },
   {
-   "id": "i1547",
+   "id": "i1846",
    "kind": "coin",
    "country": "RU",
    "name": "Министерство образования",
@@ -23076,7 +26770,7 @@
    "image": ""
   },
   {
-   "id": "i1548",
+   "id": "i1847",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «60 лет Победы» (ММД)",
@@ -23090,7 +26784,7 @@
    "image": ""
   },
   {
-   "id": "i1549",
+   "id": "i1848",
    "kind": "coin",
    "country": "RU",
    "name": "10 руб. «60 лет Победы» (СПМД)",
@@ -23104,7 +26798,7 @@
    "image": ""
   },
   {
-   "id": "i1550",
+   "id": "i1849",
    "kind": "coin",
    "country": "RU",
    "name": "Дербент",
@@ -23119,7 +26813,7 @@
    "image": ""
   },
   {
-   "id": "i1551",
+   "id": "i1850",
    "kind": "coin",
    "country": "RU",
    "name": "Кострома",
@@ -23134,7 +26828,7 @@
    "image": ""
   },
   {
-   "id": "i1552",
+   "id": "i1851",
    "kind": "coin",
    "country": "RU",
    "name": "Старая Русса",
@@ -23149,7 +26843,7 @@
    "image": ""
   },
   {
-   "id": "i1553",
+   "id": "i1852",
    "kind": "coin",
    "country": "RU",
    "name": "Псков",
@@ -23164,7 +26858,7 @@
    "image": ""
   },
   {
-   "id": "i1554",
+   "id": "i1853",
    "kind": "coin",
    "country": "RU",
    "name": "Муром",
@@ -23179,7 +26873,7 @@
    "image": ""
   },
   {
-   "id": "i1555",
+   "id": "i1854",
    "kind": "coin",
    "country": "RU",
    "name": "Дорогобуж",
@@ -23194,7 +26888,7 @@
    "image": ""
   },
   {
-   "id": "i1556",
+   "id": "i1855",
    "kind": "coin",
    "country": "RU",
    "name": "Касимов",
@@ -23209,7 +26903,7 @@
    "image": ""
   },
   {
-   "id": "i1557",
+   "id": "i1856",
    "kind": "coin",
    "country": "RU",
    "name": "Дмитров",
@@ -23224,7 +26918,7 @@
    "image": ""
   },
   {
-   "id": "i1558",
+   "id": "i1857",
    "kind": "coin",
    "country": "RU",
    "name": "Ряжск",
@@ -23239,7 +26933,7 @@
    "image": ""
   },
   {
-   "id": "i1559",
+   "id": "i1858",
    "kind": "coin",
    "country": "RU",
    "name": "Кемь",
@@ -23254,7 +26948,7 @@
    "image": ""
   },
   {
-   "id": "i1560",
+   "id": "i1859",
    "kind": "coin",
    "country": "RU",
    "name": "Калининград",
@@ -23269,7 +26963,7 @@
    "image": ""
   },
   {
-   "id": "i1561",
+   "id": "i1860",
    "kind": "coin",
    "country": "RU",
    "name": "Казань",
@@ -23284,7 +26978,7 @@
    "image": ""
   },
   {
-   "id": "i1562",
+   "id": "i1861",
    "kind": "coin",
    "country": "RU",
    "name": "Мценск",
@@ -23299,7 +26993,7 @@
    "image": ""
   },
   {
-   "id": "i1563",
+   "id": "i1862",
    "kind": "coin",
    "country": "RU",
    "name": "Боровск",
@@ -23314,7 +27008,7 @@
    "image": ""
   },
   {
-   "id": "i1564",
+   "id": "i1863",
    "kind": "coin",
    "country": "RU",
    "name": "Ленинградская обл.",
@@ -23329,7 +27023,7 @@
    "image": ""
   },
   {
-   "id": "i1565",
+   "id": "i1864",
    "kind": "coin",
    "country": "RU",
    "name": "Тверская обл.",
@@ -23344,7 +27038,7 @@
    "image": ""
   },
   {
-   "id": "i1566",
+   "id": "i1865",
    "kind": "coin",
    "country": "RU",
    "name": "Орловская обл.",
@@ -23359,7 +27053,7 @@
    "image": ""
   },
   {
-   "id": "i1567",
+   "id": "i1866",
    "kind": "coin",
    "country": "RU",
    "name": "Краснодарский край",
@@ -23374,7 +27068,7 @@
    "image": ""
   },
   {
-   "id": "i1568",
+   "id": "i1867",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Татарстан",
@@ -23389,7 +27083,7 @@
    "image": ""
   },
   {
-   "id": "i1569",
+   "id": "i1868",
    "kind": "coin",
    "country": "RU",
    "name": "Москва",
@@ -23404,7 +27098,7 @@
    "image": ""
   },
   {
-   "id": "i1570",
+   "id": "i1869",
    "kind": "coin",
    "country": "RU",
    "name": "Белгород",
@@ -23419,7 +27113,7 @@
    "image": ""
   },
   {
-   "id": "i1571",
+   "id": "i1870",
    "kind": "coin",
    "country": "RU",
    "name": "Торжок",
@@ -23434,7 +27128,7 @@
    "image": ""
   },
   {
-   "id": "i1572",
+   "id": "i1871",
    "kind": "coin",
    "country": "RU",
    "name": "Каргополь",
@@ -23449,7 +27143,7 @@
    "image": ""
   },
   {
-   "id": "i1573",
+   "id": "i1872",
    "kind": "coin",
    "country": "RU",
    "name": "Приморский край",
@@ -23464,7 +27158,7 @@
    "image": ""
   },
   {
-   "id": "i1574",
+   "id": "i1873",
    "kind": "coin",
    "country": "RU",
    "name": "Сахалинская обл.",
@@ -23479,7 +27173,7 @@
    "image": ""
   },
   {
-   "id": "i1575",
+   "id": "i1874",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Саха (Якутия)",
@@ -23494,7 +27188,7 @@
    "image": ""
   },
   {
-   "id": "i1576",
+   "id": "i1875",
    "kind": "coin",
    "country": "RU",
    "name": "Читинская обл.",
@@ -23509,7 +27203,7 @@
    "image": ""
   },
   {
-   "id": "i1577",
+   "id": "i1876",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Алтай",
@@ -23524,7 +27218,7 @@
    "image": ""
   },
   {
-   "id": "i1578",
+   "id": "i1877",
    "kind": "coin",
    "country": "RU",
    "name": "Вологда (ММД)",
@@ -23539,7 +27233,7 @@
    "image": ""
   },
   {
-   "id": "i1579",
+   "id": "i1878",
    "kind": "coin",
    "country": "RU",
    "name": "Вологда (СПМД)",
@@ -23554,7 +27248,7 @@
    "image": ""
   },
   {
-   "id": "i1580",
+   "id": "i1879",
    "kind": "coin",
    "country": "RU",
    "name": "Великий Устюг (ММД)",
@@ -23569,7 +27263,7 @@
    "image": ""
   },
   {
-   "id": "i1581",
+   "id": "i1880",
    "kind": "coin",
    "country": "RU",
    "name": "Великий Устюг (СПМД)",
@@ -23584,7 +27278,7 @@
    "image": ""
   },
   {
-   "id": "i1582",
+   "id": "i1881",
    "kind": "coin",
    "country": "RU",
    "name": "Гдов (ММД)",
@@ -23599,7 +27293,7 @@
    "image": ""
   },
   {
-   "id": "i1583",
+   "id": "i1882",
    "kind": "coin",
    "country": "RU",
    "name": "Гдов (СПМД)",
@@ -23614,7 +27308,7 @@
    "image": ""
   },
   {
-   "id": "i1584",
+   "id": "i1883",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Башкортостан",
@@ -23629,7 +27323,7 @@
    "image": ""
   },
   {
-   "id": "i1585",
+   "id": "i1884",
    "kind": "coin",
    "country": "RU",
    "name": "Ростовская обл.",
@@ -23644,7 +27338,7 @@
    "image": ""
   },
   {
-   "id": "i1586",
+   "id": "i1885",
    "kind": "coin",
    "country": "RU",
    "name": "Новосибирская обл.",
@@ -23659,7 +27353,7 @@
    "image": ""
   },
   {
-   "id": "i1587",
+   "id": "i1886",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Хакасия",
@@ -23674,7 +27368,7 @@
    "image": ""
   },
   {
-   "id": "i1588",
+   "id": "i1887",
    "kind": "coin",
    "country": "RU",
    "name": "Липецкая обл.",
@@ -23689,7 +27383,7 @@
    "image": ""
   },
   {
-   "id": "i1589",
+   "id": "i1888",
    "kind": "coin",
    "country": "RU",
    "name": "Архангельская обл.",
@@ -23704,7 +27398,7 @@
    "image": ""
   },
   {
-   "id": "i1590",
+   "id": "i1889",
    "kind": "coin",
    "country": "RU",
    "name": "Владимир (ММД)",
@@ -23719,7 +27413,7 @@
    "image": ""
   },
   {
-   "id": "i1591",
+   "id": "i1890",
    "kind": "coin",
    "country": "RU",
    "name": "Владимир (СПМД)",
@@ -23734,7 +27428,7 @@
    "image": ""
   },
   {
-   "id": "i1592",
+   "id": "i1891",
    "kind": "coin",
    "country": "RU",
    "name": "Приозерск (ММД)",
@@ -23749,7 +27443,7 @@
    "image": ""
   },
   {
-   "id": "i1593",
+   "id": "i1892",
    "kind": "coin",
    "country": "RU",
    "name": "Приозерск (СПМД)",
@@ -23764,7 +27458,7 @@
    "image": ""
   },
   {
-   "id": "i1594",
+   "id": "i1893",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленск (ММД)",
@@ -23779,7 +27473,7 @@
    "image": ""
   },
   {
-   "id": "i1595",
+   "id": "i1894",
    "kind": "coin",
    "country": "RU",
    "name": "Смоленск (СПМД)",
@@ -23794,7 +27488,7 @@
    "image": ""
   },
   {
-   "id": "i1596",
+   "id": "i1895",
    "kind": "coin",
    "country": "RU",
    "name": "Азов (ММД)",
@@ -23809,7 +27503,7 @@
    "image": ""
   },
   {
-   "id": "i1597",
+   "id": "i1896",
    "kind": "coin",
    "country": "RU",
    "name": "Азов (СПМД)",
@@ -23824,7 +27518,7 @@
    "image": ""
   },
   {
-   "id": "i1598",
+   "id": "i1897",
    "kind": "coin",
    "country": "RU",
    "name": "Удмуртская Республика (ММД)",
@@ -23839,7 +27533,7 @@
    "image": ""
   },
   {
-   "id": "i1599",
+   "id": "i1898",
    "kind": "coin",
    "country": "RU",
    "name": "Удмуртская Республика (СПМД)",
@@ -23854,7 +27548,7 @@
    "image": ""
   },
   {
-   "id": "i1600",
+   "id": "i1899",
    "kind": "coin",
    "country": "RU",
    "name": "Астраханская обл. (ММД)",
@@ -23869,7 +27563,7 @@
    "image": ""
   },
   {
-   "id": "i1601",
+   "id": "i1900",
    "kind": "coin",
    "country": "RU",
    "name": "Астраханская обл. (СПМД)",
@@ -23884,7 +27578,7 @@
    "image": ""
   },
   {
-   "id": "i1602",
+   "id": "i1901",
    "kind": "coin",
    "country": "RU",
    "name": "Свердловская обл. (ММД)",
@@ -23899,7 +27593,7 @@
    "image": ""
   },
   {
-   "id": "i1603",
+   "id": "i1902",
    "kind": "coin",
    "country": "RU",
    "name": "Свердловская обл. (СПМД)",
@@ -23914,7 +27608,7 @@
    "image": ""
   },
   {
-   "id": "i1604",
+   "id": "i1903",
    "kind": "coin",
    "country": "RU",
    "name": "Кабардино-Балкарская Республика (ММД)",
@@ -23929,7 +27623,7 @@
    "image": ""
   },
   {
-   "id": "i1605",
+   "id": "i1904",
    "kind": "coin",
    "country": "RU",
    "name": "Кабардино-Балкарская Республика (СПМД)",
@@ -23944,7 +27638,7 @@
    "image": ""
   },
   {
-   "id": "i1606",
+   "id": "i1905",
    "kind": "coin",
    "country": "RU",
    "name": "Выборг (ММД)",
@@ -23959,7 +27653,7 @@
    "image": ""
   },
   {
-   "id": "i1607",
+   "id": "i1906",
    "kind": "coin",
    "country": "RU",
    "name": "Выборг (СПМД)",
@@ -23974,7 +27668,7 @@
    "image": ""
   },
   {
-   "id": "i1608",
+   "id": "i1907",
    "kind": "coin",
    "country": "RU",
    "name": "Галич (ММД)",
@@ -23989,7 +27683,7 @@
    "image": ""
   },
   {
-   "id": "i1609",
+   "id": "i1908",
    "kind": "coin",
    "country": "RU",
    "name": "Галич (СПМД)",
@@ -24004,7 +27698,7 @@
    "image": ""
   },
   {
-   "id": "i1610",
+   "id": "i1909",
    "kind": "coin",
    "country": "RU",
    "name": "Калуга (ММД)",
@@ -24019,7 +27713,7 @@
    "image": ""
   },
   {
-   "id": "i1611",
+   "id": "i1910",
    "kind": "coin",
    "country": "RU",
    "name": "Калуга (СПМД)",
@@ -24034,7 +27728,7 @@
    "image": ""
   },
   {
-   "id": "i1612",
+   "id": "i1911",
    "kind": "coin",
    "country": "RU",
    "name": "Великий Новгород (ММД)",
@@ -24049,7 +27743,7 @@
    "image": ""
   },
   {
-   "id": "i1613",
+   "id": "i1912",
    "kind": "coin",
    "country": "RU",
    "name": "Великий Новгород (СПМД)",
@@ -24064,7 +27758,7 @@
    "image": ""
   },
   {
-   "id": "i1614",
+   "id": "i1913",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Калмыкия (ММД)",
@@ -24079,7 +27773,7 @@
    "image": ""
   },
   {
-   "id": "i1615",
+   "id": "i1914",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Калмыкия (СПМД)",
@@ -24094,7 +27788,7 @@
    "image": ""
   },
   {
-   "id": "i1616",
+   "id": "i1915",
    "kind": "coin",
    "country": "RU",
    "name": "Еврейская АО (ММД)",
@@ -24109,7 +27803,7 @@
    "image": ""
   },
   {
-   "id": "i1617",
+   "id": "i1916",
    "kind": "coin",
    "country": "RU",
    "name": "Еврейская АО (СПМД)",
@@ -24124,7 +27818,7 @@
    "image": ""
   },
   {
-   "id": "i1618",
+   "id": "i1917",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Адыгея (ММД)",
@@ -24139,7 +27833,7 @@
    "image": ""
   },
   {
-   "id": "i1619",
+   "id": "i1918",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Адыгея (СПМД)",
@@ -24154,7 +27848,7 @@
    "image": ""
   },
   {
-   "id": "i1620",
+   "id": "i1919",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Коми (СПМД)",
@@ -24169,7 +27863,7 @@
    "image": ""
   },
   {
-   "id": "i1621",
+   "id": "i1920",
    "kind": "coin",
    "country": "RU",
    "name": "Кировская обл.",
@@ -24184,7 +27878,7 @@
    "image": ""
   },
   {
-   "id": "i1622",
+   "id": "i1921",
    "kind": "coin",
    "country": "RU",
    "name": "Брянск",
@@ -24199,7 +27893,7 @@
    "image": ""
   },
   {
-   "id": "i1623",
+   "id": "i1922",
    "kind": "coin",
    "country": "RU",
    "name": "Юрьевец",
@@ -24214,7 +27908,7 @@
    "image": ""
   },
   {
-   "id": "i1624",
+   "id": "i1923",
    "kind": "coin",
    "country": "RU",
    "name": "Ненецкий АО",
@@ -24229,7 +27923,7 @@
    "image": ""
   },
   {
-   "id": "i1625",
+   "id": "i1924",
    "kind": "coin",
    "country": "RU",
    "name": "Всероссийская перепись населения",
@@ -24243,7 +27937,7 @@
    "image": ""
   },
   {
-   "id": "i1626",
+   "id": "i1925",
    "kind": "coin",
    "country": "RU",
    "name": "Елец",
@@ -24258,7 +27952,7 @@
    "image": ""
   },
   {
-   "id": "i1627",
+   "id": "i1926",
    "kind": "coin",
    "country": "RU",
    "name": "Соликамск",
@@ -24273,7 +27967,7 @@
    "image": ""
   },
   {
-   "id": "i1628",
+   "id": "i1927",
    "kind": "coin",
    "country": "RU",
    "name": "Республика Бурятия",
