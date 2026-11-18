@@ -3438,6 +3438,90 @@ nav::-webkit-scrollbar{display:none;height:0}
    ]
   },
   {
+   "id": "t_indep",
+   "name": "Годовщины независимости",
+   "denom": "памятные монеты разных стран",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i0278": "США",
+    "i0764": "Алжир",
+    "i1181": "Ангола"
+   },
+   "ids": [
+    "i0278",
+    "i0764",
+    "i1181"
+   ]
+  },
+  {
+   "id": "t_const",
+   "name": "Годовщины конституций",
+   "denom": "памятные монеты разных стран",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i1761": "Россия",
+    "i1785": "Россия"
+   },
+   "ids": [
+    "i1761",
+    "i1785"
+   ]
+  },
+  {
+   "id": "t_sport",
+   "name": "Чемпионаты мира и спорт",
+   "denom": "памятные монеты разных стран",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i0106": "Польша",
+    "i0268": "Мексика",
+    "i0269": "Венгрия",
+    "i1756": "Россия",
+    "i1758": "Россия",
+    "i1759": "Россия",
+    "i1760": "Россия",
+    "i1910": "Испания"
+   },
+   "ids": [
+    "i0106",
+    "i0268",
+    "i0269",
+    "i1756",
+    "i1758",
+    "i1759",
+    "i1760",
+    "i1910"
+   ]
+  },
+  {
+   "id": "t_space",
+   "name": "Космос",
+   "denom": "памятные монеты разных стран",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i0261": "Молдова",
+    "i0262": "Молдова",
+    "i1765": "Россия",
+    "i1778": "Россия",
+    "i1790": "Россия",
+    "i1982": "Россия",
+    "i1983": "Россия"
+   },
+   "ids": [
+    "i0261",
+    "i0262",
+    "i1765",
+    "i1778",
+    "i1790",
+    "i1982",
+    "i1983"
+   ]
+  },
+  {
    "id": "ca_comm",
    "name": "Канада — памятные монеты",
    "denom": "",
@@ -35011,7 +35095,7 @@ function seriesCard(s){
   let chips;
   if(s.gmap){
     const g={},t={};p.its.filter(have).forEach(i=>{const k=s.gmap[i.id];g[k]=(g[k]||0)+(i.qty||1);(t[k]=t[k]||[]).push(i.name+(i.year?", "+i.year:""))});
-    chips=Object.keys(g).sort((a,b)=>a.localeCompare(b,"ru")).map(k=>`<span class="chip"${s.expect?` title="${esc(t[k].join("; "))}"`:""}>${esc(k)}${g[k]>1?`<sup>×${g[k]}</sup>`:""}</span>`).join("")
+    chips=Object.keys(g).sort((a,b)=>a.localeCompare(b,"ru")).map(k=>`<span class="chip" title="${esc(t[k].join("; "))}">${esc(k)}${g[k]>1?`<sup>×${g[k]}</sup>`:""}</span>`).join("")
       +(s.expect||[]).filter(k=>!g[k]).map(k=>`<span class="chip missing">${esc(k)}</span>`).join("");
   }else chips=p.its.filter(i=>!i.dup).map(i=>`<span class="chip ${i.status!=="have"?i.status:""}">${esc(i.name)}${i.year&&i.year.length<6&&!/\d{4}/.test(i.name)?" "+esc(i.year):""}${i.qty>1?`<sup>×${i.qty}</sup>`:""}</span>`).join("");
   return `<article class="scard"><div class="meta">${esc(s.denom||"")}</div><h2>${esc(s.name)}</h2>${bar}${done?`<span class="full">Собрана полностью</span>`:""}${chips?`<div class="chips">${chips}</div>`:""}${s.note?`<p class="snote">${esc(s.note)}</p>`:""}</article>`;
