@@ -3770,31 +3770,743 @@
     "i1867"
    ]
   },
+      {
+   "id": "kz_cities",
+   "name": "Казахстан — Города Казахстана",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "total": 16,
+   "gmap": {
+    "i2667": "Усть-Каменогорск (2011)",
+    "i2571": "Павлодар (2012)",
+    "i2575": "Атырау (2012)",
+    "i2598": "Уральск (2014)",
+    "i2573": "Кызылорда (2014)",
+    "i2632": "Кызылорда (2014)",
+    "i2574": "Петропавловск (2016)"
+   },
+   "expect": [
+    "Актобе (2011)",
+    "Караганда (2011)",
+    "Актау (2012)",
+    "Костанай (2013)",
+    "Талдыкорган (2013)",
+    "Тараз (2013)",
+    "Астана (2015)",
+    "Алма-Ата (2015)",
+    "Кокшетау (2015)",
+    "Шымкент (2015)"
+   ],
+   "ids": [
+    "i2667",
+    "i2571",
+    "i2575",
+    "i2598",
+    "i2573",
+    "i2632",
+    "i2574"
+   ]
+  },
+  {
+   "id": "kz_tales",
+   "name": "Казахстан — Сказки народа Казахстана",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "total": 7,
+   "gmap": {
+    "i1730": "Алдар-Косе (2013)",
+    "i1731": "Колобок (2013)",
+    "i2559": "Сирко (2014)"
+   },
+   "expect": [
+    "Шурале (2013)",
+    "Ходжа Насреддин (2015)",
+    "Легенда о Тангуне (2016)",
+    "Бременские музыканты (2017)"
+   ],
+   "ids": [
+    "i1730",
+    "i1731",
+    "i2559"
+   ]
+  },
+  {
+   "id": "kz_portr",
+   "name": "Казахстан — Портреты на банкнотах",
+   "denom": "50 и 100 тенге",
+   "by": "group",
+   "world": true,
+   "total": 4,
+   "gmap": {
+    "i2564": "Чокан Валиханов (2014)",
+    "i2557": "Абай Кунанбаев (2015)",
+    "i2563": "Абулхайр-хан (2016)"
+   },
+   "expect": [
+    "Абылай-хан (2017)"
+   ],
+   "ids": [
+    "i2564",
+    "i2557",
+    "i2563"
+   ]
+  },
+  {
+   "id": "kz_treasure",
+   "name": "Казахстан — Сокровища степи",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "total": 1,
+   "gmap": {
+    "i2568": "Тайказан (2014)"
+   },
+   "ids": [
+    "i2568"
+   ]
+  },
+  {
+   "id": "kz_awards",
+   "name": "Казахстан — Государственные награды",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "total": 8,
+   "gmap": {
+   },
+   "expect": [
+    "Знак ордена Золотого орла (2006)",
+    "Звезда ордена Золотого орла (2006)",
+    "Орден Отечества (2007)",
+    "Орден Доблести (2008)",
+    "Звезда ордена Славы (2008)",
+    "Звезда ордена Дружбы (2009)",
+    "Орден Благородства (2009)",
+    "Знак ордена Почёта (2010)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "kz_cosmos",
+   "name": "Казахстан — Космос",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "gmap": {
+   },
+   "expect": [
+    "Космос (2006)",
+    "Первый спутник (2007)",
+    "«Восток» (2008)",
+    "«Союз» — «Аполлон» (2009)",
+    "Луноход-1 (2010)",
+    "Первый космонавт (2011)",
+    "«Мир» (2012)",
+    "МКС (2013)",
+    "«Буран» (2014)",
+    "«Венера-10» (2015)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "kz_redbook",
+   "name": "Казахстан — Красная книга",
+   "denom": "50 тенге",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i1735": "Устюртский муфлон (2015)"
+   },
+   "expect": [
+    "Алтайский улар (2006)",
+    "Колпица (2007)",
+    "Тяньшанский медведь (2008)",
+    "Дикобраз (2009)",
+    "Кудрявый пеликан (2010)",
+    "Ястребиная сова (2011)",
+    "Древесный богомол (2012)",
+    "Длинноиглый ёж (2013)",
+    "Манул (2014)"
+   ],
+   "ids": [
+    "i1735"
+   ]
+  },
+  {
+   "id": "kz_rites",
+   "name": "Казахстан — Обряды и национальные игры",
+   "denom": "50 и 100 тенге",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i2664": "Айтыс (2011)",
+    "i2665": "Наурыз (2012)",
+    "i2570": "Сандет той (2020)"
+   },
+   "expect": [
+    "Укладывание в колыбель (2006)",
+    "Разрезание пут (2007)",
+    "Догони девушку (2008)",
+    "Беташар (2009)",
+    "Отау көтеру (2010)",
+    "Сүйіндір (2013)",
+    "Көкпар (2014)",
+    "Бата (2015)",
+    "Қырқынан шығару (2016)",
+    "Шашу (2017)",
+    "Сүйінші (2018)",
+    "Қыз ұзату (2019)"
+   ],
+   "ids": [
+    "i2664",
+    "i2665",
+    "i2570"
+   ]
+  },
+  {
+   "id": "kz_people",
+   "name": "Казахстан — Люди",
+   "denom": "50 и 100 тенге",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i2522": "Жумабаев (2013)",
+    "i2569": "Тулебаев (2013)",
+    "i1732": "Шевченко (2014)",
+    "i2560": "Шевченко (2014)",
+    "i1733": "Бекмаханов (2015)",
+    "i2567": "Бекмаханов (2015)",
+    "i2558": "Габдуллин (2015)",
+    "i2561": "Есенберлин (2015)",
+    "i1734": "Ташенев (2015)",
+    "i2562": "Ташенев (2015)",
+    "i2437": "Жангельдин (2016)",
+    "i2416": "Ергали (2016)",
+    "i2520": "175 лет Абаю (2020)"
+   },
+   "ids": [
+    "i2522",
+    "i2569",
+    "i1732",
+    "i2560",
+    "i1733",
+    "i2567",
+    "i2558",
+    "i2561",
+    "i1734",
+    "i2562",
+    "i2437",
+    "i2416",
+    "i2520"
+   ]
+  },
+  {
+   "id": "kz_events",
+   "name": "Казахстан — События",
+   "denom": "50 и 100 тенге",
+   "by": "group",
+   "world": true,
+   "gmap": {
+    "i2565": "75 лет Победы (2020)"
+   },
+   "ids": [
+    "i2565"
+   ]
+  },
   {
    "id": "kz_comm",
-   "name": "Казахстан — памятные выпуски",
+   "name": "Казахстан — другие памятные выпуски",
    "denom": "монеты и банкноты",
    "by": "group",
    "world": true,
    "gmap": {
-    "i1241": "500 тенге «Сакский стиль» (2025 (2026))",
-    "i2416": "100 тенге «Хамит Ергали — 100 лет», нейзильбер (2016)",
-    "i1730": "50 тенге «Алдар-Косе» (2013)",
-    "i1731": "50 тенге «Колобок» (2013)",
-    "i1732": "50 тенге «200 лет Т. Г. Шевченко» (2014)",
-    "i1733": "50 тенге «100 лет Е. Бекмаханова» (2015)",
-    "i1734": "50 тенге «100 лет Ж. Ташенева» (2015)",
-    "i1735": "50 тенге «Устюртский муфлон» (2015)"
+    "i1241": "500 тенге «Сакский стиль» (2025)",
+    "i2515": "Туранга — флора Казахстана (2020)",
+    "i2566": "Тилашар — азбука (2021)",
+    "i2572": "Арал (2014)"
    },
    "ids": [
     "i1241",
-    "i2416",
-    "i1730",
-    "i1731",
-    "i1732",
-    "i1733",
-    "i1734",
-    "i1735"
+    "i2515",
+    "i2566",
+    "i2572"
+   ]
+  },
+  {
+   "id": "pl_kings",
+   "name": "Польша 2 злотых — Короли и князья",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 9,
+   "gmap": {
+   },
+   "expect": [
+    "Zygmunt II August (1548–1572) (1996)",
+    "Stefan Batory (1576–1586) (1997)",
+    "Zygmunt III Waza (1587–1632) (1998)",
+    "Władysław IV Waza (1632–1648) (1999)",
+    "Jan II Kazimierz (1648–1668) (2000)",
+    "Jan III Sobieski (1674–1696) (2001)",
+    "August II Mocny (1697–1706; 1709–1733) (2002)",
+    "Stanisław Leszczyński (1704–1709; 1733–1736) (2003)",
+    "Stanisław August Poniatowski (1764–1795) (2005)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_animals",
+   "name": "Польша 2 злотых — Животные мира",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 19,
+   "gmap": {
+   },
+   "expect": [
+    "Sum (Silurus glanis) (1995)",
+    "Jeż (Erinaceus europaeus) (1996)",
+    "Jelonek rogacz (Lucanus cervus) (1997)",
+    "Ropucha paskówka (Bufo calamita) (1998)",
+    "Wilk (Canis lupus) (1999)",
+    "Dudek (Upupa epops) (2000)",
+    "Paź królowej (Papilio machaon) (2001)",
+    "Żółw błotny (Emys orbicularis) (2002)",
+    "Węgorz europejski (Anguilla anguilla) (2003)",
+    "Morświn (Phocoena phocoena) (2004)",
+    "Puchacz (Bubo bubo) (2005)",
+    "Świstak (Marmota marmota) (2006)",
+    "Foka szara (Halichoerus grypus) (2007)",
+    "Sokół wędrowny (Falco peregrinus) (2008)",
+    "Jaszczurka zielona (Lacerta viridis) (2009)",
+    "Podkowiec mały (Rhinolophus hipposideros) (2010)",
+    "Borsuk (Meles meles) (2011)",
+    "Żubr (Bison bonasus) (2013)",
+    "Konik polski (Equus caballus gmelini) (2014)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_castles",
+   "name": "Польша 2 злотых — Замки и дворцы",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 6,
+   "gmap": {
+   },
+   "expect": [
+    "Pałac Królewski w Łazienkach (1995)",
+    "Zamek w Lidzbarku Warmińskim (1996)",
+    "Zamek w Pieskowej Skale (1997)",
+    "Zamek w Kórniku (1998)",
+    "Pałac Potockich w Radzyniu Podlaskim (1999)",
+    "Pałac w Wilanowie (2000)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_zabytki",
+   "name": "Польша 2 злотых — Памятники материальной культуры",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 7,
+   "gmap": {
+    "i2556": "Krzemionki Opatowskie (2012)"
+   },
+   "expect": [
+    "Kopalnia soli w Wieliczce (2001)",
+    "Zamek w Malborku (2002)",
+    "Kościół w Haczowie (2006)",
+    "Miasto średniowieczne w Toruniu (2007)",
+    "Kazimierz Dolny (2008)",
+    "Krzeszów (2010)"
+   ],
+   "ids": [
+    "i2556"
+   ]
+  },
+  {
+   "id": "pl_travel",
+   "name": "Польша 2 злотых — Путешественники и исследователи",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 10,
+   "gmap": {
+    "i2527": "Bronisław Piłsudski (1866–1918) (2008)"
+   },
+   "expect": [
+    "200-lecie urodzin Pawła Edmunda Strzeleckiego (1797–1873) (1997)",
+    "100. rocznica śmierci Ernesta Malinowskiego (1818–1899) (1999)",
+    "Michał Siedlecki (1873–1940) (2001)",
+    "Bronisław Malinowski (1884–1942) (2002)",
+    "Aleksander Czekanowski (1833–1876) (2004)",
+    "Ignacy Domeyko (1802–1889) (2007)",
+    "Henryk Arctowski i Antoni B. Dobrowolski (2007)",
+    "Benedykt Dybowski (1833–1930) (2010)",
+    "Ferdynand Ossendowski (1876–1945) (2011)"
+   ],
+   "ids": [
+    "i2527"
+   ]
+  },
+  {
+   "id": "pl_painters",
+   "name": "Польша 2 злотых — Художники XIX–XX веков",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 10,
+   "gmap": {
+    "i2536": "Artur Grottger (1837–1867) (2010)",
+    "i2544": "Artur Grottger (1837–1867) (2010)",
+    "i2547": "Piotr Michałowski (1800–1855) (2012)",
+    "i2548": "Władysław Strzemiński (1893–1952) (2009)",
+    "i2554": "Leon Wyczółkowski (1852–1936) (2007)"
+   },
+   "expect": [
+    "Jan Matejko (1838–1893) (2002)",
+    "Jacek Malczewski (1854–1929) (2003)",
+    "Stanisław Wyspiański (1869–1907) (2004)",
+    "Tadeusz Makowski (1882–1932) (2005)",
+    "Aleksander Gierymski (1850–1901) (2006)",
+    "Zofia Stryjeńska (1891–1976) (2011)"
+   ],
+   "ids": [
+    "i2536",
+    "i2544",
+    "i2547",
+    "i2548",
+    "i2554"
+   ]
+  },
+  {
+   "id": "pl_cavalry",
+   "name": "Польша 2 злотых — История кавалерии",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 5,
+   "gmap": {
+   },
+   "expect": [
+    "Jeździec piastowski (2006)",
+    "Rycerz ciężkozbrojny XV w. (2007)",
+    "Husarz XVII wiek (2009)",
+    "Szwoleżer Gwardii Cesarza Napoleona I (2010)",
+    "Ułan II Rzeczypospolitej (2011)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_music",
+   "name": "Польша 2 злотых — История эстрады",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 4,
+   "gmap": {
+    "i2535": "Czesław Niemen (2009)",
+    "i2551": "Krzysztof Komeda (2010)"
+   },
+   "expect": [
+    "Jeremi Przybora, Jerzy Wasowski (2011)",
+    "Agnieszka Osiecka (2013)"
+   ],
+   "ids": [
+    "i2535",
+    "i2551"
+   ]
+  },
+  {
+   "id": "pl_cities_hist",
+   "name": "Польша 2 злотых — Исторические города",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 32,
+   "gmap": {
+   },
+   "expect": [
+    "Gniezno (2005)",
+    "Kołobrzeg (2005)",
+    "Włocławek (2005)",
+    "Cieszyn (2005)",
+    "Jarosław (2006)",
+    "Bochnia (2006)",
+    "Elbląg (2006)",
+    "Legnica (2006)",
+    "Chełm (2006)",
+    "Żagań (2006)",
+    "Nysa (2006)",
+    "Pszczyna (2006)",
+    "Sandomierz (2006)",
+    "Chełmno (2006)",
+    "Nowy Sącz (2006)",
+    "Kalisz (2006)",
+    "Kwidzyn (2007)",
+    "Płock (2007)",
+    "Łomża (2007)",
+    "Gorzów Wielkopolski (2007)",
+    "Racibórz (2007)",
+    "Świdnica (2007)",
+    "Słupsk (2007)",
+    "Przemyśl (2007)",
+    "Stargard Szczeciński (2007)",
+    "Brzeg (2007)",
+    "Tarnów (2007)",
+    "Kłodzko (2007)",
+    "Piotrków Trybunalski (2008)",
+    "Konin (2008)",
+    "Łowicz (2008)",
+    "Bielsko-Biała (2008)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_cities",
+   "name": "Польша 2 злотых — Города Польши",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 15,
+   "gmap": {
+    "i2525": "Łódź (2011)"
+   },
+   "expect": [
+    "Częstochowa – Jasna Góra (2009)",
+    "Jędrzejów – Klasztor Cystersów (2009)",
+    "Trzebnica – Sanktuarium św. Jadwigi (2009)",
+    "Trzemeszno – bazylika (2010)",
+    "Stare Miasto w Warszawie (2010)",
+    "Kalwaria Zebrzydowska (2010)",
+    "Gorlice (2010)",
+    "Miechów (2010)",
+    "Katowice (2010)",
+    "Gdynia (2011)",
+    "Mława (2011)",
+    "Poznań (2011)",
+    "Kraków (2011)",
+    "Kalisz (2011)"
+   ],
+   "ids": [
+    "i2525"
+   ]
+  },
+  {
+   "id": "pl_woj",
+   "name": "Польша 2 злотых — Гербы воеводств",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 16,
+   "gmap": {
+   },
+   "expect": [
+    "Województwo dolnośląskie (2004)",
+    "Województwo kujawsko-pomorskie (2004)",
+    "Województwo lubelskie (2004)",
+    "Województwo lubuskie (2004)",
+    "Województwo łódzkie (2004)",
+    "Województwo małopolskie (2004)",
+    "Województwo mazowieckie (2004)",
+    "Województwo opolskie (2004)",
+    "Województwo podkarpackie (2004)",
+    "Województwo podlaskie (2004)",
+    "Województwo pomorskie (2004)",
+    "Województwo śląskie (2004)",
+    "Województwo świętokrzyskie (2005)",
+    "Województwo warmińsko-mazurskie (2005)",
+    "Województwo wielkopolskie (2005)",
+    "Województwo zachodniopomorskie (2005)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_freedom",
+   "name": "Польша 2 злотых — Путь к свободе",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 8,
+   "gmap": {
+    "i2523": "40. rocznica Marca '68 (2008)",
+    "i2531": "40. rocznica Marca '68 (2008)",
+    "i2537": "Wybory 4 czerwca 1989 roku (2009)"
+   },
+   "expect": [
+    "Wejście Polski do NATO (1999)",
+    "20-lecie powstania Solidarności (2000)",
+    "30. rocznica Grudnia ’70 (2000)",
+    "Wstąpienie Polski do Unii Europejskiej (2004)",
+    "25-lecie NSZZ Solidarność (2005)",
+    "30. rocznica Czerwca '76 (2006)"
+   ],
+   "ids": [
+    "i2523",
+    "i2531",
+    "i2537"
+   ]
+  },
+  {
+   "id": "pl_ships",
+   "name": "Польша 2 злотых — Корабли",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 8,
+   "gmap": {
+   },
+   "expect": [
+    "Niszczyciel Błyskawica (2012)",
+    "Okręt podwodny Orzeł (2012)",
+    "Lekki krążownik Dragon (2012)",
+    "Niszczyciel Piorun (2012)",
+    "Kuter rakietowy Gdynia (2013)",
+    "Niszczyciel rakietowy Warszawa (2013)",
+    "Okręt transportowo-minowy Lublin (2013)",
+    "Fregata rakietowa Gen. K. Pułaski (2013)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_clubs",
+   "name": "Польша 2 злотых — Футбольные клубы",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 2,
+   "gmap": {
+   },
+   "expect": [
+    "Polonia Warszawa (2011)",
+    "Warta Poznań (2013)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_battles",
+   "name": "Польша 2 злотых — Великие битвы",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 1,
+   "gmap": {
+   },
+   "expect": [
+    "Grunwald, Kłuszyn (2010)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_year",
+   "name": "Польша 2 злотых — Обрядовый год",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 4,
+   "gmap": {
+   },
+   "expect": [
+    "Kolędnicy (2001)",
+    "Śmigus-dyngus (2003)",
+    "Dożynki (2004)",
+    "Noc Świętojańska (2006)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_dzieje",
+   "name": "Польша 2 злотых — История злотого",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 4,
+   "gmap": {
+   },
+   "expect": [
+    "1 złoty z 1924 roku (2004)",
+    "Żaglowiec (2 zł i 5 zł z 1936 r.) (2005)",
+    "10 zł z 1932 r. (2006)",
+    "5 złotych z 1928 roku – Nike (2007)"
+   ],
+   "ids": [
+   ]
+  },
+  {
+   "id": "pl_misc",
+   "name": "Польша 2 злотых — индивидуальные выпуски",
+   "denom": "2 злотых",
+   "by": "group",
+   "world": true,
+   "total": 100,
+   "gmap": {
+    "i0101": "2 злотых 2009 (тип не определён)",
+    "i0105": "XX Zimowe Igrzyska Olimpijskie: Turyn 2006 (2006)",
+    "i0106": "Mistrzostwa Świata w Piłce Nożnej: Niemcy 2006 (2006)",
+    "i2524": "150 lat Muzeum Narodowego w Warszawie (2012)",
+    "i2526": "200. rocznica śmierci księcia Józefa Poniatowskiego (2013)",
+    "i2528": "Witold Lutosławski (2013)",
+    "i2538": "Witold Lutosławski (2013)",
+    "i2529": "200-lecie urodzin Hipolita Cegielskiego (2013)",
+    "i2530": "Cyprian Norwid (1821–1883) (2013)",
+    "i2533": "Cyprian Norwid (1821–1883) (2013)",
+    "i2532": "300-lecie Pielgrzymki Warszawskiej na Jasną Górę (2011)",
+    "i2553": "300-lecie Pielgrzymki Warszawskiej na Jasną Górę (2011)",
+    "i2534": "100 lat Teatru Polskiego w Warszawie (2013)",
+    "i2539": "90. rocznica bitwy warszawskiej (2010)",
+    "i2540": "Wrzesień 1939 roku (Westerplatte) (2009)",
+    "i2541": "500-lecie wydania Statutu Łaskiego (2006)",
+    "i2542": "65. rocznica Powstania Warszawskiego – poeci warszawscy: Krzysztof Kamil Baczyński i Tadeusz Gajcy (2009)",
+    "i2550": "65. rocznica Powstania Warszawskiego – poeci warszawscy: Krzysztof Kamil Baczyński i Tadeusz Gajcy (2009)",
+    "i2543": "25. rocznica śmierci Księdza Jerzego Popiełuszki (2009)",
+    "i2545": "Polacy ratujący Żydów – Irena Sendlerowa, Zofia Kossak, siostra Matylda Getter (2009)",
+    "i2546": "100. rocznica powstania Tatrzańskiego Ochotniczego Pogotowia Ratunkowego (2009)",
+    "i2549": "95. rocznica urodzin ks. Jana Twardowskiego (2010)",
+    "i2552": "180 lat bankowości centralnej w Polsce (2009)",
+    "i2555": "50-lecie działalności Polskiego Stowarzyszenia na rzecz Osób z Upośledzeniem Umysłowym (2013)"
+   },
+   "ids": [
+    "i0101",
+    "i0105",
+    "i0106",
+    "i2524",
+    "i2526",
+    "i2528",
+    "i2538",
+    "i2529",
+    "i2530",
+    "i2533",
+    "i2532",
+    "i2553",
+    "i2534",
+    "i2539",
+    "i2540",
+    "i2541",
+    "i2542",
+    "i2550",
+    "i2543",
+    "i2545",
+    "i2546",
+    "i2549",
+    "i2552",
+    "i2555"
    ]
   }
  ],
